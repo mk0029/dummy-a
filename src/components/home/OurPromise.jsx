@@ -15,7 +15,23 @@ const OurPromise = ({image, tag,heading,para}) => {
           <TagParagraph>{tag}</TagParagraph>
           <Heading className={'pt-1 pb-2.5'}>{heading}</Heading>
           <Paragraph>{para}</Paragraph>
-          <button className='mt-7 bg-red-400'>Know More</button>
+          <button className=' mt-5
+                        text-[#9D7F19] 
+                        text-center 
+                        text-[0.875rem] 
+                        font-normal 
+                        leading-[1.25rem] 
+                        py-2.5
+                        px-5
+                        border 
+                        border-[#9D7F19] 
+                        transition-all 
+                        duration-[0.5s] 
+                        ease-[cubic-bezier(0.075,0.82,0.165,1)] 
+                        capitalize 
+                        cursor-pointer hover:text-white hover:bg-dark-orange'>
+            Know More
+          </button>
         </div>
       </div>
     </div>
