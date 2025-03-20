@@ -46,7 +46,7 @@ const NavBar = () => {
             className={`fixed top-0 navbg w-full duration-500 z-[200] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
-            <div className="flex justify-between items-center w-full max-w-[1232px] px-4 mx-auto py-3 md:py-3.5">
+            <div className="flex justify-between items-center w-full max-w-[1232px] px-4 mx-auto py-3 md:py-4 lg:py-5">
                 <div className="flex items-center gap-12">
                     <Link aria-label="Home" href="/" className="flex gap-3 relative z-[400]">
                         <Image
@@ -58,7 +58,7 @@ const NavBar = () => {
                             unoptimized
                         />
                     </Link>
-                    <div className="flex gap-11">
+                    <div className="hidden lg:flex gap-11">
                         <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="/">
                             Our Story
                         </Link>
@@ -70,10 +70,10 @@ const NavBar = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex items-center gap-7">
+                <div className="hidden lg:flex items-center gap-7">
                     <Link className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
-                    
-                       <span className="me-1"> <Icons icon="editLine" /></span>
+
+                        <span className="me-1"> <Icons icon="editLine" /></span>
                         Enquire
 
                     </Link>
@@ -81,9 +81,13 @@ const NavBar = () => {
                         chat
                     </Link>
                     <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
-                    <span className="me-1"> <Icons icon="search" /></span>
+                        <span className="me-1"> <Icons icon="search" /></span>
                         Search
                     </Link>
+                </div>
+                <div className="lg:hidden flex">
+                <span className="me-1"> <Icons className={"w-6 h-6"} icon="search" /></span>
+                <span className="me-1"> <Icons icon="menuToggel" /></span>
                 </div>
             </div>
         </div>

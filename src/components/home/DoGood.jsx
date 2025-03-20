@@ -2,33 +2,32 @@ import Image from 'next/image'
 import React from 'react'
 import TagParagraph from '../common/TagParagraph'
 import Heading from '../common/Heading'
+import Paragraph from '../common/Paragraph'
 
 
 const DoGood = () => {
     return (
         <>
-            <div className='flex flex-wrap justify-between bg-[#fffbec] lg:flex-nowrap'>
+            <div className='flex flex-wrap justify-between bg-[#fffbec] lg:flex-nowrap py-12'>
 
                 {/* Text Section */}
-                <div className='flex flex-col items-start justify-center px-[20px] md:px-[60px] lg:px-[120px] w-full lg:w-1/2 text-left'>
-                    <div>
-                        <TagParagraph>OUR PURPOSE</TagParagraph>
-                        {/* <h3 className='text-[#9D7F19] text-lg md:text-[12px] mb-2'></h3> */}
-                        {/* <h2 className='mb-4 text-2xl md:text-[24px]'></h2> */}
-                        <Heading>Do good. Do well.</Heading>
-                    </div>
+                <div className='flex flex-col items-start justify-center md:items-end px-[20px] md:px-[60px] lg:px-[120px] w-full lg:w-1/2 text-left'>
+                    <div className="lg:max-w-[357px]">
 
-                    <div>
-                        <p className=' lg:w-[357px] text-left '>
+                        <TagParagraph>OUR PURPOSE</TagParagraph>
+                        <Heading className={"pt-1 pb-2.5"}>Do good. Do well.</Heading>
+
+                        <Paragraph>
                             Lodha is committed to elevating the living experience,
                             emphasising the importance of creating a positive impact
                             on the environment and society.
-                        </p>
+                        </Paragraph>
                     </div>
+
                 </div>
 
                 {/* Image Section */}
-                <div className='flex flex-col md:flex-row w-full lg:w-1/2 gap-[15px] md:gap-0 px-[20px] md:px-0'>
+                <div className='flex flex-col md:flex-row w-full lg:w-1/2 gap-[15px] md:gap-0 px-[20px] md:px-0 pt-10 lg:pt-0'>
                     <div className='relative w-full md:w-[50%] lg:w-[28vw] h-[50vh] md:h-screen'>
                         <Image
                             src={"/assets/images/homepage/webp/lodhaImg.webp"}
