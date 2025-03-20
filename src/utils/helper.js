@@ -23,3 +23,26 @@ export const FOOTER_SECOND_LINK_LIST = [
 
     },
 ];
+
+export const SOCIAL_MEDIA_LINK_LIST =[
+    {
+        icon :"facebook",
+        url : "/abc"
+    },
+    {
+        icon :"twitter",
+        url : "/abc"
+    },
+    {
+        icon :"instagram",
+        url : "/abc"
+    },
+    {
+        icon :"linkedin",
+        url : "/abc"
+    },
+    {
+        icon :"youtube",
+        url : "/abc"
+    },
+]

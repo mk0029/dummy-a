@@ -3,8 +3,13 @@
 
 @theme {
   --color-light-orange: #fffbec;
+  --color-dark-orange: #9D7F19;
+  --color-light-black: #313131;
+  --color-light-gray: #6D6E70;
   --leading-130: "130%";
+  --leading-143: "143%";
   --leading-125: "125%";
+  --leading-116: "110%";
 }
 
 @font-face {
@@ -14,6 +19,34 @@
   font-display: swap;
 }
 
+
+
+@font-face {
+  font-family: 'Cormorant Garamond Bold';
+  src: url('../../public/assets/fonts/CormorantGaramond-Bold.woff2');
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Semibold';
+  src: url('../../public/assets/fonts/CormorantGaramond-SemiBold.woff2');
+  font-style: bold;
+  font-display: swap;
+}
+
 body {
   font-family: 'Futura Md BT', sans-serif;
+}
+
+.cormorantBold {
+  font-family: 'Cormorant Garamond Bold' !important;
+}
+
+.futuraSemiBold {
+  font-family: 'Cormorant Garamond Semibold' !important;
+}
+
+.navbg {
+  background-color: rgba(31, 25, 20, 0.50);
 }
