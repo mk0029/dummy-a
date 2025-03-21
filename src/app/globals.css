@@ -16,7 +16,6 @@
   font-family: 'Futura Md BT';
   src: url('../../public/assets/fonts/FuturaBT-Book.woff2');
   font-style: normal;
-  font-display: swap;
 }
 
 
@@ -25,14 +24,19 @@
   font-family: 'Cormorant Garamond Bold';
   src: url('../../public/assets/fonts/CormorantGaramond-Bold.woff2');
   font-style: bold;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Cormorant Garamond Semibold';
   src: url('../../public/assets/fonts/CormorantGaramond-SemiBold.woff2');
-  font-style: bold;
-  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant Garamond regular';
+  src: url('../../public/assets/fonts/CormorantGaramond-Regular.woff2');
+}
+@font-face {
+  font-family: 'Futura Lt BT';
+  src: url('../../public/assets/fonts/FuturaBT-Light.woff2');
 }
 
 body {
@@ -45,6 +49,12 @@ body {
 
 .futuraSemiBold {
   font-family: 'Cormorant Garamond Semibold' !important;
+}
+.futuraRegular {
+  font-family: 'Cormorant Garamond regular' !important;
+}
+.futuraLight {
+  font-family: 'Futura Lt BT' !important;
 }
 
 .navbg {

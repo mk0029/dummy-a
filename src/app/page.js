@@ -11,14 +11,14 @@ export default function Home() {
     <div>
       <NavBar />
       <Hero />
-      <OurPromise tag="OUR PROMISE" ttiel="" image="/assets/images/homepage/webp/our-promise.webp" heading={
+      <OurPromise tag="OUR PROMISE" image="/assets/images/homepage/webp/our-promise.webp" heading={
         <>
-          Creating the world's <br /> finest developments
+          Creating the world&apos;s <br /> finest developments
         </>
-      } para="Lodha is India’s leading real estate developer, delivering thoughtfully designed, premium properties that shape urban lifestyle. " />
+      } para="Lodha is India&apos;s leading real estate developer, delivering thoughtfully designed, premium properties that shape urban lifestyle. " />
       <DoGood />
       <Slider />
-      <OurPromise tag="OUR EXPERIENCES" ttiel="" image="/assets/images/homepage/webp/our-experiences.webp" heading="Elevating everyday living" para="We craft a tapestry of experiences designed to enrich your life and elevate your every day, where every moment is a testament to the art of living." />
+      <OurPromise tag="OUR EXPERIENCES" image="/assets/images/homepage/webp/our-experiences.webp" heading="Elevating everyday living" para="We craft a tapestry of experiences designed to enrich your life and elevate your every day, where every moment is a testament to the art of living." />
       <OurBrand />
       <Footer />
     </div>
