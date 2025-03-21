@@ -80,10 +80,10 @@ const Slider = () => {
         </div>
 
         {/* Slider Section */}
-        <div className="slider w-full max-w-[1400px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-hidden relative">
+        <div className="slider w-full max-w-[1400px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-clip relative">
           <div
             ref={sliderRef}
-            className="box-content flex gap-[30px] overflow-hidden"
+            className="box-content flex gap-[30px] overflow-clip"
           >
             {slides.map((slide, index) => (
               <div key={index} className="flex flex-col min-w-[250px]">

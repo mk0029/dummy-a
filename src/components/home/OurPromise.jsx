@@ -32,7 +32,7 @@ const OurPromise = ({ image, tag, heading, para }) => {
     <div ref={sectionRef} className="bg-white max-w-[1170px] mx-auto px-4 xl:px-0 py-10 lg:py-12 xl:py-16">
       <div className="flex flex-col md:flex-row gap-6 md:gap-4 items-center">
         <div className="w-full md:w-1/2">
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-clip">
             <span
               ref={overlayRef}
               className="block w-full h-full bg-white absolute top-0 right-0"

@@ -4,9 +4,9 @@ import Icons from './Icons'
 
 const MobileNav = ({ showNavBar }) => {
     return (
-        <div className={`${showNavBar ? "left-0" : "-left-full"} transition-all lg:hidden duration-300 fixed top-0 h-full w-full flex flex-col justify-between min-h-[calc(100vh-48px)] mt-12 pt-4  border-t border-light-gray navbg`}>
+        <div className='min-h-[calc(100vh-60px)] flex flex-col justify-between'>
             <div className="flex flex-col px-4">
-                <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black pb-4" href="/">
+                <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black py-4" href="/">
                     Our Story
                 </Link>
                 <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black border-t py-4 border-light-gray" href="/">

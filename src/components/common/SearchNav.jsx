@@ -2,12 +2,12 @@ import React from 'react';
 import Icons from './Icons';
 import Link from 'next/link';
 
-const SearchNav = ({ setSearchNavBar, searchNavBar }) => {
+const SearchNav = ({ setSearchNavBar }) => {
   return (
-    <div className={`${searchNavBar ? "top-0 duration-300":"-top-full duration-300"} duration-300 min-h-screen fixed w-full h-full navbg left-0 `}>
-      <div className='max-w-[1440px] py-24 flex flex-col items-center'>
+    <div className='min-h-[calc(100vh-60px)] flex flex-col mt-10'>
+      
         <div className="relative w-full flex justify-center">
-          <div className="relative w-full max-w-[840px] ">
+          <div className="relative w-full max-w-[840px] mx-auto">
 
             <span onClick={() => setSearchNavBar(false)} className="absolute bottom-[70px] right-[-100px] cursor-pointer text-white">
               <Icons icon={"cross"} />
@@ -27,7 +27,7 @@ const SearchNav = ({ setSearchNavBar, searchNavBar }) => {
           </div>
         </div>
 
-        <div className='flex flex-col mt-[15px] items-start w-full max-w-[840px]'>
+        <div className='flex flex-col mt-[15px] items-start w-full max-w-[840px] mx-auto'>
           <p className="uppercase text-white text-base leading-none group futuraLight w-full">
             Quick Links
           </p>
@@ -49,7 +49,7 @@ const SearchNav = ({ setSearchNavBar, searchNavBar }) => {
             </Link>
           </div>
         </div>
-      </div>
+    
     </div>
   );
 }

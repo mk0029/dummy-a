@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TagParagraph from "../common/TagParagraph";
 import Heading from "../common/Heading";
 import Paragraph from "../common/Paragraph";
+import Link from "next/link";
+import Icons from "../common/Icons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,8 +47,8 @@ const DoGood = () => {
 
             <div className="flex flex-col md:flex-row w-full lg:w-[51%] gap-[15px] md:gap-0 px-5 md:min-h-screen overflow-clip md:px-0 pt-2.5 lg:pt-0">
 
-                <div className="relative w-full md:w-[50%] lg:w-[28vw] h-[50vh] md:min-h-screen">
-                    <div className="relative overflow-hidden group">
+                <div className="relative w-full md:w-[50%] group lg:w-[28vw] h-[50vh] md:min-h-screen">
+                    <div className="relative overflow-clip group">
 
                         <span
                             ref={overlayRef1}
@@ -60,14 +62,14 @@ const DoGood = () => {
                             height={400}
                         />
                     </div>
-                    <button className="absolute bottom-[30px] futuraRegular left-[20px] text-white underline text-[1.25rem]">
-                        Our Story
-                    </button>
+                    <Link href={"/"} className="absolute flex items-center gap-2 bottom-8 futuraRegular left-[20px] text-white underline text-[1.25rem]">
+                        Our Story <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
+                    </Link>
                 </div>
 
 
-                <div className="relative w-full md:w-[50%] lg:w-[28vw] h-[50vh] md:min-h-screen">
-                    <div className="relative overflow-hidden group">
+                <div className="relative w-full md:w-[50%] lg:w-[28vw] group h-[50vh] md:min-h-screen">
+                    <div className="relative overflow-clip group">
 
                         <span
                             ref={overlayRef2}
@@ -81,9 +83,9 @@ const DoGood = () => {
                             height={400}
                         />
                     </div>
-                    <button className="absolute bottom-[30px] futuraRegular left-[20px] text-white underline text-[1.25rem]">
-                        Our Impact
-                    </button>
+                    <Link href={"/"} className="absolute flex items-center gap-2 bottom-8 futuraRegular left-[20px] text-white underline text-[1.25rem]">
+                        Our Impact <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
+                    </Link>
                 </div>
             </div>
         </div>
