@@ -24,25 +24,52 @@ export const FOOTER_SECOND_LINK_LIST = [
     },
 ];
 
-export const SOCIAL_MEDIA_LINK_LIST =[
+export const SOCIAL_MEDIA_LINK_LIST = [
     {
-        icon :"facebook",
-        url : "/abc"
+        icon: "facebook",
+        url: "/abc"
     },
     {
-        icon :"twitter",
-        url : "/abc"
+        icon: "twitter",
+        url: "/abc"
     },
     {
-        icon :"instagram",
-        url : "/abc"
+        icon: "instagram",
+        url: "/abc"
     },
     {
-        icon :"linkedin",
-        url : "/abc"
+        icon: "linkedin",
+        url: "/abc"
     },
     {
-        icon :"youtube",
-        url : "/abc"
+        icon: "youtube",
+        url: "/abc"
     },
 ]
+
+
+export const PROJECT_ALL_DATA_LIST = [
+    {
+        heading: "Residential",
+        view: "View all",
+        projects: [
+            { title: "Lodha World Towers", link: "/projects/residential-property-in-worli/lodha-world-towers", location: "Mumbai" },
+            { title: "Lodha Cullinan", link: "/projects/residential-property-in-andheri/lodha-cullinan", location: "Mumbai" },
+            { title: "Lodha Vero", link: "/projects/residential-property-in-matunga/lodha-vero", location: "Mumbai" },
+            { title: "Lodha Sterling", link: "/projects/residential-property-in-thane/lodha-sterling", location: "Thane" },
+            { title: "Lodha Golfview", link: "/projects/residential-property-in-dombivli/lodha-golfview", location: "Palava" },
+            { title: "Lodha Azur", link: "/projects/residential-property-in-bangalore/lodha-azur", location: "Bangalore" },
+         
+        ]
+    },
+    {
+        heading: "Commercial",
+        view: "View all",
+        projects: [
+            { title: "Offices", link: "/commercial-offices" },
+            { title: "Retail", link: "/commercial-retail" },
+            { title: "Warehousing", link: "https://www.lodhaindustrialandlogisticspark.com/", external: true },
+            { title: "Plots", link: "https://www.lodhaindustrialandlogisticspark.com/", external: true },
+        ]
+    }
+];

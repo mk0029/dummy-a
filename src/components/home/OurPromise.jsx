@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const OurPromise = ({ image, tag, heading, para }) => {
+const OurPromise = ({ image, tag, heading, para,colorBg }) => {
   const overlayRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -29,7 +29,7 @@ const OurPromise = ({ image, tag, heading, para }) => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="bg-white max-w-[1170px] mx-auto px-4 xl:px-0 py-10 lg:py-12 xl:py-16">
+    <div ref={sectionRef} className={` max-w-[1170px] mx-auto px-4 xl:px-0 py-10 lg:py-12 xl:py-16 ${colorBg}`}>
       <div className="flex flex-col md:flex-row gap-6 md:gap-4 items-center">
         <div className="w-full md:w-1/2">
           <div className="relative overflow-clip">

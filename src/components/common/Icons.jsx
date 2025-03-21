@@ -58,8 +58,14 @@ const Icons = ({ icon, className }) => {
             </svg>
         ),
         cross: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15">
+            <svg  className="cursor-pointer w-[26px] h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15">
                 <path fill="white" fillRule="evenodd" d="M12.854 2.854a.5.5 0 0 0-.708-.708L7.5 6.793L2.854 2.146a.5.5 0 1 0-.708.708L6.793 7.5l-4.647 4.646a.5.5 0 0 0 .708.708L7.5 8.207l4.646 4.647a.5.5 0 0 0 .708-.708L8.207 7.5z" clipRule="evenodd" />
+            </svg>
+        ),
+        cricleCross: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                <path fill="white" fillRule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" clipRule="evenodd" />
+                <path fill="white" d="M11.854 4.854a.5.5 0 0 0-.707-.707L8 7.293L4.854 4.147a.5.5 0 1 0-.707.707L7.293 8l-3.146 3.146a.5.5 0 0 0 .707.708L8 8.707l3.147 3.147a.5.5 0 0 0 .707-.708L8.708 8z" />
             </svg>
         ),
         downUpArrow: (

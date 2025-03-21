@@ -6,12 +6,14 @@ import { useEffect, useState, useMemo, useCallback } from "react";
 import Icons from "./Icons";
 import MobileNav from "./MobileNav";
 import SearchNav from "./SearchNav";
+import OurProject from "./OurProject";
 
 const NavBar = () => {
     const [prevScrollPosition, setPrevScrollPosition] = useState(0);
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
     const [showNavBar, setShowNavBar] = useState(false);
     const [searchNavBar, setSearchNavBar] = useState(false);
+    const [ourProject, setOurProject] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
 
     const pathName = usePathname();
@@ -47,10 +49,10 @@ const NavBar = () => {
         <div className="relative">
             <div
                 id="nav_bar"
-                className={`fixed top-0 backdrop-blur-md navbg w-full duration-500 z-[200] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
+                className={`fixed top-0 border-b-[0.6px]  ${showNavBar || searchNavBar || ourProject ? "border-light-gray" : "border-transparent"} backdrop-blur-md navbg w-full duration-500 z-[500] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
                     }`}
             >
-               
+
                 <div className="flex justify-between items-center w-full max-w-[1232px] px-4 mx-auto py-[18px] lg:py-5">
                     <div className="flex items-center gap-12">
                         <Link aria-label="Home" href="/" className="flex gap-3 relative z-[400]">
@@ -63,14 +65,14 @@ const NavBar = () => {
                                 unoptimized
                             />
                         </Link>
-                        <div className="hidden lg:flex gap-11">
-                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="/">
+                        <div className="hidden lg:flex xl:ps-6 gap-11">
+                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/our-story">
                                 Our Story
                             </Link>
-                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="/">
+                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/esg-sustainablity-environmental-social-governance">
                                 Our Impact
                             </Link>
-                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
+                            <Link onClick={() => {setOurProject(!ourProject)}} className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
                                 Our Projects <span className="ms-2.5"><Icons icon={"downArrow"} /></span>
                             </Link>
                         </div>
@@ -80,7 +82,7 @@ const NavBar = () => {
                             <span className="me-1"> <Icons icon="editLine" /></span>
                             Enquire
                         </Link>
-                        <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="/">
+                        <Link target="_blank" className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://api.whatsapp.com/send/?phone=%2B917718893537&text=Hi&type=phone_number&app_absent=0">
                             chat
                         </Link>
                         <Link onClick={() => setSearchNavBar(!searchNavBar)} className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
@@ -89,17 +91,20 @@ const NavBar = () => {
                         </Link>
                     </div>
                     <div className="lg:hidden flex">
-                        <span onClick={() => setSearchNavBar(!searchNavBar)} className="me-1"> <Icons className={"w-6 h-6"} icon="search" /></span>
-                        <span onClick={() => setShowNavBar(!showNavBar)} className="me-1"> <Icons icon="menuToggel" /></span>
+                        <span onClick={() => { setSearchNavBar(!searchNavBar), setShowNavBar(false) }} className="me-1"> <Icons className={"w-6 h-6"} icon="search" /></span>
+                        <span onClick={() => { setShowNavBar(!showNavBar), setSearchNavBar(false),setOurProject(false) }} className="me-1"> {showNavBar ? <Icons icon="cross" /> : <Icons icon="menuToggel" />}</span>
                     </div>
                 </div>
             </div>
-            <div className={`${showNavBar ? "left-0" : "left-full"} z-[499] transition-all lg:hidden duration-300 fixed top-0 h-full w-full  mt-[60px] border-t border-light-gray navbg`}>
-                <MobileNav showNavBar={showNavBar} />
+            <div className={`${showNavBar ? "left-0" : "left-full"} z-[499] transition-all lg:hidden duration-300 fixed top-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+                <MobileNav setShowNavBar={setShowNavBar} setOurProject={setOurProject} />
             </div>
-           
-            <div className={`${searchNavBar ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 navbg h-full w-full  mt-[60px] border-t border-light-gray navbg`}>
+
+            <div className={`${searchNavBar ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
                 <SearchNav searchNavBar={searchNavBar} setSearchNavBar={setSearchNavBar} />
+            </div>
+            <div className={`${ourProject ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+                <OurProject setOurProject={setOurProject} />
             </div>
         </div>
     );

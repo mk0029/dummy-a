@@ -72,23 +72,23 @@ const Slider = () => {
 
   return (
     <>
-      <div className="main pt-[50px] lg:pt-[80px] px-4">
+      <div className="max-w-[1170px] xl:px-0 mx-auto pt-[50px] lg:py-20 px-4">
         {/* Heading Section */}
         <div className="flex flex-col items-center justify-center w-full text-center">
           <TagParagraph center>Our Pride</TagParagraph>
-          <Heading center>Iconic Properties</Heading>
+          <Heading className={"pt-1"} center>Iconic Properties</Heading>
         </div>
 
         {/* Slider Section */}
-        <div className="slider w-full max-w-[1400px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-clip relative">
+        <div className="slider w-full max-w-[1170px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-hidden relative">
           <div
             ref={sliderRef}
-            className="box-content flex gap-[30px] overflow-clip"
+            className="w-full justify-between flex gap-[30px] overflow-hidden"
           >
             {slides.map((slide, index) => (
               <div key={index} className="flex flex-col min-w-[250px]">
                 <Image className='w-[250px] h-[353px]' width={250} height={353} src={slide.img} alt="slider" />
-                <p className='text-[#6d6e70] text-[0.9rem] font-normal leading-[1.3rem] mt-[10px] text-left'>
+                <p className='text-light-gray text-sm font-medium futuraMedium !leading-116 mt-[10px] text-left'>
                   {slide.title}
                 </p>
               </div>
@@ -97,7 +97,7 @@ const Slider = () => {
         </div>
 
         {/* Arrows (Between 768px - 1030px only) */}
-        <div className=" gap-[15px] items-center justify-center mt-[15px] hidden md:flex lg:hidden">
+        <div className=" gap-4 items-center justify-center mt-[15px] hidden md:flex lg:hidden">
           <div
             className="cursor-pointer px-[12px] py-[6px] text-[#9D7F19] text-[1.5rem]"
             onClick={() => slideTo(activeSlide > 0 ? activeSlide - 1 : 0)}
@@ -113,11 +113,11 @@ const Slider = () => {
         </div>
 
         {/* Dots (Below 768px only) */}
-        <div className="flex gap-[10px] items-center justify-center mt-[15px] md:hidden">
+        <div className="flex gap-1.5 items-center justify-center mt-[15px] md:hidden">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-[10px] h-[10px] rounded-full bg-[#9D7F19] cursor-pointer transition-all ${activeSlide === index ? 'transform translate-y-[-3px]' : ''
+              className={`w-1 h-1 rounded-full bg-[#9D7F19] cursor-pointer transition-all ${activeSlide === index ? 'opacity-100' : 'opacity-50'
                 }`}
               onClick={() => slideTo(index)}
             />
@@ -125,7 +125,7 @@ const Slider = () => {
         </div>
 
         {/* View All Projects Button */}
-        <div className="flex items-center justify-center mt-[15px]">
+        <div className="flex items-center justify-center mt-10">
           <button className='
                         text-[#9D7F19] 
                         text-center 
