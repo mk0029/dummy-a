@@ -7,6 +7,7 @@ import Icons from "./Icons";
 import MobileNav from "./MobileNav";
 import SearchNav from "./SearchNav";
 import OurProject from "./OurProject";
+import EnquireCall from "./EnquireCall";
 
 const NavBar = () => {
     const [prevScrollPosition, setPrevScrollPosition] = useState(0);
@@ -14,6 +15,7 @@ const NavBar = () => {
     const [showNavBar, setShowNavBar] = useState(false);
     const [searchNavBar, setSearchNavBar] = useState(false);
     const [ourProject, setOurProject] = useState(false);
+    const [showEnquire, setShowEnquire] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
 
     const pathName = usePathname();
@@ -72,13 +74,13 @@ const NavBar = () => {
                             <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/esg-sustainablity-environmental-social-governance">
                                 Our Impact
                             </Link>
-                            <Link onClick={() => {setOurProject(!ourProject)}} className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
+                            <Link onClick={() => { setOurProject(!ourProject) }} className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
                                 Our Projects <span className="ms-2.5"><Icons icon={"downArrow"} /></span>
                             </Link>
                         </div>
                     </div>
                     <div className="hidden lg:flex items-center gap-7">
-                        <Link className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
+                        <Link onClick={() => setShowEnquire(!showEnquire)} className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
                             <span className="me-1"> <Icons icon="editLine" /></span>
                             Enquire
                         </Link>
@@ -92,7 +94,7 @@ const NavBar = () => {
                     </div>
                     <div className="lg:hidden flex">
                         <span onClick={() => { setSearchNavBar(!searchNavBar), setShowNavBar(false) }} className="me-1"> <Icons className={"w-6 h-6"} icon="search" /></span>
-                        <span onClick={() => { setShowNavBar(!showNavBar), setSearchNavBar(false),setOurProject(false) }} className="me-1"> {showNavBar ? <Icons icon="cross" /> : <Icons icon="menuToggel" />}</span>
+                        <span onClick={() => { setShowNavBar(!showNavBar), setSearchNavBar(false), setOurProject(false) }} className="me-1"> {showNavBar ? <Icons icon="cross" /> : <Icons icon="menuToggel" />}</span>
                     </div>
                 </div>
             </div>
@@ -105,6 +107,9 @@ const NavBar = () => {
             </div>
             <div className={`${ourProject ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
                 <OurProject setOurProject={setOurProject} />
+            </div>
+            <div className={`${showEnquire ? "scale-100" : "scale-0"} duration-200 fixed z-[600] transition-all left-0 top-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+                <EnquireCall setShowEnquire={setShowEnquire} />
             </div>
         </div>
     );

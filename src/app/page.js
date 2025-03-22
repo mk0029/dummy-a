@@ -1,3 +1,4 @@
+import EnquireCall from "@/components/common/EnquireCall";
 import Footer from "@/components/common/Footer";
 import FooterContent from "@/components/common/FooterContent";
 import NavBar from "@/components/common/NavBar";
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <NavBar />
       <Hero />
+      {/* <EnquireCall />  */}
       <OurPromise colorBg="bg-white" tag="OUR PROMISE" image="/assets/images/homepage/webp/our-promise.webp" heading={
         <>
           Creating the world&apos;s <br /> finest developments

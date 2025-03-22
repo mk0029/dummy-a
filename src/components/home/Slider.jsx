@@ -72,7 +72,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="max-w-[1170px] xl:px-0 mx-auto pt-[50px] lg:py-20 px-4">
+      <div className="max-w-[1170px] xl:px-0 mx-auto py-[50px] lg:py-20 px-4">
         {/* Heading Section */}
         <div className="flex flex-col items-center justify-center w-full text-center">
           <TagParagraph center>Our Pride</TagParagraph>
@@ -131,7 +131,7 @@ const Slider = () => {
                         text-center 
                         text-[0.875rem] 
                         font-normal 
-                        leading-[1.25rem] 
+                        !leading-116 
                         py-2.5
                         px-5
                         border 

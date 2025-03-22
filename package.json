@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "formik": "^2.4.6",
     "gsap": "^3.12.7",
     "next": "15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-select": "^5.10.1",
+    "react-select-country-list": "^2.2.3",
+    "world-countries": "^5.1.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
