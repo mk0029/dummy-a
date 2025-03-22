@@ -46,7 +46,7 @@ const DoGood = () => {
             </div>
 
             <div className="flex flex-col md:flex-row w-full lg:w-[54%] gap-6 md:gap-0 px-5 md:min-h-screen overflow-clip md:px-0 pt-7 lg:pt-0">
-                <div className="relative w-full md:w-[50%] group lg:w-[28vw] md:h-[50vh] md:min-h-screen">
+                <div className="relative w-full md:w-[50%] group lg:w-[28vw] lg:h-[50vh] md:min-h-screen">
                     <div className="relative overflow-clip group">
                         <span
                             ref={overlayRef1}
@@ -73,7 +73,7 @@ const DoGood = () => {
                 </div>
 
 
-                <div className="relative w-full md:w-[50%] lg:w-[28vw] group md:h-[50vh] md:min-h-screen overflow-hidden">
+                <div className="relative w-full md:w-[50%] lg:w-[28vw] group lg:h-[50vh] md:min-h-screen overflow-hidden">
                     <div className="relative overflow-clip group">
 
                         <span

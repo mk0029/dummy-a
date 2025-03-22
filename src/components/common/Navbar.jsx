@@ -37,13 +37,13 @@ const NavBar = () => {
     }, [handleScroll]);
 
     useEffect(() => {
-        if (showNavBar || searchNavBar) {
+        if (showNavBar || searchNavBar || ourProject || showEnquire) {
             document.body.classList.add("overflow-hidden");
         } else {
             document.body.classList.remove("overflow-hidden");
         }
         return () => document.body.classList.remove("overflow-hidden");
-    }, [showNavBar, searchNavBar]);
+    }, [showNavBar, searchNavBar, ourProject, showEnquire]);
 
     if (!isMounted) return null; // Avoid hydration mismatch
 
@@ -99,7 +99,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className={`${showNavBar ? "left-0" : "left-full"} z-[499] transition-all lg:hidden duration-300 fixed top-0 h-full w-full backdrop-blur-[12px] navpopup`}>
-                <MobileNav setShowNavBar={setShowNavBar} setOurProject={setOurProject} />
+                <MobileNav setShowNavBar={setShowNavBar} setOurProject={setOurProject} setShowEnquire={setShowEnquire} />
             </div>
 
             <div className={`${searchNavBar ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>

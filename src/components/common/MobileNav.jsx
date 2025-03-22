@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Icons from './Icons'
 
-const MobileNav = ({ setOurProject, setShowNavBar }) => {
+const MobileNav = ({ setOurProject, setShowNavBar, setShowEnquire }) => {
     return (
         <div className='min-h-screen pt-16 flex flex-col justify-between'>
             <div className="flex flex-col px-4">
@@ -20,7 +20,7 @@ const MobileNav = ({ setOurProject, setShowNavBar }) => {
                 </Link>
             </div>
             <div className="flex items-center px-4 gap-2 justify-between border-t border-light-gray py-4">
-                <Link onClick={() => setShowNavBar(false)} className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
+                <Link onClick={() => { setShowNavBar(false), setShowEnquire(true) }} className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
                     <span className="me-1"> <Icons icon="editLine" /></span>
                     Enquire
                 </Link>
