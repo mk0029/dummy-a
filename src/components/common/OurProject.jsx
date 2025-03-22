@@ -13,11 +13,13 @@ const OurProject = ({ setOurProject, activeIndex, setActiveIndex }) => {
 
   return (
     <div className="">
-      <div className='min-h-[calc(100vh-50px)] lg:flex flex-col px-4 pt-16 mt-10 hidden'>
-        <div className="relative w-full max-w-[840px] mx-auto">
-          <span onClick={() => setOurProject(false)} className="absolute -top-8 right-0 lg:-right-10 xl:-right-24 cursor-pointer text-white">
+      <div className='min-h-[calc(100vh-50px)] lg:flex flex-col px-4 pt-20 mt-10 hidden'>
+        <div className="relative w-full max-w-[1170px] mx-auto">
+        <span onClick={() => setOurProject(false)} className="absolute -top-8 right-0 lg:-right-10 xl:-right-0 cursor-pointer text-white">
             <Icons icon={"cricleCross"} />
           </span>
+        <div className="relative w-full max-w-[840px] mx-auto">
+         
           <div className="grid grid-cols-[55%_45%] lg:grid-cols-[25%_25%_50%]">
             {PROJECT_ALL_DATA_LIST.map((obj, i) => (
               <div key={i}>
@@ -47,11 +49,12 @@ const OurProject = ({ setOurProject, activeIndex, setActiveIndex }) => {
                 id="searchinput"
                 className="w-full text-sm futuraLight ps-5 pe-10 rounded-[20px] py-2 bg-wide-black/20 text-white outline-none"
               />
-              <span className="absolute right-2 top-1/2 transform cursor-pointer -translate-y-1/2 text-gray-500">
+              <span className="absolute right-3 top-1/2 transform cursor-pointer -translate-y-1/2 text-gray-500">
                 <Icons className={'w-6 h-6'} icon={"search"} />
               </span>
             </div>
           </div>
+        </div>
         </div>
 
       </div>
@@ -67,7 +70,7 @@ const OurProject = ({ setOurProject, activeIndex, setActiveIndex }) => {
             {PROJECT_ALL_DATA_LIST.map((obj, i) => (
               <div key={i} className="border-t border-light-gray">
                 <h2
-                  className="capitalize text-white text-sm flex justify-between leading-none duration-300 hover:text-black py-4 cursor-pointer"
+                  className="capitalize text-white text-sm flex justify-between leading-none duration-300 py-4 cursor-pointer"
                   onClick={() => toggleAccordion(i)}
                 >
                   {obj.heading}

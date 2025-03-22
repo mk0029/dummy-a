@@ -2,18 +2,20 @@ import React from 'react';
 import Icons from './Icons';
 import Link from 'next/link';
 
-const SearchNav = ({ setSearchNavBar }) => {
+const SearchNav = ({ setSearchNavBar, setOurProject }) => {
   return (
-    <div className='min-h-[calc(100vh-60px)] pt-16 flex flex-col px-4 mt-10'>
+    <div className='min-h-[calc(80vh-60px)] pt-20 flex flex-col px-4 mt-10'>
+      <div className="max-w-[1170px] w-full relative mx-auto px-4 xl:px-0">
+        <span onClick={() => { setSearchNavBar(false), setOurProject(false) }} className="absolute -top-8 right-0 lg:-right-10 xl:-right-0 cursor-pointer text-white">
+          <Icons icon={"cricleCross"} />
+        </span>
 
-          <div className="relative w-full max-w-[840px] mx-auto">
+        <div className="relative w-full max-w-[840px] mx-auto">
 
-            <span onClick={() => setSearchNavBar(false)} className="absolute bottom-[70px] right-0 lg:-right-10 xl:-right-24 cursor-pointer text-white">
-              <Icons icon={"cricleCross"} />
-            </span>
 
-           <div className="relative w-full lg:w-[88%]">
-           <input
+
+          <div className="relative w-full lg:w-[88%]">
+            <input
               type="text"
               placeholder="What are you looking for?"
               id="searchinput"
@@ -24,8 +26,8 @@ const SearchNav = ({ setSearchNavBar }) => {
             <span className="absolute right-0 hidden lg:flex top-1/2 transform cursor-pointer -translate-y-1/2 text-gray-500">
               <Icons className={'w-6 h-6'} icon={"search"} />
             </span>
-           </div>
           </div>
+        </div>
 
         <div className='flex flex-col mt-6 items-start w-full max-w-[840px] mx-auto'>
           <p className="capitalize text-white futuraLight text-base max-lg:text-light-black leading-none group futuraLight w-full">
@@ -49,7 +51,7 @@ const SearchNav = ({ setSearchNavBar }) => {
             </Link>
           </div>
         </div>
-    
+      </div>
     </div>
   );
 }

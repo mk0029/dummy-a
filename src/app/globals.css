@@ -80,6 +80,9 @@ body {
 .navpopup {
   background-color: rgba(24, 22, 21, 0.80);
 }
+.css-1u9des2-indicatorSeparator{
+  display: none !important;
+}
 @media (max-width:1023.98px) {
   .navpopupwhite {
     background-color: rgba(235, 235, 234, 0.8) !important;

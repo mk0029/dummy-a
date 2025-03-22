@@ -18,12 +18,14 @@ const customStyles = {
     fontSize: "14px",
     backgroundColor: "white",
     fontFamily: "Futura BK BT",
+    color: "#313131",
   }),
   menu: (provided) => ({
     ...provided,
     backgroundColor: "white",
     fontSize: "14px",
     fontFamily: "Futura BK BT",
+    color: "#6d6e70",
   }),
   option: (provided, state) => ({
     ...provided,
@@ -32,6 +34,7 @@ const customStyles = {
     color: "black",
     padding: "10px",
     fontFamily: "Futura BK BT",
+    color: "#6d6e70",
   }),
 };
 
@@ -92,8 +95,8 @@ const EnquireCall = ({ setShowEnquire }) => {
 
   return (
     <div className="min-h-screen w-full h-full flex justify-center items-center px-4">
-      <div className="max-w-md mx-auto px-6 py-10 pb-6 bg-white shadow-lg relative">
-        <span onClick={() => setShowEnquire(false)} className="cursor-pointer absolute top-4 end-4">
+      <div className="max-w-md mx-auto px-4 lg:px-6 py-7 lg:pt-10 lg:pb-6 bg-white shadow-lg relative">
+        <span onClick={() => setShowEnquire(false)} className="cursor-pointer absolute top-2.5 end-2.5 lg:top-4 lg:end-4">
           <Icons className={"fill-dark-orange"} icon={"cricleCross"} />
         </span>
         <h2 className="text-center text-2xl cormorantBold text-dark-orange">Request a Call Back</h2>
@@ -103,7 +106,7 @@ const EnquireCall = ({ setShowEnquire }) => {
             type="text"
             name="name"
             placeholder="Name*"
-            className="w-full border-b text-light-gray border-light-gray text-sm p-2 outline-none"
+            className="w-full border-b text-light-gray border-light-gray text-sm py-1 lg:py-2 p-2 outline-none"
             value={formData.name}
             onChange={handleChange}
           />
@@ -113,7 +116,7 @@ const EnquireCall = ({ setShowEnquire }) => {
             type="email"
             name="email"
             placeholder="E-Mail ID*"
-            className="w-full text-light-gray border-b border-light-gray text-sm p-2 outline-none mt-3"
+            className="w-full text-light-gray border-b border-light-gray text-sm py-1 lg:py-2 p-2 outline-none mt-3"
             value={formData.email}
             onChange={handleChange}
           />
@@ -137,7 +140,7 @@ const EnquireCall = ({ setShowEnquire }) => {
               type="text"
               name="city"
               placeholder="City*"
-              className="w-full text-light-gray text-sm p-2 outline-none"
+              className="w-full text-light-gray text-sm py-1 lg:py-2 p-2 outline-none"
               value={formData.city}
               onChange={handleChange}
             />
@@ -170,7 +173,7 @@ const EnquireCall = ({ setShowEnquire }) => {
           {errors.agree && <p className="text-red-500 text-xs mt-1">{errors.agree}</p>}
 
           <div className="flex justify-center">
-            <button type="submit" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal py-2.5 px-5 border border-dark-orange hover:text-white hover:bg-dark-orange">
+            <button type="submit" className="mt-5 text-dark-orange text-center text-sm font-normal py-1.5 lg:py-2.5 px-8 border border-dark-orange hover:text-white hover:bg-dark-orange">
               Submit
             </button>
           </div>

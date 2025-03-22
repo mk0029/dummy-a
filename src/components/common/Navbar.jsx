@@ -51,7 +51,7 @@ const NavBar = () => {
         <div className="relative">
             <div
                 id="nav_bar"
-                className={`fixed top-0 border-b-[0.6px]  ${showNavBar || searchNavBar || ourProject ? "border-light-gray" : "border-transparent"} ${searchNavBar ? "navWhite":"navbg"} backdrop-blur-md navbg w-full duration-500 z-[500] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
+                className={`fixed top-0 border-b-[0.6px]  ${showNavBar || searchNavBar || ourProject ? "border-light-gray" : "border-transparent"} ${searchNavBar ? "navWhite" : "navbg"} backdrop-blur-md navbg w-full duration-500 z-[500] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
                     }`}
             >
 
@@ -69,25 +69,28 @@ const NavBar = () => {
                         </Link>
                         <div className="hidden lg:flex xl:ps-6 gap-11">
                             <Link className=" uppercase text-white text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0" href="https://www.lodhagroup.com/our-story">
-                                Our Story                   
+                                Our Story
                             </Link>
                             <Link className=" uppercase text-white text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0" href="https://www.lodhagroup.com/esg-sustainablity-environmental-social-governance">
                                 Our Impact
                             </Link>
-                            <Link onClick={() => { setOurProject(!ourProject) }} className=" uppercase text-white flex gap-1 text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0" href="/">
-                                Our Projects <span className="ms-2.5"><Icons icon={"downArrow"} /></span>
+                            <Link onClick={() => { setOurProject(!ourProject), setSearchNavBar(false) }} className=" uppercase text-white flex gap-1 text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0" href="/">
+                                Our Projects 
+                                <span className={`transform transition-transform ms-2 ${ourProject ? '-rotate-180' : 'rotate-0'}`}>
+                                    <Icons icon={"downArrow"} />
+                                </span>
                             </Link>
                         </div>
                     </div>
                     <div className="hidden lg:flex items-center gap-7">
-                        <Link onClick={() => setShowEnquire(!showEnquire)} className="uppercase text-white text-sm group leading-none duration-300 hover:text-black flex items-center" href="/">
+                        <Link onClick={() => setShowEnquire(!showEnquire)} className="uppercase text-white text-sm group leading-none duration-300  flex items-center" href="/">
                             <span className="me-1"> <Icons icon="editLine" /></span>
                             Enquire
                         </Link>
-                        <Link target="_blank" className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://api.whatsapp.com/send/?phone=%2B917718893537&text=Hi&type=phone_number&app_absent=0">
+                        <Link target="_blank" className="uppercase text-white text-sm leading-none duration-300 " href="https://api.whatsapp.com/send/?phone=%2B917718893537&text=Hi&type=phone_number&app_absent=0">
                             chat
                         </Link>
-                        <Link onClick={() => setSearchNavBar(!searchNavBar)} className="uppercase text-white text-sm leading-none duration-300 hover:text-black group items-center flex" href="/">
+                        <Link onClick={() => { setSearchNavBar(!searchNavBar), setOurProject(false) }} className="uppercase text-white text-sm leading-none duration-300  group items-center flex" href="/">
                             <span className="me-1"> <Icons icon="search" /></span>
                             Search
                         </Link>
@@ -103,9 +106,9 @@ const NavBar = () => {
             </div>
 
             <div className={`${searchNavBar ? "left-0 lg:top-0" : "left-full lg:-top-[120vh]"} duration-300 fixed z-[499] transition-all lg:left-0 h-full w-full backdrop-blur-[12px] navpopup navpopupwhite`}>
-                <SearchNav searchNavBar={searchNavBar} setSearchNavBar={setSearchNavBar} />
+                <SearchNav searchNavBar={searchNavBar} setSearchNavBar={setSearchNavBar} setOurProject={setOurProject} />
             </div>
-            <div className={`${ourProject ? "top-0" : "-top-[120vh]"} hidden lg:block  duration-300 fixed z-[499] transition-all overflow-clip lg:left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+            <div className={`${ourProject ? "top-0" : "-top-[120vh]"} hidden lg:block  duration-300 fixed z-[499] transition-all overflow-clip lg:left-0 h-[620px] w-full backdrop-blur-[12px] navpopup`}>
                 <OurProject setOurProject={setOurProject} />
             </div>
             <div className={`${showEnquire ? "scale-100" : "scale-0"} duration-200 fixed z-[600] transition-all left-0 top-0 h-full w-full backdrop-blur-[12px] navpopup`}>
