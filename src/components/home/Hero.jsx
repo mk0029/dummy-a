@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="w-full  max-md:min-h-screen flex justify-center items-center bg-black">
       <div className="relative w-full aspect-video">
         <video
-          className="w-full  h-full object-cover block md:hidden"
+          className="w-full min-h-screen h-full object-cover block md:hidden"
           src="/assets/videos/food12.mp4"
           loop
           preload="auto"
