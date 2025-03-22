@@ -168,7 +168,7 @@ const EnquireCall = ({ setShowEnquire }) => {
 
           {/* Submit Button */}
           <div className="flex justify-center">
-            <button type="submit" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-[#9D7F19] transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
+            <button type="submit" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-dark-orange transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
               Submit
             </button>
           </div>

@@ -75,20 +75,22 @@ const Slider = () => {
       <div className="max-w-[1170px] xl:px-0 mx-auto py-[50px] lg:py-20 px-4">
         {/* Heading Section */}
         <div className="flex flex-col items-center justify-center w-full text-center">
-          <TagParagraph center>Our Pride</TagParagraph>
-          <Heading className={"pt-1"} center>Iconic Properties</Heading>
+          <div data-aos="fade-up">
+            <TagParagraph center>Our Pride</TagParagraph>
+          </div>
+          <Heading aosdelay={"150"} aostime={"fade-up"} className={"pt-1"} center>Iconic Properties</Heading>
         </div>
 
         {/* Slider Section */}
-        <div className="slider w-full max-w-[1170px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-hidden relative">
+        <div className="slider  w-full max-w-[1170px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-hidden relative">
           <div
             ref={sliderRef}
             className="w-full justify-between flex gap-[30px] overflow-hidden"
           >
             {slides.map((slide, index) => (
               <div key={index} className="flex flex-col min-w-[250px]">
-                <Image className='w-[250px] h-[353px]' width={250} height={353} src={slide.img} alt="slider" />
-                <p className='text-light-gray text-sm font-medium futuraMedium !leading-116 mt-[10px] text-left'>
+                <Image data-aos="fade-up" className='w-[250px] h-[353px]' width={250} height={353} src={slide.img} alt="slider" />
+                <p data-aos="fade-up" data-aos-delay="100" className='text-light-gray text-sm font-medium futuraMedium !leading-116 mt-[10px] text-left'>
                   {slide.title}
                 </p>
               </div>
@@ -99,13 +101,13 @@ const Slider = () => {
         {/* Arrows (Between 768px - 1030px only) */}
         <div className=" gap-4 items-center justify-center mt-[15px] hidden md:flex lg:hidden">
           <div
-            className="cursor-pointer px-[12px] py-[6px] text-[#9D7F19] text-[1.5rem]"
+            className="cursor-pointer px-[12px] py-[6px] text-dark-orangetext-[1.5rem]"
             onClick={() => slideTo(activeSlide > 0 ? activeSlide - 1 : 0)}
           >
             &lt;
           </div>
           <div
-            className="cursor-pointer px-[12px] py-[6px] text-[#9D7F19] text-[1.5rem]"
+            className="cursor-pointer px-[12px] py-[6px] text-dark-orangetext-[1.5rem]"
             onClick={() => slideTo(activeSlide < slides.length - 1 ? activeSlide + 1 : slides.length - 1)}
           >
             &gt;
@@ -126,8 +128,8 @@ const Slider = () => {
 
         {/* View All Projects Button */}
         <div className="flex items-center justify-center mt-10">
-          <button className='
-                        text-[#9D7F19] 
+          <button data-aos="fade-up" data-aos-delay="100" className='
+                        text-dark-orange
                         text-center 
                         text-[0.875rem] 
                         font-normal 
@@ -135,7 +137,7 @@ const Slider = () => {
                         py-2.5
                         px-5
                         border 
-                        border-[#9D7F19] 
+                        border-dark-orange 
                         transition-all 
                         duration-[0.5s] 
                         ease-[cubic-bezier(0.075,0.82,0.165,1)] 

@@ -1,4 +1,5 @@
-import EnquireCall from "@/components/common/EnquireCall";
+
+"use client"
 import Footer from "@/components/common/Footer";
 import FooterContent from "@/components/common/FooterContent";
 import NavBar from "@/components/common/NavBar";
@@ -7,8 +8,16 @@ import Hero from "@/components/home/Hero";
 import OurBrand from "@/components/home/OurBrand";
 import OurPromise from "@/components/home/OurPromise";
 import Slider from "@/components/home/Slider";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  }, []);
   return (
     <div>
       <NavBar />

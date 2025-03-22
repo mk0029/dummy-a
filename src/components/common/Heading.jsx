@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Heading = ({ maxWidth, center, right, className, children }) => {
+const Heading = ({ maxWidth, center, right, className, children, aosdelay, aostime }) => {
     return (
-        <h2
+        <h2 data-aos={`${aostime}`} data-aos-delay={`${aosdelay}`}
             style={{ maxWidth: `${maxWidth && maxWidth}px` }}
             className={`${className && className} 
     ${center ? 'mx-auto text-center' : right ? 'ml-auto mr-0 text-right' : ' ml-0 mr-auto text-left'}

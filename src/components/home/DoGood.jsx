@@ -35,9 +35,11 @@ const DoGood = () => {
 
             <div className="flex flex-col items-start justify-center md:items-end px-[20px] md:px-[60px] lg:px-[120px] xl:pe-[160px] w-full lg:w-1/2 text-left">
                 <div className="lg:max-w-[357px]">
+                    <div data-aos="fade-up">
                     <TagParagraph>OUR PURPOSE</TagParagraph>
-                    <Heading className={"pt-1 pb-2.5"}>Do good. Do well.</Heading>
-                    <Paragraph>
+                    </div>
+                    <Heading aosdelay={"150"} aostime={"fade-up"} className={"pt-1 pb-2.5"}>Do good. Do well.</Heading>
+                    <Paragraph aosdelay={"300"} aostime={"fade-up"}>
                         Lodha is committed to elevating the living experience,
                         emphasising the importance of creating a positive impact
                         on the environment and society.

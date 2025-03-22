@@ -41,10 +41,12 @@ const OurPromise = ({ image, tag, heading, para, colorBg }) => {
           </div>
         </div>
         <div className="w-full md:w-1/2 max-w-[550px] lg:max-w-[280px] xl:max-w-[310px] lg:mx-auto">
-          <TagParagraph>{tag}</TagParagraph>
-          <Heading className={"pt-1 pb-2.5"}>{heading}</Heading>
-          <Paragraph>{para}</Paragraph>
-          <button className="mt-5 text-[#9D7F19] text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-[#9D7F19] transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
+          <div data-aos={"fade-up"} >
+            <TagParagraph>{tag}</TagParagraph>
+          </div>
+          <Heading aosdelay={"120"} aostime={"fade-up"} className={"pt-1 pb-2.5"}>{heading}</Heading>
+          <Paragraph aosdelay={"240"} aostime={"fade-up"}>{para}</Paragraph>
+          <button data-aos="fade-up" data-aos-delay="360" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-dark-orange transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
             Know More
           </button>
         </div>
