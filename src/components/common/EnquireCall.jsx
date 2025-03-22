@@ -17,20 +17,30 @@ const customStyles = {
     boxShadow: "none",
     fontSize: "14px",
     backgroundColor: "white",
+    fontFamily: "Futura BK BT",
   }),
   menu: (provided) => ({
     ...provided,
-    borderRadius: "6px",
-    boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
+    backgroundColor: "white",
     fontSize: "14px",
+    fontFamily: "Futura BK BT",
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    borderBottom: "1px solid #E0E0E0", // 👈 Ye border har option ke neeche lagega
+    backgroundColor: state.isSelected ? "#F8F8F8" : "white", // Selected item color
+    color: "black",
+    padding: "10px",
+    fontFamily: "Futura BK BT",
   }),
 };
+
 
 const EnquireCall = ({ setShowEnquire }) => {
   const countryOptions = countryList().getData();
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [isClient, setIsClient] = useState(false);
-  
+
   // Single useState for Name, Email, and Phone
   const [formData, setFormData] = useState({
     name: "",
@@ -50,11 +60,11 @@ const EnquireCall = ({ setShowEnquire }) => {
 
   const validateForm = () => {
     let errors = {};
-    
+
     if (!formData.name.trim()) errors.name = "Name is required.";
     if (!formData.email.trim()) errors.email = "Email is required.";
     else if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = "Invalid email address.";
-    
+
     if (!formData.phone.trim()) errors.phone = "Mobile number is required.";
     else if (formData.phone.length < 10) errors.phone = "Mobile number must be at least 10 digits.";
 
@@ -81,13 +91,13 @@ const EnquireCall = ({ setShowEnquire }) => {
 
   return (
     <div className="min-h-screen w-full h-full flex justify-center items-center px-4">
-      <div className="max-w-md mx-auto px-6 py-10 pb-6 bg-white shadow-lg rounded-lg relative">
+      <div className="max-w-md mx-auto px-6 py-10 pb-6 bg-white shadow-lg relative">
         <span onClick={() => setShowEnquire(false)} className="cursor-pointer absolute top-4 end-4">
           <Icons className={"fill-dark-orange"} icon={"cricleCross"} />
         </span>
         <h2 className="text-center text-2xl cormorantBold text-dark-orange">Request a Call Back</h2>
         <form className="mt-4" onSubmit={handleSubmit}>
-          
+
           {/* Name */}
           <input
             type="text"
@@ -129,9 +139,10 @@ const EnquireCall = ({ setShowEnquire }) => {
               country={selectedCountry?.value.toLowerCase()}
               disableDropdown
               enableLongNumbers
-              inputClass="w-full text-sm p-2 outline-none !border-none !pl-0"
+              inputClass="w-full text-sm outline-none !border-none !pl-0"
               containerClass="w-full"
               buttonClass="hidden"
+              className="w-full text-light-gray text-sm p-2 py-0 outline-none"
               inputProps={{
                 placeholder: "Enter Mobile Number*",
               }}
