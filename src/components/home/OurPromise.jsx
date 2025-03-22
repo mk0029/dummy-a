@@ -29,26 +29,28 @@ const OurPromise = ({ image, tag, heading, para, colorBg }) => {
   }, []);
 
   return (
-    <div ref={sectionRef} className={` max-w-[1170px] mx-auto px-4 xl:px-0 py-10 lg:py-12 xl:py-16 ${colorBg}`}>
-      <div className="flex flex-col md:flex-row gap-6 md:gap-4 items-center">
-        <div className="w-full md:w-1/2">
-          <div className="relative overflow-clip">
-            <span
-              ref={overlayRef}
-              className="block w-full h-full bg-white absolute top-0 right-0"
-            ></span>
-            <Image src={image} alt="promise" width={497} height={296} className="w-full" />
+    <div className={`${colorBg}`}>
+      <div ref={sectionRef} className={` max-w-[1170px] mx-auto px-4 xl:px-0 py-10 lg:py-12 xl:py-16 `}>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-4 items-center">
+          <div className="w-full md:w-1/2">
+            <div className="relative overflow-clip">
+              <span
+                ref={overlayRef}
+                className="block w-full h-full bg-white absolute top-0 right-0"
+              ></span>
+              <Image src={image} alt="promise" width={497} height={296} className="w-full" />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/2 max-w-[550px] lg:max-w-[280px] xl:max-w-[310px] lg:mx-auto">
-          <div data-aos={"fade-up"} >
-            <TagParagraph>{tag}</TagParagraph>
+          <div className="w-full md:w-1/2 max-w-[550px] lg:max-w-[280px] xl:max-w-[310px] lg:mx-auto">
+            <div data-aos={"fade-up"} >
+              <TagParagraph>{tag}</TagParagraph>
+            </div>
+            <Heading aosdelay={"120"} aostime={"fade-up"} className={"pt-1 pb-2.5"}>{heading}</Heading>
+            <Paragraph aosdelay={"240"} aostime={"fade-up"}>{para}</Paragraph>
+            <button data-aos="fade-up" data-aos-delay="360" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-dark-orange transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
+              Know More
+            </button>
           </div>
-          <Heading aosdelay={"120"} aostime={"fade-up"} className={"pt-1 pb-2.5"}>{heading}</Heading>
-          <Paragraph aosdelay={"240"} aostime={"fade-up"}>{para}</Paragraph>
-          <button data-aos="fade-up" data-aos-delay="360" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-dark-orange transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
-            Know More
-          </button>
         </div>
       </div>
     </div>

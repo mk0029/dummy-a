@@ -31,7 +31,7 @@ const DoGood = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex flex-wrap justify-between bg-light-orange lg:flex-nowrap py-12">
+        <div ref={sectionRef} className="flex flex-wrap justify-between bg-light-orange lg:flex-nowrap ">
 
             <div className="flex flex-col items-start justify-center md:items-end px-[20px] md:px-[60px] lg:px-[120px] xl:pe-[160px] w-full lg:w-1/2 text-left">
                 <div className="lg:max-w-[357px]">
@@ -48,7 +48,7 @@ const DoGood = () => {
             </div>
 
             <div className="flex flex-col md:flex-row w-full lg:w-[54%] gap-6 md:gap-0 px-5 md:min-h-screen overflow-clip md:px-0 pt-7 lg:pt-0">
-                <div className="relative w-full md:w-[50%] group lg:w-[28vw] lg:h-[50vh] md:min-h-screen">
+                <div className="relative w-full md:w-[50%] group lg:w-[27vw] md:min-h-screen">
                     <div className="relative overflow-clip group">
                         <span
                             ref={overlayRef1}
@@ -57,7 +57,7 @@ const DoGood = () => {
                         <Image
                             src={"/assets/images/homepage/webp/lodhaImg.webp"}
                             alt="Lodha"
-                            className="object-cover hidden md:flex group-hover:scale-105 duration-300 w-full h-full"
+                            className="object-cover hidden md:flex min-h-screen group-hover:scale-105 duration-300 w-full h-full"
                             width={400}
                             height={400}
                         />
@@ -75,7 +75,7 @@ const DoGood = () => {
                 </div>
 
 
-                <div className="relative w-full md:w-[50%] lg:w-[28vw] group lg:h-[50vh] md:min-h-screen overflow-hidden">
+                <div className="relative w-full md:w-[50%] lg:w-[27vw] group md:min-h-screen overflow-hidden">
                     <div className="relative overflow-clip group">
 
                         <span
@@ -85,7 +85,7 @@ const DoGood = () => {
                         <Image
                             src={"/assets/images/homepage/webp/our-impact-story.webp"}
                             alt="Lodha Second"
-                            className="object-cover w-full hidden md:flex group-hover:scale-105 duration-300 h-full"
+                            className="object-cover w-full hidden md:flex group-hover:scale-105 duration-300 min-h-screen h-full"
                             width={400}
                             height={400}
                         />

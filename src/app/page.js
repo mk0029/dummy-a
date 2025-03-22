@@ -8,9 +8,9 @@ import Hero from "@/components/home/Hero";
 import OurBrand from "@/components/home/OurBrand";
 import OurPromise from "@/components/home/OurPromise";
 import Slider from "@/components/home/Slider";
-import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
