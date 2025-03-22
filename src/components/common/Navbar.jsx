@@ -51,7 +51,7 @@ const NavBar = () => {
         <div className="relative">
             <div
                 id="nav_bar"
-                className={`fixed top-0 border-b-[0.6px]  ${showNavBar || searchNavBar || ourProject ? "border-light-gray" : "border-transparent"} backdrop-blur-md navbg w-full duration-500 z-[500] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
+                className={`fixed top-0 border-b-[0.6px]  ${showNavBar || searchNavBar || ourProject ? "border-light-gray" : "border-transparent"} ${searchNavBar ? "navWhite":"navbg"} backdrop-blur-md navbg w-full duration-500 z-[500] ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"
                     }`}
             >
 
@@ -102,10 +102,10 @@ const NavBar = () => {
                 <MobileNav setShowNavBar={setShowNavBar} setOurProject={setOurProject} setShowEnquire={setShowEnquire} />
             </div>
 
-            <div className={`${searchNavBar ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+            <div className={`${searchNavBar ? "left-0 lg:top-0" : "left-full lg:-top-[120vh]"} duration-300 fixed z-[499] transition-all lg:left-0 h-full w-full backdrop-blur-[12px] navpopup navpopupwhite`}>
                 <SearchNav searchNavBar={searchNavBar} setSearchNavBar={setSearchNavBar} />
             </div>
-            <div className={`${ourProject ? "top-0" : "-top-[120vh]"} duration-300 fixed z-[499] transition-all left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
+            <div className={`${ourProject ? "top-0" : "-top-[120vh]"} hidden lg:block  duration-300 fixed z-[499] transition-all overflow-clip lg:left-0 h-full w-full backdrop-blur-[12px] navpopup`}>
                 <OurProject setOurProject={setOurProject} />
             </div>
             <div className={`${showEnquire ? "scale-100" : "scale-0"} duration-200 fixed z-[600] transition-all left-0 top-0 h-full w-full backdrop-blur-[12px] navpopup`}>

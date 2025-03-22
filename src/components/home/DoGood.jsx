@@ -31,7 +31,7 @@ const DoGood = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex flex-wrap justify-between bg-light-orange lg:flex-nowrap ">
+        <div ref={sectionRef} className="flex flex-wrap justify-between bg-light-orange lg:flex-nowrap py-12 lg:py-0">
 
             <div className="flex flex-col items-start justify-center md:items-end px-[20px] md:px-[60px] lg:px-[120px] xl:pe-[160px] w-full lg:w-1/2 text-left">
                 <div className="lg:max-w-[357px]">

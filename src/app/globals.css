@@ -80,13 +80,11 @@ body {
 .navpopup {
   background-color: rgba(24, 22, 21, 0.80);
 }
-/* .css-13cymwt-control{
-  border: none !important;
-  padding: 0px !important;
+@media (max-width:1023.98px) {
+  .navpopupwhite {
+    background-color: rgba(235, 235, 234, 0.8) !important;
+  }
+  .navWhite {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+  }
 }
-.css-13cymwt-control:focus{
-  outline: none !important;
-}
-.css-hlgwow{
-  padding: 0px !important;
-} */
