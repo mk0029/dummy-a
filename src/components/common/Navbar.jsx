@@ -68,8 +68,8 @@ const NavBar = () => {
                             />
                         </Link>
                         <div className="hidden lg:flex xl:ps-6 gap-11">
-                            <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/our-story">
-                                Our Story
+                            <Link className=" uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/our-story">
+                                Our Story                   
                             </Link>
                             <Link className="uppercase text-white text-sm leading-none duration-300 hover:text-black" href="https://www.lodhagroup.com/esg-sustainablity-environmental-social-governance">
                                 Our Impact

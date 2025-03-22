@@ -27,25 +27,24 @@ const customStyles = {
   }),
   option: (provided, state) => ({
     ...provided,
-    borderBottom: "1px solid #E0E0E0", // 👈 Ye border har option ke neeche lagega
-    backgroundColor: state.isSelected ? "#F8F8F8" : "white", // Selected item color
+    borderBottom: "1px solid #E0E0E0",
+    backgroundColor: state.isSelected ? "#F8F8F8" : "white",
     color: "black",
     padding: "10px",
     fontFamily: "Futura BK BT",
   }),
 };
 
-
 const EnquireCall = ({ setShowEnquire }) => {
   const countryOptions = countryList().getData();
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [isClient, setIsClient] = useState(false);
 
-  // Single useState for Name, Email, and Phone
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
+    city: "",
   });
 
   const [agree, setAgree] = useState(false);
@@ -67,6 +66,8 @@ const EnquireCall = ({ setShowEnquire }) => {
 
     if (!formData.phone.trim()) errors.phone = "Mobile number is required.";
     else if (formData.phone.length < 10) errors.phone = "Mobile number must be at least 10 digits.";
+
+    if (!formData.city.trim()) errors.city = "City is required.";
 
     if (!agree) errors.agree = "You must accept the privacy policy.";
 
@@ -98,7 +99,6 @@ const EnquireCall = ({ setShowEnquire }) => {
         <h2 className="text-center text-2xl cormorantBold text-dark-orange">Request a Call Back</h2>
         <form className="mt-4" onSubmit={handleSubmit}>
 
-          {/* Name */}
           <input
             type="text"
             name="name"
@@ -109,7 +109,6 @@ const EnquireCall = ({ setShowEnquire }) => {
           />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
 
-          {/* Email */}
           <input
             type="email"
             name="email"
@@ -120,9 +119,8 @@ const EnquireCall = ({ setShowEnquire }) => {
           />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
 
-          {/* Country Select */}
           <div className="w-full border-b border-light-gray mt-3">
-            <label htmlFor="" className="px-2 text-xs text-light-gray">Select Country*</label>
+            <label className="px-2 text-xs text-light-gray">Select Country*</label>
             <Select
               options={countryOptions}
               value={selectedCountry}
@@ -133,8 +131,21 @@ const EnquireCall = ({ setShowEnquire }) => {
             />
           </div>
 
-          {/* Mobile Number */}
           <div className="w-full border-b border-light-gray mt-3">
+            <label className="px-2 text-xs text-light-gray">Enter City*</label>
+            <input
+              type="text"
+              name="city"
+              placeholder="City*"
+              className="w-full text-light-gray text-sm p-2 outline-none"
+              value={formData.city}
+              onChange={handleChange}
+            />
+          </div>
+          {errors.city && <p className="text-red-500 text-xs mt-1">{errors.city}</p>}
+
+          <div className="w-full border-b border-light-gray mt-3">
+            <label className="px-2 text-xs text-light-gray">Select Country*</label>
             <PhoneInput
               country={selectedCountry?.value.toLowerCase()}
               disableDropdown
@@ -143,32 +154,23 @@ const EnquireCall = ({ setShowEnquire }) => {
               containerClass="w-full"
               buttonClass="hidden"
               className="w-full text-light-gray text-sm p-2 py-0 outline-none"
-              inputProps={{
-                placeholder: "Enter Mobile Number*",
-              }}
+              inputProps={{ placeholder: "Enter Mobile Number*" }}
               value={formData.phone}
               onChange={(value) => setFormData({ ...formData, phone: value })}
             />
           </div>
           {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
 
-          {/* Checkbox */}
           <label className="flex items-center mt-4">
-            <input
-              type="checkbox"
-              className="mr-2"
-              checked={agree}
-              onChange={(e) => setAgree(e.target.checked)}
-            />
+            <input type="checkbox" className="mr-2" checked={agree} onChange={(e) => setAgree(e.target.checked)} />
             <span className="text-gray-600 text-sm">
-              By checking this box, you agree to our <Link href="https://www.lodhagroup.com/privacy-policy" className="text-dark-orange underline">Privacy Policy</Link> and consent to be contacted with relevant updates.
+              By checking this box, you agree to our <Link href="https://www.lodhagroup.com/privacy-policy" className="text-dark-orange">Privacy Policy</Link> and consent to be contacted with relevant updates.
             </span>
           </label>
           {errors.agree && <p className="text-red-500 text-xs mt-1">{errors.agree}</p>}
 
-          {/* Submit Button */}
           <div className="flex justify-center">
-            <button type="submit" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal !leading-116 py-2.5 px-5 border border-dark-orange transition-all duration-[0.5s] ease-[cubic-bezier(0.075,0.82,0.165,1)] capitalize cursor-pointer hover:text-white hover:bg-dark-orange">
+            <button type="submit" className="mt-5 text-dark-orange text-center text-[0.875rem] font-normal py-2.5 px-5 border border-dark-orange hover:text-white hover:bg-dark-orange">
               Submit
             </button>
           </div>
