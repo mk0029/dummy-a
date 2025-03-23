@@ -52,6 +52,14 @@
 body {
   font-family: "Futura BK BT";
 }
+*:not(.no-default-smooth),
+:not(.no-default-smooth):after,
+:not(.no-default-smooth):before {
+  transition: opacity 300ms linear, fill 300ms linear, g 300ms linear,
+    ract 300ms linear, stroke 300ms linear, background-color 300ms linear,
+    color 300ms linear, border 300ms linear, box-shadow 300ms linear,
+    transform 300ms linear;
+}
 
 .cormorantBold {
   font-family: "Cormorant Garamond Bold" !important;
@@ -89,5 +97,11 @@ body {
   }
   .navWhite {
     background-color: rgba(255, 255, 255, 0.3) !important;
+  }
+}
+
+@layer components {
+  .container {
+    @apply !w-full !max-w-[1210px] !mx-auto !px-5;
   }
 }
