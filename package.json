@@ -18,6 +18,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-select": "^5.10.1",
     "react-select-country-list": "^2.2.3",
+    "swiper": "^11.2.6",
     "world-countries": "^5.1.0",
     "yup": "^1.6.1"
   },
