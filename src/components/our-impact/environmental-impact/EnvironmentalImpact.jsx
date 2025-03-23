@@ -1,5 +1,7 @@
 import React from "react";
 import ImpactCard from "../common/ImpactCard";
+import Paragraph from "@/components/common/Components/Paragraph";
+import Heading from "@/components/common/Components/Heading";
 
 const EnvironmentalImpact = () => {
   return (
