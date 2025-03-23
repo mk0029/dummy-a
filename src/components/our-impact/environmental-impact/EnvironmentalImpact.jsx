@@ -2,6 +2,7 @@ import React from "react";
 import ImpactCard from "../common/ImpactCard";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Heading from "@/components/common/Components/Heading";
+import { ENVIRONMENTAL_IMPACT_LIST } from "@/utils/defaults";
 
 const EnvironmentalImpact = () => {
   return (
@@ -15,7 +16,15 @@ const EnvironmentalImpact = () => {
         </Paragraph>
       </div>
       <div className="mt-5 sm:mt-6 lg:mt-8">
-        <ImpactCard />
+        <div className="flex">
+          {ENVIRONMENTAL_IMPACT_LIST.map((obj, index) => (
+            <div key={`environment-card-${index + 1}`} className="w-4/12 px-2">
+              <ImpactCard src={obj.img} url={obj.url}>
+                {obj.description}
+              </ImpactCard>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
