@@ -1,18 +1,30 @@
-"use client"
-import Image from 'next/image';
-import React, { useRef, useState, useEffect } from 'react';
-import TagParagraph from '../common/TagParagraph';
-import Heading from '../common/Heading';
+"use client";
+import Image from "next/image";
+import React, { useRef, useState, useEffect } from "react";
+import TagParagraph from "../common/TagParagraph";
+import Heading from "../common/Heading";
 
 const Slider = () => {
   const sliderRef = useRef(null);
   const [activeSlide, setActiveSlide] = useState(0);
 
   const slides = [
-    { img: "/assets/images/homepage/webp/slider-1.webp", title: 'Lodha Altamount | Altamount' },
-    { img: "/assets/images/homepage/webp/slider-2.webp", title: 'Lodha World Towers | Worli' },
-    { img: "/assets/images/homepage/webp/slider-3.webp", title: 'Trump Tower | Worli' },
-    { img: "/assets/images/homepage/webp/slider-4.webp", title: 'Lodha Bellagio | Powai' },
+    {
+      img: "/assets/images/homepage/webp/slider-1.webp",
+      title: "Lodha Altamount | Altamount",
+    },
+    {
+      img: "/assets/images/homepage/webp/slider-2.webp",
+      title: "Lodha World Towers | Worli",
+    },
+    {
+      img: "/assets/images/homepage/webp/slider-3.webp",
+      title: "Trump Tower | Worli",
+    },
+    {
+      img: "/assets/images/homepage/webp/slider-4.webp",
+      title: "Lodha Bellagio | Powai",
+    },
   ];
 
   // Slide Function
@@ -20,7 +32,7 @@ const Slider = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollTo({
         left: index * 280,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
       setActiveSlide(index);
     }
@@ -41,18 +53,20 @@ const Slider = () => {
     const handleTouchEnd = (e) => {
       endX = e.changedTouches[0].clientX;
       if (startX - endX > 50) {
-        slideTo(activeSlide < slides.length - 1 ? activeSlide + 1 : slides.length - 1);
+        slideTo(
+          activeSlide < slides.length - 1 ? activeSlide + 1 : slides.length - 1
+        );
       } else if (endX - startX > 50) {
         slideTo(activeSlide > 0 ? activeSlide - 1 : 0);
       }
     };
 
-    slider.addEventListener('touchstart', handleTouchStart);
-    slider.addEventListener('touchend', handleTouchEnd);
+    slider.addEventListener("touchstart", handleTouchStart);
+    slider.addEventListener("touchend", handleTouchEnd);
 
     return () => {
-      slider.removeEventListener('touchstart', handleTouchStart);
-      slider.removeEventListener('touchend', handleTouchEnd);
+      slider.removeEventListener("touchstart", handleTouchStart);
+      slider.removeEventListener("touchend", handleTouchEnd);
     };
   }, [activeSlide]);
 
@@ -66,8 +80,8 @@ const Slider = () => {
       setActiveSlide(currentIndex);
     };
 
-    slider.addEventListener('scroll', handleScroll);
-    return () => slider.removeEventListener('scroll', handleScroll);
+    slider.addEventListener("scroll", handleScroll);
+    return () => slider.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -78,7 +92,14 @@ const Slider = () => {
           <div data-aos="fade-up">
             <TagParagraph center>Our Pride</TagParagraph>
           </div>
-          <Heading aosdelay={"150"} aostime={"fade-up"} className={"pt-1"} center>Iconic Properties</Heading>
+          <Heading
+            aosdelay={"150"}
+            aostime={"fade-up"}
+            className={"pt-1"}
+            center
+          >
+            Iconic Properties
+          </Heading>
         </div>
 
         {/* Slider Section */}
@@ -89,8 +110,19 @@ const Slider = () => {
           >
             {slides.map((slide, index) => (
               <div key={index} className="flex flex-col min-w-[250px]">
-                <Image data-aos="fade-up" className='w-[250px] h-[353px]' width={250} height={353} src={slide.img} alt="slider" />
-                <p data-aos="fade-up" data-aos-delay="100" className='text-light-gray text-sm font-medium futuraMedium !leading-116 mt-[10px] text-left'>
+                <Image
+                  data-aos="fade-up"
+                  className="w-[250px] h-[353px]"
+                  width={250}
+                  height={353}
+                  src={slide.img}
+                  alt="slider"
+                />
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  className="text-light-gray text-sm font-medium futuraMedium !leading-110 mt-[10px] text-left"
+                >
                   {slide.title}
                 </p>
               </div>
@@ -108,7 +140,13 @@ const Slider = () => {
           </div>
           <div
             className="cursor-pointer px-[12px] py-[6px] text-dark-orangetext-[1.5rem]"
-            onClick={() => slideTo(activeSlide < slides.length - 1 ? activeSlide + 1 : slides.length - 1)}
+            onClick={() =>
+              slideTo(
+                activeSlide < slides.length - 1
+                  ? activeSlide + 1
+                  : slides.length - 1
+              )
+            }
           >
             &gt;
           </div>
@@ -119,8 +157,9 @@ const Slider = () => {
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-1 h-1 rounded-full bg-[#9D7F19] cursor-pointer transition-all ${activeSlide === index ? 'opacity-100' : 'opacity-50'
-                }`}
+              className={`w-1 h-1 rounded-full bg-[#9D7F19] cursor-pointer transition-all ${
+                activeSlide === index ? "opacity-100" : "opacity-50"
+              }`}
               onClick={() => slideTo(index)}
             />
           ))}
@@ -128,12 +167,15 @@ const Slider = () => {
 
         {/* View All Projects Button */}
         <div className="flex items-center justify-center mt-10">
-          <button data-aos="fade-up" data-aos-delay="100" className='
+          <button
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="
                         text-dark-orange
                         text-center 
                         text-[0.875rem] 
                         font-normal 
-                        !leading-116 
+                        !leading-110 
                         py-2.5
                         px-5
                         border 
@@ -142,7 +184,8 @@ const Slider = () => {
                         duration-[0.5s] 
                         ease-[cubic-bezier(0.075,0.82,0.165,1)] 
                         capitalize 
-                        cursor-pointer hover:text-white hover:bg-dark-orange'>
+                        cursor-pointer hover:text-white hover:bg-dark-orange"
+          >
             View All Projects
           </button>
         </div>

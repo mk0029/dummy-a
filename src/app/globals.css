@@ -1,89 +1,89 @@
 @import "tailwindcss";
 
-
 @theme {
   --color-light-orange: #fffbec;
-  --color-dark-orange: #9D7F19;
+  --color-dark-orange: #9d7f19;
   --color-light-black: #313131;
-  --color-light-gray: #6D6E70;
-  --color-dark-gray: #F8F8F8;
+  --color-light-gray: #6d6e70;
+  --color-dark-gray: #f8f8f8;
   --color-wide-gray: #d0d0d0;
   --color-wide-black: #d9d9d9;
   --leading-130: "130%";
   --leading-143: "143%";
+  --leading-140: "140%";
   --leading-125: "125%";
-  --leading-116: "110%";
+  --leading-120: "120%";
+  --leading-116: "116%";
+  --leading-110: "110%";
 }
 
 @font-face {
-  font-family: 'Futura BK BT';
-  src: url('../../public/assets/fonts/FuturaBT-Book.woff2');
+  font-family: "Futura BK BT";
+  src: url("../../public/assets/fonts/FuturaBT-Book.woff2");
   font-style: normal;
 }
 
-
-
 @font-face {
-  font-family: 'Cormorant Garamond Bold';
-  src: url('../../public/assets/fonts/CormorantGaramond-Bold.woff2');
+  font-family: "Cormorant Garamond Bold";
+  src: url("../../public/assets/fonts/CormorantGaramond-Bold.woff2");
   font-style: bold;
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond Semibold';
-  src: url('../../public/assets/fonts/CormorantGaramond-SemiBold.woff2');
+  font-family: "Cormorant Garamond Semibold";
+  src: url("../../public/assets/fonts/CormorantGaramond-SemiBold.woff2");
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond regular';
-  src: url('../../public/assets/fonts/CormorantGaramond-Regular.woff2');
+  font-family: "Cormorant Garamond regular";
+  src: url("../../public/assets/fonts/CormorantGaramond-Regular.woff2");
 }
 
 @font-face {
-  font-family: 'Futura Lt BT';
-  src: url('../../public/assets/fonts/FuturaBT-Light.woff2');
+  font-family: "Futura Lt BT";
+  src: url("../../public/assets/fonts/FuturaBT-Light.woff2");
 }
 
 @font-face {
-  font-family: 'Futura MD BT';
-  src: url('../../public/assets/fonts/FuturaBT-Medium_1.woff2');
+  font-family: "Futura MD BT";
+  src: url("../../public/assets/fonts/FuturaBT-Medium_1.woff2");
 }
 
 body {
-  font-family: 'Futura BK BT';
+  font-family: "Futura BK BT";
 }
 
 .cormorantBold {
-  font-family: 'Cormorant Garamond Bold' !important;
+  font-family: "Cormorant Garamond Bold" !important;
 }
 
 .cormorantSemiBold {
-  font-family: 'Cormorant Garamond Semibold' !important;
+  font-family: "Cormorant Garamond Semibold" !important;
 }
 
 .cormorantRegular {
-  font-family: 'Cormorant Garamond regular' !important;
+  font-family: "Cormorant Garamond regular" !important;
 }
 
 .futuraLight {
-  font-family: 'Futura Lt BT' !important;
+  font-family: "Futura Lt BT" !important;
 }
 
 .futuraMedium {
-  font-family: 'Futura MD BT' !important;
+  font-family: "Futura MD BT" !important;
 }
 
 .navbg {
-  background-color: rgba(31, 25, 20, 0.50);
+  background-color: rgba(31, 25, 20, 0.5);
 }
 
 .navpopup {
-  background-color: rgba(24, 22, 21, 0.80);
+  background-color: rgba(24, 22, 21, 0.8);
 }
-.css-1u9des2-indicatorSeparator{
+.css-1u9des2-indicatorSeparator {
   display: none !important;
 }
-@media (max-width:1023.98px) {
+@media (max-width: 1023.98px) {
   .navpopupwhite {
     background-color: rgba(235, 235, 234, 0.8) !important;
   }
