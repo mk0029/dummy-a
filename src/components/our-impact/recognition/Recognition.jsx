@@ -7,7 +7,7 @@ import NonImgSwiper from "../common/NonImgSwiper";
 const Recognition = () => {
   return (
     <div>
-      <Heading>Recognitio</Heading>
+      <Heading>Recognition</Heading>
       <Paragraph className="pt-2.5">
         Leading in global sustainability benchmarks
       </Paragraph>

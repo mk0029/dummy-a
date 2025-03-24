@@ -9,6 +9,7 @@ import ImpactCard from "./ImpactCard";
 const ImpactSlider = ({ list }) => {
   return (
     <Swiper
+      className="!pb-10 sm:!pb-20 lg:!pb-5"
       navigation={false}
       slidesPerView={3}
       spaceBetween={0}
@@ -22,7 +23,7 @@ const ImpactSlider = ({ list }) => {
       {list.length > 0 &&
         list.map(({ url, img, description, id }) => (
           <SwiperSlide key={id}>
-            <div className="mx-2">
+            <div className="mx-1 md:mx-2">
               <ImpactCard src={img} url={url}>
                 {description}
               </ImpactCard>

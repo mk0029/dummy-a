@@ -21,14 +21,21 @@ const NonImgSwiper = ({ list }) => {
           1024: { slidesPerView: 3, spaceBetween: 0 },
         }}
         modules={[Autoplay, Navigation]}
-        className="mySwiper !flex !items-center !justify-center max-w-[1170px] mx-auto"
+        className="mySwiper !flex !items-center !justify-center max-w-[1170px] mx-auto !pt-20"
       >
         {list.length > 0 &&
           list.map(({ description, id }) => (
-            <SwiperSlide key={id} className="max-w-[292px] mx-auto">
+            <SwiperSlide
+              key={id}
+              className="w-1/4 max-w-[292.5px] mx-auto flex justify-center"
+            >
               <div
-                className={` px-10 border-dark-orange w-full mx-uto max-w-[292.5px] ${
-                  id === 1 ? "border-x " : id === 0 ? "border-l" : "border-r"
+                className={` px-10 border-dark-orange w-full mx-uto max-w-[292.5px] min-h-[140px] max-h-[140px] ${
+                  id === 1
+                    ? "border-x-[0.5px]"
+                    : id === 0
+                    ? "border-l-[0.5px]"
+                    : "border-r-[0.5px]"
                 }`}
               >
                 <NonImgCard>{description}</NonImgCard>
