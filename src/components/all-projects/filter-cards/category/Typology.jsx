@@ -3,7 +3,7 @@ import Paragraph from "@/components/common/Components/Paragraph";
 import Icons from "@/components/common/Icons";
 import { useState } from "react";
 
-const ProjectType = ({
+const Typology = ({
   className = "",
   title = "",
   list = [],
@@ -12,7 +12,7 @@ const ProjectType = ({
   const [selectedType, setSelectedType] = useState("");
   const [isDropOpen, setIsDropOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const projectTypes = ["Apartment", "Villas", "Commercial"];
+  const projectTypes = ["5+", "4", "3", "2"];
 
   // Filter project types based on search input
   const filteredTypes = projectTypes.filter((type) =>
@@ -24,9 +24,7 @@ const ProjectType = ({
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer min-w-[105px] ${className}`}>
-        <Paragraph className={`!text-start select-none`}>
-          Project Type
-        </Paragraph>
+        <Paragraph className={`!text-start select-none`}>Typology</Paragraph>
         <Icons
           icon="accordion-arrow"
           className={`w-3 ${isDropOpen && "rotate-180"}`}
@@ -54,13 +52,12 @@ const ProjectType = ({
             onClick={() => setSelectedType(type)}
             key={index}
             className="py-3.5 w-full flex items-center border-b border-solid border-b-[rgba(0,0,0,0.1)] px-7 gap-x-2.5 hover:bg-light-black/10 transition-all ease-linear cursor-pointer">
-            <span className="size-[18px] rounded-full flex justify-center items-center border border-solid border-dark-orange">
-              <span
-                className={`inline-block rounded-full bg-dark-orange size-2.5 transition-all ease-linear duration-300 ${
-                  selectedType !== type && "opacity-0"
-                }`}></span>
+            <span className="size-[18px] relative flex justify-center items-center border border-solid border-dark-orange">
+              {selectedType === type && (
+                <span className="w-2 h-1 absolute border-l border-solid border-dark-orange border-b -rotate-45 scale-[1.2] mb-0.5"></span>
+              )}
             </span>
-            <Paragraph>{type}</Paragraph>
+            <Paragraph>{type} Beds</Paragraph>
           </div>
         ))}
       </div>
@@ -68,4 +65,4 @@ const ProjectType = ({
   );
 };
 
-export default ProjectType;
+export default Typology;
