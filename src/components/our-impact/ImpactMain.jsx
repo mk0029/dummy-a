@@ -1,4 +1,5 @@
 import AnimatedHero from "../common/Components/AnimatedHero";
+import RouteInfo from "../common/Components/RouteInfo";
 import Blogs from "./blogs/Blogs";
 import CreatingImpact from "./CreatingImpact";
 import Downloads from "./downloads/Downloads";
@@ -18,6 +19,7 @@ const ImpactMain = () => {
       <Partnerships />
       <Downloads />
       <Blogs />
+      <RouteInfo />
     </div>
   );
 };

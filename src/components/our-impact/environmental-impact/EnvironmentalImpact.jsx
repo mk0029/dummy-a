@@ -7,7 +7,7 @@ import ImpactSlider from "../common/ImpactSlider";
 
 const EnvironmentalImpact = () => {
   return (
-    <div id="environment" className="container">
+    <div className="container custom-dots-swiper pb-12 sm:pb-14 md:pb-16 lg::pb-20">
       <div className="max-w-[800px] mx-auto">
         <Heading className="lg:mt-1">Environmental Impact</Heading>
         <Paragraph className="mt-2.5">
@@ -18,14 +18,6 @@ const EnvironmentalImpact = () => {
       </div>
       <div className="mt-5 sm:mt-6 lg:mt-8">
         <ImpactSlider list={ENVIRONMENTAL_IMPACT_LIST} />
-        {/*           
-          {ENVIRONMENTAL_IMPACT_LIST.map((obj, index) => (
-            <div key={`environment-card-${index + 1}`} className="w-4/12 px-2">
-              <ImpactCard src={obj.img} url={obj.url}>
-                {obj.description}
-              </ImpactCard>
-            </div>
-          ))} */}
       </div>
     </div>
   );
