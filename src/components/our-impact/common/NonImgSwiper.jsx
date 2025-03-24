@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import NonImgCard from "./NonImgCard";
 
-const NonImgSwiper = ({ list }) => {
+const NonImgSwiper = ({ list, className = "" }) => {
   return (
-    <div className={`flex flex-col gap-14`}>
+    <div className={`flex flex-col ${className}`}>
       <Swiper
         navigation={{
           nextEl: ".swiper-next",

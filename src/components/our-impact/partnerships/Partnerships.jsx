@@ -11,7 +11,7 @@ const Partnerships = () => {
       <Paragraph className="pt-2.5">
         Leading in global sustainability benchmarks
       </Paragraph>
-      <NonImgSwiper list={PARTNERSHIPS_LIST} />
+      <NonImgSwiper list={PARTNERSHIPS_LIST} className="block" />
     </div>
   );
 };
