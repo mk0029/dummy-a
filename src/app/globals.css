@@ -112,3 +112,6 @@ body {
   .swiper-pagination-bullet-active {
   @apply !opacity-100;
 }
+::-webkit-scrollbar {
+  @apply hidden;
+}

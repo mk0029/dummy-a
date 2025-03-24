@@ -6,7 +6,7 @@ import ImpactSlider from "../common/ImpactSlider";
 
 const SocialImpact = () => {
   return (
-    <div className="py-12 sm:py-14 md:py-16 lg::py-20 bg-light-orange">
+    <div className="py-12 sm:py-14 md:py-16 lg:py-20 bg-light-orange">
       <div className="container custom-dots-swiper">
         <div className="max-w-[800px] mx-auto">
           <Heading className="lg:mt-1">Social Impact</Heading>

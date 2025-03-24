@@ -1,7 +1,4 @@
 "use client";
-import Footer from "@/components/common/Footer";
-import FooterContent from "@/components/common/FooterContent";
-import NavBar from "@/components/common/NavBar";
 import DoGood from "@/components/home/DoGood";
 import Hero from "@/components/home/Hero";
 import OurBrand from "@/components/home/OurBrand";
@@ -42,8 +39,6 @@ export default function Home() {
         para="We craft a tapestry of experiences designed to enrich your life and elevate your every day, where every moment is a testament to the art of living."
       />
       <OurBrand />
-      <Footer />
-      <FooterContent />
     </div>
   );
 }

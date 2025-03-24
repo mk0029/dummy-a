@@ -68,3 +68,165 @@ export const BLOGS_LIST = [
     url: "/",
   },
 ];
+export const DOWNLOAD_LIST = [
+  {
+    title: "Environment Policies",
+    list: [
+      {
+        title: "Environment Sustainability Policy",
+        url: "https://www.lodhagroup.com/sites/default/files/2024-08/Environmental-Sustainability-Policy.pdf",
+      },
+      {
+        title: "Supplier Code of Coduct",
+        url: "https://www.lodhagroup.com/sites/default/files/2024-08/Supplier-Code-of-Conduct.pdf",
+      },
+      {
+        title: "Sustainable Procurement Policy",
+        url: "https://www.lodhagroup.com/sites/default/files/2024-04/Proc_65_Sustainable-Procurement-Policy_Rev0.pdf",
+      },
+    ],
+  },
+  {
+    title: "Social Policies",
+    list: [
+      { title: "Prevention of Personal Harassment at Workplace Policy" },
+      { title: "Prevention of Sexual Harassment at Workplace Policy" },
+      { title: "Employee Handbook" },
+      { title: "Corporate Social Responsibility Policy" },
+      { title: "Human Rights Policy" },
+      { title: "Inclusion and Diversity Policy" },
+      { title: "Stakeholder Engagement Policy" },
+      { title: "Stakeholder Grievance Redressal Policy" },
+      { title: "Employee Health and Safety Policy" },
+      { title: "Equal Opportunities Policy" },
+      { title: "Associates Wellness Handbook" },
+      { title: "Human Rights Risk Management Policy" },
+    ],
+  },
+  {
+    title: "Governance Policies",
+    list: [
+      { title: "Group Tax Policy" },
+      { title: "Nomination and Remuneration Policy" },
+      { title: "Related Party Transactions Policy" },
+      { title: "Code of Conduct for Directors and Senior Management" },
+      { title: "Fair Disclosure Code" },
+      { title: "Policy for Determination of Materiality" },
+      { title: "Insider Trading Code" },
+      { title: "Anti-Corruption / Bribery / Money Laundering Policy" },
+      { title: "Code of Conduct" },
+      { title: "Information Security Policy" },
+      { title: "Shareholders' Rights Charter" },
+      { title: "Transparency and Ethics Policy" },
+      { title: "Whistle Blower Policy" },
+      { title: "Board Diversity Policy" },
+      { title: "Board Evaluation Policy" },
+      { title: "Risk Management Policy" },
+    ],
+  },
+  {
+    title: "Sustainability Reports",
+    list: [
+      { title: "FY 2024" },
+      { title: "FY 2023" },
+      { title: "FY 2022" },
+      { title: "FY 2021" },
+      { title: "ESG Factbook" },
+    ],
+  },
+  {
+    title: "Certifications",
+    list: [
+      {
+        title:
+          "IGBC Green Existing Building Rating System, Lodha Excelus, Mahalaxmi, Mumbai",
+      },
+      {
+        title:
+          "IGBC Green Existing Building Rating System, Lodha iThink A, Palava",
+      },
+      {
+        title:
+          "IGBC Green Existing Building Rating System, Lodha iThink A, Thane",
+      },
+      {
+        title:
+          "IGBC Green Existing Building Rating System, Lodha Xperia Mall, Palava",
+      },
+      { title: "IGBC Green Homes, Lodha Bellavista, Pokhran Road, Thane" },
+      { title: "IGBC Green Homes, Lodha Malabar, Walkeshwar, Mumbai" },
+      {
+        title:
+          "IGBC Green Residential Societies, Lodha Eternis, Andheri East, Mumbai",
+      },
+      {
+        title: "IGBC Green Residential Societies, Lodha Park, Worli, Mumbai",
+      },
+      {
+        title:
+          "IGBC Green Residential Societies, Lodha World Towers (Crest), Worli, Mumbai",
+      },
+      {
+        title:
+          "IGBC Green Affordable Housing, Crown Thane by Lodha, Majiwada, Thane",
+      },
+      { title: "IGBC Green Affordable Housing, Lodha Premier, Palava" },
+      {
+        title:
+          "IGBC Green Affordable Housing, Casa Maxima Phase 1, Mira Road, Mumbai",
+      },
+      {
+        title:
+          "IGBC Green Affordable Housing, Crown Taloja, Taloja Road, Mumbai",
+      },
+      {
+        title:
+          "IGBC Green Affordable Housing, Lodha Amara Phase III, Kolshet, Thane",
+      },
+      { title: "IGBC Green Homes, Lodha NIBM, NIBM Road, Pune" },
+      { title: "IGBC Green Homes, Lodha Acenza, Andheri, Mumbai" },
+      { title: "IGBC Green Homes, Lodha Bel Air, Jogeshwari, Mumbai" },
+      { title: "IGBC Green Homes, Lodha One, Bund Garden, Pune" },
+      { title: "IGBC Green Homes, Lodha Giardino, Kharadi, Pune" },
+      { title: "IGBC Green Logistics Park, Palava" },
+      {
+        title:
+          "IGBC Green Residential Societies, Casa Greenville & Casa Treetops, Lodha Upper Thane",
+      },
+      { title: "IGBC Green Homes, Lodha Sea Face, Worli, Mumbai" },
+      { title: "IGBC Green Homes, Lodha Sterling, Thane" },
+      { title: "IGBC Green Logistics Parks, Lodha Logistics Park, Kurla" },
+      { title: "IGBC Green Residential Societies, Lodha Palava, Palava" },
+      {
+        title:
+          "IGBC Green Residential Societies, New Cuffe Parade, Wadala, Mumbai",
+      },
+      { title: "IGBC Green Residential Societies, Lodha Belmondo, Pune" },
+      { title: "LEED Gold Certificate, iThink - I, Thane" },
+      {
+        title:
+          "LEED Gold Certificate, iThink Techno Campus, Kanjurmarg, Mumbai",
+      },
+      { title: "LEED Gold Certificate, Lodha Excelus, New Cuffe Parade" },
+      {
+        title:
+          "LEED Gold Certificate, Lodha Supremus, Tower B, Lodha Business Park, Thane",
+      },
+      { title: "LEED Gold Certificate, Lodha iThink, Tower A, Palava" },
+      { title: "LEED Gold Pre-Certificate, Lodha iThink, Tower B, Palava" },
+      {
+        title:
+          "LEED Gold Pre-Certificate, Lodha iThink, Tower A, Palava Business District, Palava",
+      },
+      { title: "LEED Gold Pre-Certificate, One Lodha Place, Mumbai" },
+      { title: "LEED v4 BD+C, Lodha Must Have, Lower Parel, Mumbai" },
+      { title: "LEED v4 BD+C, New Cuffe Parade CT5, Wadala, Mumbai" },
+      {
+        title:
+          "BEE 5 Star Energy Rating Certificate, Lodha Xperia Mall, Palava",
+      },
+      { title: "ISO 14001 2015 Certificate" },
+      { title: "ISO 45001 2018 Certificate" },
+    ],
+  },
+];
