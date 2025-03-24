@@ -6,7 +6,7 @@ import NonImgSwiper from "../common/NonImgSwiper";
 
 const Recognition = () => {
   return (
-    <div>
+    <div className="py-12 sm:py-14 md:py-16 lg:py-20 container overflow-hidden">
       <Heading>Recognition</Heading>
       <Paragraph className="pt-2.5">
         Leading in global sustainability benchmarks

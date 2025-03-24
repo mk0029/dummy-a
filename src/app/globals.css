@@ -9,7 +9,7 @@
   --color-wide-gray: #d0d0d0;
   --color-wide-black: #d9d9d9;
   --leading-130: "130%";
-  --leading-143: "143%";
+  --leading-142: "142%";
   --leading-140: "140%";
   --leading-125: "125%";
   --leading-120: "120%";
@@ -83,6 +83,41 @@ body {
 .css-1u9des2-indicatorSeparator {
   display: none !important;
 }
+
+.swiper-next::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #9d7f19;
+  transform: rotate(45deg) translateY(-7px);
+}
+.swiper-next::before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #9d7f19;
+  transform: rotate(-45deg) translateY(7px);
+}
+
+.swiper-prev::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #9d7f19;
+  transform: rotate(45deg) translateY(7px);
+}
+.swiper-prev::before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #9d7f19;
+  transform: rotate(-45deg) translateY(-7px);
+}
+
 @media (max-width: 1023.98px) {
   .navpopupwhite {
     background-color: rgba(235, 235, 234, 0.8) !important;

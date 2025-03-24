@@ -6,7 +6,7 @@ import Cta from "../common/Components/Cta";
 const CreatingImpact = () => {
   return (
     <div>
-      <div className="container py-12 sm:py-14 md:py-16 lg::py-20 text-center">
+      <div className="container py-12 sm:py-14 md:py-16 lg:py-20 text-center">
         <div className="max-w-[800px] mx-auto">
           <Heading className="lg:mt-1">Creating a positive impact</Heading>
           <Paragraph className="mt-2.5">
