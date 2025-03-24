@@ -11,6 +11,8 @@ const PriceRange = ({
 }) => {
   const [selectedType, setSelectedType] = useState("");
   const [isDropOpen, setIsDropOpen] = useState(false);
+  const [isSubDropOpen, setIsSubDropOpen] = useState(-1);
+
   const projectTypes = ["Apartment", "Villas", "Commercial"];
 
   return (

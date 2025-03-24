@@ -20,7 +20,8 @@ const Slider = () => {
         768: { slidesPerView: 2.3, spaceBetween: 0 },
         1024: { slidesPerView: 3, spaceBetween: 0 },
       }}
-      modules={[Autoplay, Navigation, Pagination]}>
+      modules={[Autoplay, Navigation, Pagination]}
+    >
       {BLOGS_LIST.length > 0 &&
         BLOGS_LIST.map(({ url, img, title, id, author }) => (
           <SwiperSlide className="!h-full !flex !grow" key={id}>

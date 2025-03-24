@@ -7,7 +7,7 @@ const Paragraph = ({ className = "", variant = "default", children }) => {
   };
   return (
     <p
-      className={`${className} text-light-gray !leading-143 text-center ${variants[variant]}`}>
+      className={`${className}  text-light-gray !leading-142 text-center ${variants[variant]}`}>
       {children}
     </p>
   );
