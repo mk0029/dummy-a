@@ -31,7 +31,7 @@ const OurProject = ({ setOurProject, activeIndex, setActiveIndex }) => {
                         href={data.link}
                         target={data.external ? "_blank" : "_self"}
                         rel={data.external ? "noopener noreferrer" : ""}
-                        className="text-wide-gray text-base lg:text-base group-hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-red-500 before:bottom-0 before:left-0"
+                        className="text-wide-gray text-base lg:text-base group-hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-[1px] before:bg-dark-orange before:bottom-0 before:left-0"
                       >
                         {data.title}
                       </Link>

@@ -18,7 +18,7 @@ const Hero = () => {
         ></video>
 
         <iframe
-          className="w-full h-full max-lg:min-h-screen object-cover hidden md:block"
+          className="w-full h-full max-md:min-h-screen object-cover hidden md:block"
           src="https://www.youtube.com/embed/sBfD87qRyd8?autoplay=1&mute=1&loop=1&controls=1&rel=0&playlist=sBfD87qRyd8&enablejsapi=1"
           title="Lodha - Creators of the World's Finest Developments"
           allowFullScreen
