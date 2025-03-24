@@ -1,3 +1,4 @@
+import Paragraph from "@/components/common/Components/Paragraph";
 import React from "react";
 
 const NonImgCard = ({ children }) => {

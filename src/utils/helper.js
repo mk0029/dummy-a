@@ -109,24 +109,61 @@ export const PROJECT_ALL_DATA_LIST = [
 ];
 
 export const RECOGNITION_LIST = [
-  `First Real Estate Company in India to have ${(
-    <span className="font-black">SBTi validated Net-Zero Targets </span>
-  )} (both near and long term)`,
-  "Ranked 1st in India with the 6th highest score out of 500 Global Real Estate Development companies in the S&P Global Corporate Sustainability Assessment 2024. Member of Dow Jones Sustainability Indices",
-  "Ranked 1st in Asia with a perfect score of 100/100 in the Residential Development Benchmark category at Global Real Estate Sustainability Benchmark 2024 (GRESB)",
-  "Ranked 1st in India and 5th in Asia with a 5-star rating and a score of 94/100 in GRESB Standing Investments Benchmark 2024",
-  "Ranked 3rd among 300 most influential companies across the globe and adjudged No. 1 in the real estate industry globally in the Urban Benchmark published by the World Benchmarking Alliance",
-  `Included in the ${(
-    <span>FTSE4Good Index Series</span>
-  )}  in the June 2023 index review`,
-  `Winner of the 10th ${(
-    <span>IGBC Green Champion Award</span>
-  )}  under the category of ‘Developer leading the Green Homes Movement in India’`,
+  {
+    id: 0,
+    description: `First Real Estate Company in India to have ${(
+      <span className="font-black">SBTi validated Net-Zero Targets </span>
+    )} (both near and long term)`,
+  },
+
+  {
+    id: 1,
+    description:
+      "Ranked 1st in India with the 6th highest score out of 500 Global Real Estate Development companies in the S&P Global Corporate Sustainability Assessment 2024. Member of Dow Jones Sustainability Indices",
+  },
+  {
+    id: 2,
+    description:
+      "Ranked 1st in Asia with a perfect score of 100/100 in the Residential Development Benchmark category at Global Real Estate Sustainability Benchmark 2024 (GRESB)",
+  },
+  {
+    id: 3,
+    description:
+      "Ranked 1st in India and 5th in Asia with a 5-star rating and a score of 94/100 in GRESB Standing Investments Benchmark 2024",
+  },
+  {
+    id: 4,
+    description:
+      "Ranked 3rd among 300 most influential companies across the globe and adjudged No. 1 in the real estate industry globally in the Urban Benchmark published by the World Benchmarking Alliance",
+  },
+  {
+    id: 5,
+    description: `Included in the ${(
+      <span>FTSE4Good Index Series</span>
+    )}  in the June 2023 index review`,
+  },
+  {
+    id: 6,
+    description: `Winner of the 10th ${(
+      <span>IGBC Green Champion Award</span>
+    )}  under the category of ‘Developer leading the Green Homes Movement in India’`,
+  },
 ];
 
 export const PARTNERSHIPS_LIST = [
-  "Launched Lodha Net Zero Urban Accelerator in partnership with RMI in 2022 ",
-  "Part of Xynteo’s Build Ahead - a business-led coalition, dedicated to collectively tackling the challenge of achieving a net-zero built environment  ",
-  "Ranked 1st in Asia with a perfect score of 100/100 in the Residential Development Benchmark category at Global Real Estate Sustainability Benchmark 2024 (GRESB)",
-  "Signatory to WRI led business charter, value-chain approach to decarbonising the building and construction sector in India ",
+  {
+    id: 0,
+    description:
+      "Launched Lodha Net Zero Urban Accelerator in partnership with RMI in 2022 ",
+  },
+  {
+    id: 1,
+    description:
+      "Part of Xynteo’s Build Ahead - a business-led coalition, dedicated to collectively tackling the challenge of achieving a net-zero built environment  ",
+  },
+  {
+    id: 2,
+    description:
+      "Signatory to WRI led business charter, value-chain approach to decarbonising the building and construction sector in India ",
+  },
 ];

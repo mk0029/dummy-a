@@ -3,10 +3,11 @@ import ImpactCard from "../common/ImpactCard";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Heading from "@/components/common/Components/Heading";
 import { ENVIRONMENTAL_IMPACT_LIST } from "@/utils/defaults";
+import ImpactSlider from "../common/ImpactSlider";
 
 const EnvironmentalImpact = () => {
   return (
-    <div className="container">
+    <div id="environment" className="container">
       <div className="max-w-[800px] mx-auto">
         <Heading className="lg:mt-1">Environmental Impact</Heading>
         <Paragraph className="mt-2.5">
@@ -16,15 +17,15 @@ const EnvironmentalImpact = () => {
         </Paragraph>
       </div>
       <div className="mt-5 sm:mt-6 lg:mt-8">
-        <div className="flex">
+        <ImpactSlider list={ENVIRONMENTAL_IMPACT_LIST} />
+        {/*           
           {ENVIRONMENTAL_IMPACT_LIST.map((obj, index) => (
             <div key={`environment-card-${index + 1}`} className="w-4/12 px-2">
               <ImpactCard src={obj.img} url={obj.url}>
                 {obj.description}
               </ImpactCard>
             </div>
-          ))}
-        </div>
+          ))} */}
       </div>
     </div>
   );
