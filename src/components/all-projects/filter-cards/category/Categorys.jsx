@@ -8,7 +8,7 @@ import PriceRange from "./PriceRange";
 const Categorys = () => {
   return (
     <div className="w-full flex justify-between items-center">
-      <div className="flex gap-x-6">
+      <div className="flex gap-x-6 min-w-[100px] overflow-auto max-lg:pr-5">
         <ProjectType />
         <CitySelector />
         <Loyalty />

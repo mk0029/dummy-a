@@ -1,7 +1,21 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+const outSideClickHandler = (callback) => {
+  const ref = useRef(null);
 
-const outSideClickHandler = () => {
-  return <div>outSideClickHandler</div>;
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        if (callback) callback();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [callback]);
+
+  return ref;
 };
 
 export default outSideClickHandler;

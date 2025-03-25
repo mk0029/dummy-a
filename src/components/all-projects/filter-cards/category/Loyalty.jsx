@@ -1,6 +1,7 @@
 "use client";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Icons from "@/components/common/Icons";
+import outSideClickHandler from "@/utils/outSideClickHandler";
 import { useState } from "react";
 
 const Loyalty = ({ className = "", title = "" }) => {
@@ -22,9 +23,11 @@ const Loyalty = ({ className = "", title = "" }) => {
   //       : [...prev, type]
   //   );
   // };
-
+  const dropRef = outSideClickHandler(() => {
+    setIsDropOpen(false);
+  });
   return (
-    <div className="relative z-50">
+    <div ref={dropRef} className="relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer min-w-[125px]  ${className}`}>
