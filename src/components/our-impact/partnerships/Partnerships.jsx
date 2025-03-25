@@ -1,17 +1,56 @@
-import Heading from "@/components/common/Heading";
-import Paragraph from "@/components/common/Paragraph";
-import React from "react";
-import NonImgSwiper from "../common/NonImgSwiper";
+"use client";
+import Heading from "@/components/common/Components/Heading";
+import Paragraph from "@/components/common/Components/Paragraph";
 import { PARTNERSHIPS_LIST } from "@/utils/helper";
+import React from "react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Partnerships = () => {
   return (
-    <div className="py-12 sm:py-14 md:py-16 lg:py-20 container overflow-hidden">
-      <Heading>Recognition</Heading>
-      <Paragraph className="pt-2.5">
-        Leading in global sustainability benchmarks
-      </Paragraph>
-      <NonImgSwiper list={PARTNERSHIPS_LIST} className="block" />
+    <div className="max-w-[1200px] max-xl:container xl:px-5 mx-auto pb-12 sm:pb-14 md:pb-16 lg:pb-20 relative flex flex-col justify-center items-center">
+      <div className="w-full text-center flex flex-col mb-14 max-lg:mb-10">
+        <Heading>Partnerships</Heading>
+        <Paragraph className="mt-2.5">
+          Strategic partnerships to lead the change in the industry
+        </Paragraph>
+      </div>
+      <Swiper
+        className="!w-full mySwiper !flex !justify-center lg:max-w-[876px]"
+        navigation={{
+          nextEl: ".next-btn",
+          prevEl: ".prev-btn",
+        }}
+        slidesPerView={3}
+        spaceBetween={0}
+        pagination={false}
+        breakpoints={{
+          320: { slidesPerView: 1.11, spaceBetween: 0 },
+          768: { slidesPerView: 1.3, spaceBetween: 0 },
+          1024: { slidesPerView: 3, spaceBetween: 0 },
+        }}
+        modules={[Autoplay, Navigation, Pagination]}
+      >
+        {PARTNERSHIPS_LIST.map((obj, id) => (
+          <SwiperSlide
+            key={id}
+            className={`w-[292.5px] max-lg:w-full px-10 text-start border-dark-orange min-h-[100px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
+              id === 2 ? "border-0" : "border-r-[0.5px]"
+            }`}
+          >
+            <Paragraph className="text-start !leading-5 lg:max-w-[212px]">
+              {obj.description}
+            </Paragraph>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className="mt-14 flex justify-center items-center gap-10 max-lg:mt-12 lg:hidden">
+        <div className="prev-btn size-[15px] relative cursor-pointer"></div>
+        <div className="next-btn size-[15px] relative cursor-pointer"></div>
+      </div>
     </div>
   );
 };

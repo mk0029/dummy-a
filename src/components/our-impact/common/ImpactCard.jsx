@@ -7,7 +7,7 @@ const ImpactCard = ({ src = "", children, url }) => {
   return (
     <div className="flex flex-col h-full justify-between">
       <div>
-        <div className="w-full aspect-[1.39] relative overflow-hidden group">
+        <div className="w-full aspect-[1.39] relative overflow-hidden group max-sm:max-h-[186px]">
           <Image
             src={src || "/assets/images/impact/webp/environmental-img-1.webp"}
             width={373.99}

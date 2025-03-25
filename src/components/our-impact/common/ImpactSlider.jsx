@@ -15,7 +15,7 @@ const ImpactSlider = ({ list }) => {
       spaceBetween={0}
       pagination={{ clickable: true, dynamicBullets: true }}
       breakpoints={{
-        320: { slidesPerView: 1.3, spaceBetween: 0 },
+        320: { slidesPerView: 1.11, spaceBetween: 0 },
         768: { slidesPerView: 2.3, spaceBetween: 0 },
         1024: { slidesPerView: 3, spaceBetween: 0 },
       }}
