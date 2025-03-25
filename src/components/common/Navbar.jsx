@@ -88,12 +88,11 @@ const NavBar = () => {
                 href="/our-impact">
                 Our Impact
               </Link>
-              <Link
+              <p
                 onClick={() => {
                   setOurProject(!ourProject), setSearchNavBar(false);
                 }}
-                className="uppercase text-white flex gap-1 text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0"
-                href="/">
+                className="uppercase text-white flex gap-1 text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0">
                 Our Projects
                 <span
                   className={`transform transition-transform ms-2 ${
@@ -101,7 +100,7 @@ const NavBar = () => {
                   }`}>
                   <Icons icon={"downArrow"} />
                 </span>
-              </Link>
+              </p>
             </div>
           </div>
           <div className="hidden lg:flex items-center gap-7">

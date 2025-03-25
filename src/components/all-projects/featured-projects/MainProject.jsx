@@ -28,7 +28,7 @@ const MainProject = () => {
               i >= 4 && !showAll
                 ? "opacity-0 h-0 overflow-hidden"
                 : "opacity-100 h-auto"
-            } transition-all duration-500`}>
+            } transition-all duration-500 group cursor-pointer`}>
             <Card image={obj.image} title={obj.title} />
           </div>
         ))}

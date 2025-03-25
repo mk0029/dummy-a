@@ -26,7 +26,7 @@ const PriceRange = ({ className = "" }) => {
   });
 
   return (
-    <div ref={dropRef} className="relative z-50">
+    <div ref={dropRef} className="sm:relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[140px] ${className}`}>
@@ -39,14 +39,14 @@ const PriceRange = ({ className = "" }) => {
       </div>
 
       <div
-        className={`absolute mt-5 right-0 bg-white shadow-md min-w-[350px] transition-all duration-300 ease-linear ${
+        className={`absolute mt-5 right-0 bg-white shadow-mdc w-full sm:min-w-[350px] transition-all duration-300 ease-linear ${
           !isDropOpen && "opacity-0 mt-8 pointer-events-none"
         }`}>
         <div
           className={`absolute shadow-[0_0px_3px_0px_rgba(0,0,0,0.2)] right-0.5 -top-1 w-3.5 h-2.5 bg-[#f8f8f8] -rotate-45 -z-10 transition-all ease-linear duration-300 `}></div>
         <div className="bg-white p-5 w-full flex gap-x-4">
           {["Min", "Max"].map((label, idx) => (
-            <div key={idx} className="min-w-[147px] relative">
+            <div key={idx} className="min-w-[120px] sm:min-w-[147px] relative">
               <Paragraph className="mb-2 !text-start">
                 {label}. Price (INR)
               </Paragraph>

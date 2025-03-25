@@ -24,7 +24,7 @@ const Typology = ({
     setIsDropOpen(false);
   });
   return (
-    <div ref={dropRef} className="relative z-50">
+    <div ref={dropRef} className="sm:relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[105px] ${className}`}>
