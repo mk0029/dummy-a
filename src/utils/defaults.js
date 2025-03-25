@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const ENVIRONMENTAL_IMPACT_LIST = [
   {
     id: 1,
@@ -227,6 +229,240 @@ export const DOWNLOAD_LIST = [
       },
       { title: "ISO 14001 2015 Certificate" },
       { title: "ISO 45001 2018 Certificate" },
+    ],
+  },
+];
+
+export const FEATURED_PROJECTS = [
+  {
+    title: "lodha world towers",
+    location: "mumbai",
+    area: "worli",
+    image: "/projects/residential-property-in-worli/lodha-world-towers",
+    details: [
+      {
+        image: "/assets/images/allproject/webp/details-hero.webp",
+        about: {
+          propartyInfo: {
+            propartyLogo:
+              "/assets/images/allproject/details/png/lodha-logo.png",
+            title:
+              "A sculptural statement so powerful, it has transformed Mumbai's skyline forever.",
+            details: [
+              {
+                title:
+                  "A private world of unimaginable luxury, spanning 17 landscaped acres",
+                description:
+                  "A magnificent 17-acre estate ensconced in the Mumbai Mile, the glittering stretch that comprises some of Mumbai’s finest residences, business spaces and luxury hotels, Lodha World Towers embodies global standards in luxury. The grand landscaped entrance courtyard extends over almost 100,000 sq. ft.",
+                image: "/assets/images/allproject/details/webp/acres.webp",
+              },
+              {
+                title:
+                  "  A private world of unimaginable luxury, spanning 17 landscaped acres",
+                description:
+                  "Armani/ Casa, one of the world's best-known names in interior design; Pei Cobb Freed, world-renowned architects; LERA, globally-acclaimed structural engineers; Ken Smith, internationally awarded landscape designer. Lodha World Towers represents a historic meeting of some of the world’s greatest legends.",
+                image: "/assets/images/allproject/details/webp/landmark.webp",
+              },
+            ],
+          },
+          lifeStyle: {
+            title: "Life at Lodha World Towers",
+            description:
+              "Lodha World Towers hosts Club W: 5 levels of entertainment, sports, and endless diversions. Each level of Club W is dedicated to a different and wholly immersive experience. Here you will find a top-notch gym to work out in and a spa that will help you unwind. A private theatre for evenings with close friends, and a stately ballroom for grander events. An indoor pool with cabanas made for privacy and leisure, and an outdoor poolside with a separate children’s pool for lively weekends. As varied as these spaces are, they all have that air of ritzy elegance that permeates through Lodha World Towers.",
+            prossession: "ready to move in",
+            featuers: [
+              {
+                image: "/assets/images/allproject/details/png/movie.png",
+                title: "Private Theatre",
+              },
+              {
+                image: "/assets/images/allproject/details/png/party.png",
+                title: "Grand Ballroom",
+              },
+              {
+                image: "/assets/images/allproject/details/png/left-arrow.png",
+                title: "Fitness Centre",
+              },
+              {
+                image: "/assets/images/allproject/details/png/flower.png",
+                title: "J Wellness Spa",
+              },
+              {
+                image: "/assets/images/allproject/details/png/racket.png",
+                title: "Multipurpose Indoor Court",
+              },
+              {
+                image: "/assets/images/allproject/details/png/run.png",
+                title: "Athletics Track",
+              },
+              {
+                image: "/assets/images/allproject/details/png/football.png",
+                title: "Kids Playroom",
+              },
+            ],
+            showCase: [
+              {
+                image: "/assets/images/allproject/details/webp/pool.webp",
+                id: 1,
+              },
+              {
+                image: "/assets/images/allproject/details/webp/basketball.webp",
+                id: 2,
+              },
+              {
+                image: "/assets/images/allproject/details/webp/ground.webp",
+                id: 3,
+              },
+            ],
+            plans: {
+              title: "Plans",
+              description: "Take a look at our meticulously planned layouts",
+              info: [
+                {
+                  title: "3bhk",
+                  list: [
+                    {
+                      title: "3 Bed Residence",
+                      image: "",
+                    },
+                    {
+                      title: "3 Bed Residence Finished W1",
+                      image: "",
+                    },
+                    {
+                      title: "3 Bed Redsidence Finished W2",
+                      image: "",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          neighbourhood: {
+            title: "Explore the neighbourhood",
+            description:
+              "A magnificent 17-acre estate ensconced in the Mumbai Mile, the glittering stretch that comprises some of Mumbai’s finest residences, business spaces, and luxury hotels, Lodha World Towers embodies global standards in luxury. The Lodha Place is an elegant boulevard lined with palm trees, boasting some of the finest gourmet restaurants and a secondary route to give you seamless connectivity to the Sea Link, SOBO, and other suburbs.",
+            nearestLocations: [
+              {
+                title: "Bandra-Worli Sea Link",
+                image: "/assets/images/allproject/png/road.png",
+                durationInMinuts: 20,
+              },
+              {
+                title: "Mumbai International Airport",
+                image: "/assets/images/allproject/png/airpoart.png",
+                durationInMinuts: 30,
+              },
+              {
+                title: "Mumbai International Airport",
+                image: "Peninsula Corporate Park",
+                durationInMinuts: 10,
+              },
+              {
+                title: "Palladium & High Street Phoenix",
+                image: "/assets/images/allproject/png/shop.png",
+                durationInMinuts: 5,
+              },
+            ],
+            note: "All distances stated in minutes are estimated travel time on 2-wheelers during normal traffic.",
+          },
+          finestDevelopments: {
+            title: "Creating the world’s finest developments",
+            collection: [
+              {
+                image:
+                  "/assets/images/allproject/details/webp/finest-dev-1.webp",
+                title:
+                  "Recognizing the profound impact of design and service on well-being, we create thoughtful and purposeful living spaces.",
+              },
+              {
+                image:
+                  "/assets/images/allproject/details/webp/finest-dev-2.webp",
+                title:
+                  "Committed to surpassing expectations, our carefully crafted events and experiences ensure an enriched and empowered lifestyle.",
+              },
+              {
+                image:
+                  "/assets/images/allproject/details/webp/finest-dev-3.webp",
+                title:
+                  "We are creating homes and workspaces for an ever-changing tomorrow, where luxury and sustainability can co-exist in perfect harmony.",
+              },
+            ],
+          },
+          queries: {
+            title: "Most common queries",
+            queriesList: [
+              {
+                title: "Where are Lodha World Towers located?",
+                description:
+                  "Lodha World Towers occupies pride of place on the Mumbai Mile – a glittering stretch where landmark residential and commercial developments rub shoulders with the finest hotels, luxury retail stores, and premium entertainment hubs, bordered by the lush Mahalaxmi Race Course. Lodha World Towers address: Lodha World Towers, Lodha Place, Shankar Rao Naram Path, Worli, Mumbai, Maharashtra 400 013.",
+              },
+              {
+                title:
+                  "What are the different floor plans and unit plans available at Lodha World Towers?",
+                description:
+                  "Lodha World Towers offers luxury 3, 4 & 5 bed residences in the heart of South Mumbai.",
+              },
+              {
+                title:
+                  "How well is Lodha World Towers connected to other parts of the city?",
+                description:
+                  "A rare living experience demands the right setting. Lodha World Towers chose the Mumbai mile. The estate offers swift access to prime arterial roads via Lodha Place and a secondary access route gives you access to the Sea Link. This luxury project in Mumbai enjoys seamless connectivity to the city and the suburbs.",
+              },
+              {
+                title:
+                  "What social and retail infrastructures are present near Lodha World Towers?",
+                description:
+                  "Lodha World Towers occupies pride of place on the Mumbai Mile – a glittering stretch where landmark residential and commercial developments rub shoulders with the finest hotels, luxury retail stores and premium entertainment hubs, bordered by the lush Mahalaxmi Race Course. Bandra-Worli Sea Link ~20 mins Domestic & International Airports ~30 mins Peninsula Corporate Park ~10 mins Palladium & High Street Phoenix ~5 mins",
+              },
+            ],
+            rera: {
+              title: "Lodha World Towers RERA",
+              description: (
+                <>
+                  <span>
+                    Lodha World Towers : The project has been registered via
+                    MahaRERA registration numbers: P51900008345, P51900008962
+                    and is available on the website
+                    <Link
+                      target="_blank"
+                      rel="noopener"
+                      href="https://maharera.mahaonline.gov.in">
+                      https://maharera.mahaonline.gov.in
+                    </Link>
+                    &nbsp;under registered projects.
+                  </span>
+                  <span>
+                    RERA is an iconic act that aims to bring transparency and
+                    efficiency in the real estate sector, protect consumers, and
+                    fast track dispute resolution. It is an act that promotes
+                    good governance in the market, which helps customers get
+                    more information about projects and reduces the risk
+                    associated with the purchase.
+                  </span>
+                  <span>
+                    The MahaRERA Registration Number is the mark of integrity,
+                    and all new Lodha Group projects are RERA compliant; see a
+                    list of our RERA projects here.
+                  </span>
+                  To find out more about what is RERA,
+                  <Link target="_blank" rel="noopener" href="/">
+                    &nbsp;Click Here.
+                  </Link>
+                </>
+              ),
+              image: "/assets/images/allproject/details/webp/qr-code.jpg",
+            },
+          },
+        },
+        amenities: "",
+        location: "",
+        plans: "",
+        prices: "",
+        gallery: "",
+        enquire: "",
+        chat: "",
+      },
     ],
   },
 ];

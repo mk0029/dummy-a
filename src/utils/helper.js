@@ -111,9 +111,13 @@ export const PROJECT_ALL_DATA_LIST = [
 export const RECOGNITION_LIST = [
   {
     id: 0,
-    description: `First Real Estate Company in India to have ${(
-      <span className="font-black">SBTi validated Net-Zero Targets </span>
-    )} (both near and long term)`,
+    description: (
+      <>
+        First Real Estate Company in India to have
+        {<span className="font-black"> SBTi validated Net-Zero Targets </span>}
+        (both near and long term)
+      </>
+    ),
   },
 
   {
@@ -170,69 +174,76 @@ export const PARTNERSHIPS_LIST = [
 export const FEATURED_PROJECT_DATA_LIST = [
   {
     image: "/assets/images/allproject/webp/lodha-world-tower.webp",
-    title: "Lodha World Towers | Mumbai"
+    title: "Lodha World Towers | Mumbai",
   },
   {
     image: "/assets/images/allproject/webp/lodha-cullinan.webp",
-    title: "Lodha Cullinan | Mumbai"
+    title: "Lodha Cullinan | Mumbai",
   },
   {
     image: "/assets/images/allproject/webp/lodha-vero.webp",
-    title: "Lodha Vero | Mumbai"
+    title: "Lodha Vero | Mumbai",
   },
   {
     image: "/assets/images/allproject/webp/lodha-reserve.webp",
-    title: "The Reserve by Lodha Belmondo | Mumbai-Pune Expressway"
+    title: "The Reserve by Lodha Belmondo | Mumbai-Pune Expressway",
   },
   {
     image: "/assets/images/allproject/webp/lodha-sterling.webp",
-    title: "Lodha Sterling | Thane"
+    title: "Lodha Sterling | Thane",
   },
   {
     image: "/assets/images/allproject/webp/lodha-golfview.webp",
-    title: "Lodha Golfview | Palava"
+    title: "Lodha Golfview | Palava",
   },
   {
     image: "/assets/images/allproject/webp/lodha-villa-royale.webp",
-    title: "Lodha Villa Royale Gold | Thane"
+    title: "Lodha Villa Royale Gold | Thane",
   },
   {
     image: "/assets/images/allproject/webp/lodha-azur.webp",
-    title: "Lodha Azur | Bangalore"
+    title: "Lodha Azur | Bangalore",
   },
-]
+];
 
-export const DETAIL_LINK_BAR_DATA = ["About", "Amenities", "Location", "Plans", "Prices", "Gallery"];
+export const DETAIL_LINK_BAR_DATA = [
+  "About",
+  "Amenities",
+  "Location",
+  "Plans",
+  "Prices",
+  "Gallery",
+];
 export const DETAIL_ACTION_LINKS = ["Enquire", "Chat"];
 
 export const DETAIL_LIFE_DATA_LIST = [
   {
     image: "/assets/images/allproject/details/png/movie.png",
-    title:"Private Theatre",
+    title: "Private Theatre",
   },
   {
     image: "/assets/images/allproject/details/png/party.png",
-    title:"Grand Ballroom",
+    title: "Grand Ballroom",
   },
   {
     image: "/assets/images/allproject/details/png/left-arrow.png",
-    title:"Fitness Centre",
+    title: "Fitness Centre",
   },
   {
     image: "/assets/images/allproject/details/png/flower.png",
-    title:"J Wellness Spa",
+    title: "J Wellness Spa",
   },
   {
     image: "/assets/images/allproject/details/png/racket.png",
-    title:"Multipurpose Indoor Court",
+    title: "Multipurpose Indoor Court",
   },
   {
     image: "/assets/images/allproject/details/png/run.png",
-    title:"Athletics Track",
+    title: "Athletics Track",
   },
   {
     image: "/assets/images/allproject/details/png/football.png",
-    title:"Kids Playroom",
+    title: "Kids Playroom",
   },
 ];
 

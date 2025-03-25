@@ -85,8 +85,11 @@ body {
 .css-1u9des2-indicatorSeparator {
   display: none !important;
 }
-
-.swiper-next::after {
+.swiper-button-lock {
+  display: flex !important;
+}
+.next-button::after,
+.next-btn::after {
   position: absolute;
   content: " ";
   width: 100%;
@@ -94,7 +97,8 @@ body {
   background-color: #9d7f19;
   transform: rotate(45deg) translateY(-7px);
 }
-.swiper-next::before {
+.next-button::before,
+.next-btn::before {
   position: absolute;
   content: " ";
   width: 100%;
@@ -103,7 +107,8 @@ body {
   transform: rotate(-45deg) translateY(7px);
 }
 
-.swiper-prev::after {
+.prev-button::after,
+.prev-btn::after {
   position: absolute;
   content: " ";
   width: 100%;
@@ -111,7 +116,8 @@ body {
   background-color: #9d7f19;
   transform: rotate(45deg) translateY(7px);
 }
-.swiper-prev::before {
+.prev-button::before,
+.prev-btn::before {
   position: absolute;
   content: " ";
   width: 100%;

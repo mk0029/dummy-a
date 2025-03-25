@@ -12,9 +12,10 @@ const AnimatedHero = ({ className, mainImage }) => {
 
   return (
     <div
-      className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-hidden ${className}`}
-    >
+      className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-hidden ${className}`}>
       <Image
+        priority
+        loading="eager"
         src={`${mainImage}`}
         alt="hero background"
         width={1440}
@@ -26,8 +27,7 @@ const AnimatedHero = ({ className, mainImage }) => {
       <div
         className={`absolute h-1/2 w-full z-10 bg-light-orange bottom-0 left-0 no-default-smooth transition-all ease-linear duration-700 ${
           isLayerVisible ? "translate-y-0" : "translate-y-full"
-        }`}
-      ></div>
+        }`}></div>
     </div>
   );
 };

@@ -9,7 +9,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         height="20"
         viewBox="0 0 26 20"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M4 17.5V15H22V17.5H4ZM4 11.25V8.75H22V11.25H4ZM4 5V2.5H22V5H4Z"
           fill="white"
@@ -37,7 +38,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         width="12"
         height="7"
         viewBox="0 0 12 7"
-        fill="none">
+        fill="none"
+      >
         <path
           className={stroke}
           id="Icon"
@@ -55,7 +57,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         width="16"
         height="16"
         viewBox="0 0 16 16"
-        fill="none">
+        fill="none"
+      >
         <path
           className={fill}
           id="Vector"
@@ -69,7 +72,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="#9D7F19"
           d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
@@ -81,7 +85,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="#9D7F19"
           d="M13.823 12.234c-.016.35-.13.688-.331.975a1.7 1.7 0 0 1-.829.643a1.77 1.77 0 0 1-1.053.088a1.8 1.8 0 0 1-.926-.516a1.9 1.9 0 0 1-.468-.976a1.76 1.76 0 0 1 .127-1.043c.144-.327.38-.606.682-.8c.307-.19.662-.291 1.024-.292c.477.026.926.232 1.258.575a1.85 1.85 0 0 1 .516 1.346"
@@ -101,7 +106,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 16 16">
+        viewBox="0 0 16 16"
+      >
         <path
           fill="#9D7F19"
           d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"
@@ -113,7 +119,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="#9D7F19"
           d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
@@ -125,7 +132,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="#9D7F19"
           d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
@@ -138,7 +146,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="16px"
         height="16px"
-        viewBox="0 0 15 15">
+        viewBox="0 0 15 15"
+      >
         <path
           className="group-hover:fill-black duration-300"
           fill="white"
@@ -152,7 +161,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="white"
           d="M3 10h11v2H3zm0-2h11V6H3zm0 8h7v-2H3zm15.01-3.13l.71-.71a.996.996 0 0 1 1.41 0l.71.71c.39.39.39 1.02 0 1.41l-.71.71zm-.71.71l-5.3 5.3V21h2.12l5.3-5.3z"
@@ -165,7 +175,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="white"
           d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
@@ -178,7 +189,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="20"
-        viewBox="0 0 15 15">
+        viewBox="0 0 15 15"
+      >
         <path
           fill="white"
           fillRule="evenodd"
@@ -192,7 +204,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="20"
-        viewBox="0 0 16 16">
+        viewBox="0 0 16 16"
+      >
         <path
           className={className}
           fill="white"
@@ -212,7 +225,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="20"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <path
           fill="#6D6E70"
           d="m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z"
@@ -224,7 +238,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="10"
         height="20"
-        viewBox="0 0 12 24">
+        viewBox="0 0 12 24"
+      >
         <defs>
           <path
             id="weuiArrowOutlined0"
@@ -245,17 +260,20 @@ const Icons = ({ icon, className, stroke, fill }) => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24"
+      >
         <g
           fill="none"
           stroke="white"
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth="2">
+          strokeWidth="2"
+        >
           <path
             strokeDasharray="64"
             strokeDashoffset="64"
-            d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+            d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"
+          >
             <animate
               fill="freeze"
               attributeName="stroke-dashoffset"
@@ -266,7 +284,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
           <path
             strokeDasharray="4"
             strokeDashoffset="4"
-            d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
+            d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72"
+          >
             <animate
               fill="freeze"
               attributeName="stroke-dashoffset"
@@ -278,7 +297,8 @@ const Icons = ({ icon, className, stroke, fill }) => {
           <path
             strokeDasharray="6"
             strokeDashoffset="6"
-            d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
+            d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65"
+          >
             <animate
               fill="freeze"
               attributeName="stroke-dashoffset"

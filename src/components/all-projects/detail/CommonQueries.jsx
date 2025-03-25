@@ -69,37 +69,7 @@ const CommonQueries = () => {
                 src="/assets/images/allproject/details/webp/qr-code.jpg"
                 alt="rera-content"
               />
-              <Paragraph className="!text-start para-detail-rera max-w-[875px]">
-                <span>
-                  Lodha World Towers : The project has been registered via
-                  MahaRERA registration numbers: P51900008345, P51900008962 and
-                  is available on the website{" "}
-                  <Link
-                    target="_blank"
-                    rel="noopener"
-                    href="https://maharera.mahaonline.gov.in">
-                    https://maharera.mahaonline.gov.in
-                  </Link>
-                  &nbsp;under registered projects.
-                </span>
-                <span>
-                  RERA is an iconic act that aims to bring transparency and
-                  efficiency in the real estate sector, protect consumers, and
-                  fast track dispute resolution. It is an act that promotes good
-                  governance in the market, which helps customers get more
-                  information about projects and reduces the risk associated
-                  with the purchase.
-                </span>
-                <span>
-                  The MahaRERA Registration Number is the mark of integrity, and
-                  all new Lodha Group projects are RERA compliant; see a list of
-                  our RERA projects here.
-                </span>
-                To find out more about what is RERA,
-                <Link target="_blank" rel="noopener" href="/">
-                  &nbsp;Click Here.
-                </Link>
-              </Paragraph>
+              <Paragraph className="!text-start para-detail-rera max-w-[875px]"></Paragraph>
             </div>
           </Accordion>
         </div>

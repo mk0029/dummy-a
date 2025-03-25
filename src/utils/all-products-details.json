@@ -1,0 +1,62 @@
+{
+  "title": "lodha world towers",
+  "location": "mumbai",
+  "area": "worli",
+  "image": "/projects/residential-property-in-worli/lodha-world-towers",
+  "details": [
+    {
+      "image": "/assets/images/allproject/webp/details-hero.webp",
+      "about": {
+        "propertyInfo": {
+          "propertyLogo": "/assets/images/allproject/details/png/lodha-logo.png",
+          "title": "A sculptural statement so powerful, it has transformed Mumbai's skyline forever.",
+          "details": [
+            {
+              "title": "A private world of unimaginable luxury, spanning 17 landscaped acres",
+              "description": "A magnificent 17-acre estate ensconced in the Mumbai Mile, the glittering stretch that comprises some of Mumbai’s finest residences, business spaces and luxury hotels, Lodha World Towers embodies global standards in luxury. The grand landscaped entrance courtyard extends over almost 100,000 sq. ft.",
+              "image": "/assets/images/allproject/details/webp/acres.webp"
+            },
+            {
+              "title": "A private world of unimaginable luxury, spanning 17 landscaped acres",
+              "description": "Armani/ Casa, one of the world's best-known names in interior design; Pei Cobb Freed, world-renowned architects; LERA, globally-acclaimed structural engineers; Ken Smith, internationally awarded landscape designer. Lodha World Towers represents a historic meeting of some of the world’s greatest legends.",
+              "image": "/assets/images/allproject/details/webp/landmark.webp"
+            }
+          ]
+        },
+        "lifeStyle": {
+          "title": "Life at Lodha World Towers",
+          "description": "Lodha World Towers hosts Club W: 5 levels of entertainment, sports, and endless diversions. Each level of Club W is dedicated to a different and wholly immersive experience. Here you will find a top-notch gym to work out in and a spa that will help you unwind. A private theatre for evenings with close friends, and a stately ballroom for grander events. An indoor pool with cabanas made for privacy and leisure, and an outdoor poolside with a separate children’s pool for lively weekends. As varied as these spaces are, they all have that air of ritzy elegance that permeates through Lodha World Towers.",
+          "possession": "ready to move in",
+          "features": [
+            { "image": "/assets/images/allproject/details/png/movie.png", "title": "Private Theatre" },
+            { "image": "/assets/images/allproject/details/png/party.png", "title": "Grand Ballroom" },
+            { "image": "/assets/images/allproject/details/png/left-arrow.png", "title": "Fitness Centre" },
+            { "image": "/assets/images/allproject/details/png/flower.png", "title": "J Wellness Spa" },
+            { "image": "/assets/images/allproject/details/png/racket.png", "title": "Multipurpose Indoor Court" },
+            { "image": "/assets/images/allproject/details/png/run.png", "title": "Athletics Track" },
+            { "image": "/assets/images/allproject/details/png/football.png", "title": "Kids Playroom" }
+          ],
+          "showCase": [
+            { "image": "/assets/images/allproject/details/webp/pool.webp", "id": 1 },
+            { "image": "/assets/images/allproject/details/webp/basketball.webp", "id": 2 },
+            { "image": "/assets/images/allproject/details/webp/ground.webp", "id": 3 }
+          ],
+          "plans": {
+            "title": "Plans",
+            "description": "Take a look at our meticulously planned layouts",
+            "info": [
+              {
+                "title": "3bhk",
+                "list": [
+                  { "title": "3 Bed Residence", "image": "" },
+                  { "title": "3 Bed Residence Finished W1", "image": "" },
+                  { "title": "3 Bed Residence Finished W2", "image": "" }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

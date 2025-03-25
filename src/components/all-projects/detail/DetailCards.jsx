@@ -1,3 +1,4 @@
+import AnimatedImageCard from "@/components/common/Components/AnimatedImageCard";
 import Heading from "@/components/common/Heading";
 import Paragraph from "@/components/common/Paragraph";
 import Image from "next/image";
@@ -19,14 +20,15 @@ const DetalCards = () => {
           skyline forever.
         </Paragraph>
         <div className="flex max-lg:flex-col w-full pt-[30px]">
-          <div className="w-full lg:max-w-[526px] lg:max-h-[467px] aspect-[526/467] relative">
-            <Image
-              className="object-cover"
-              src="/assets/images/allproject/details/webp/acres.webp"
-              alt="details"
-              fill
-            />
-          </div>
+          <AnimatedImageCard
+            onceTrue
+            layerSpeed={500}
+            threshold={0.4}
+            width={526}
+            height={467}
+            className="lg:max-w-[526px] lg:max-h-[467px]"
+            src="/assets/images/allproject/details/webp/acres.webp"
+          />
           <div className="lg:pl-[117px] w-full max-w-[800px] max-lg:mt-4 flex flex-col justify-center lg:max-w-[643px]">
             <Heading className="max-lg:!text-xl lg:max-w-[400px]">
               A private world of unimaginable luxury, spanning 17 landscaped
@@ -56,14 +58,15 @@ const DetalCards = () => {
               legends.
             </Paragraph>
           </div>
-          <div className="w-full lg:max-w-[526px] lg:max-h-[467px] aspect-[526/467] relative">
-            <Image
-              className="object-cover"
-              src="/assets/images/allproject/details/webp/landmark.webp"
-              alt="details"
-              fill
-            />
-          </div>
+          <AnimatedImageCard
+            onceTrue
+            layerSpeed={500}
+            threshold={0.4}
+            width={526}
+            height={467}
+            className="lg:max-w-[526px] lg:max-h-[467px]"
+            src="/assets/images/allproject/details/webp/landmark.webp"
+          />
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import AnimatedImageCard from "@/components/common/Components/AnimatedImageCard";
 import Heading from "@/components/common/Components/Heading";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Image from "next/image";
@@ -27,17 +28,13 @@ const FinestDevelopments = () => {
       <div className="flex w-full mt-6 lg:mt-8 -mx-2">
         {list.map((obj, index) => (
           <div className="w-4/12 px-2 group cursor-pointer">
-            <div className="aspect-[1.31] w-full relative overflow-hidden">
-              <Image
-                src={obj.image}
-                width={274}
-                height={386}
-                quality={100}
-                sizes="100vw"
-                alt="finest dev"
-                className="absolute top-0 left-0 h-full w-full object-center object-cover group-hover:scale-110  transition-all ease-linear duration-300"
-              />
-            </div>
+            <AnimatedImageCard
+              key={index}
+              src={obj.image}
+              width={374}
+              height={285.48}
+              disableAnimation
+            />
             <Paragraph variant="secondary" className="mt-2.5 md:mt-4">
               {obj.title}
             </Paragraph>

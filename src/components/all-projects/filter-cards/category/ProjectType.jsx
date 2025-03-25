@@ -24,7 +24,7 @@ const ProjectType = ({
     setIsDropOpen(false);
   });
   return (
-    <div ref={dropRef} className="relativell z-[99]">
+    <div ref={dropRef} className="sm:relative z-[99]">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[105px] ${className}`}>
