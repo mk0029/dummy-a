@@ -3,14 +3,19 @@ import React from "react";
 import LinkBar from "./LinkBar";
 import DetailCards from "./DetailCards";
 import ExploreNeighbourhood from "./ExploreNeighbourhood";
+import Gallery from "./Gallery";
 
 const DetailMain = () => {
   return (
     <div>
-      <AnimatedHero className=" lg:max-h-[665px]" />
+      <AnimatedHero
+        mainImage="/assets/images/allproject/webp/details-hero.webp"
+        className=" lg:max-h-[665px]"
+      />
       <LinkBar />
       <DetailCards />
       <ExploreNeighbourhood />
+      <Gallery/>
     </div>
   );
 };

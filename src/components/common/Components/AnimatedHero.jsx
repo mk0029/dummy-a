@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const AnimatedHero = ({ className }) => {
+const AnimatedHero = ({ className, mainImage }) => {
   const [isLayerVisible, setIsLayerVisible] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -11,9 +11,11 @@ const AnimatedHero = ({ className }) => {
   }, []);
 
   return (
-    <div className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-hidden ${className}`}>
+    <div
+      className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-hidden ${className}`}
+    >
       <Image
-        src="/assets/images/impact/webp/hero-background.webp"
+        src={`${mainImage}`}
         alt="hero background"
         width={1440}
         height={605}
