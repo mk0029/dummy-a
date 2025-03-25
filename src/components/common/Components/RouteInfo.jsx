@@ -22,7 +22,7 @@ const RouteInfo = () => {
               <span
                 className={`${
                   index === pathArray.length - 1 && "text-dark-orange"
-                } uppercase inline-block pl-1`}>
+                } capitalize inline-block pl-1`}>
                 {obj.replace("-", " ")}
               </span>
             )}
