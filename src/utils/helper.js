@@ -236,3 +236,8 @@ export const DETAIL_LIFE_DATA_LIST = [
   },
 ];
 
+export const DETAIL_SLIDER_IMAGES = [
+  "/assets/images/allproject/details/webp/pool.webp",
+  "/assets/images/allproject/details/webp/basketball.webp",
+  "/assets/images/allproject/details/webp/ground.webp",
+];
