@@ -19,7 +19,7 @@ const FilterHero = () => {
         <Heading className="!text-start lg:mt-1 lg:mb-5">All Projects</Heading>
         <div
           onClick={() => setIsDropOpen(!isDropOpen)}
-          className="flex justify-between items-center pr-2 gap-x-3">
+          className="flex lg:hidden justify-between items-center pr-2 gap-x-3">
           <Icons
             icon="filter-bars"
             className={`w-3 ${isDropOpen && "rotate-180"}`}

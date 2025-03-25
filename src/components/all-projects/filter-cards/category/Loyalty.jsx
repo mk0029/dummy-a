@@ -27,7 +27,7 @@ const Loyalty = ({ className = "", title = "" }) => {
     setIsDropOpen(false);
   });
   return (
-    <div ref={dropRef} className="relative z-50">
+    <div ref={dropRef} className="relative z-[97]">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[125px]  ${className}`}>

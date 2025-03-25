@@ -24,7 +24,7 @@ const ProjectType = ({
     setIsDropOpen(false);
   });
   return (
-    <div ref={dropRef} className="relative z-50">
+    <div ref={dropRef} className="relativell z-[99]">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[105px] ${className}`}>
@@ -38,7 +38,7 @@ const ProjectType = ({
         />
       </div>
       <div
-        className={`min-w-[168px] w-full shadow-[0px_3px_5px_rgba(0,0,0,0.2)] absolute mt-5 right-0 bg-white transition-all duration-300 ease-linear ${
+        className={`min-w-[168px] w-full shadow-[0px_3px_5px_rgba(0,0,0,0.2)] absolute mt-5 right-0 bg-white transition-all duration-300 ease-linear z-10 ${
           !isDropOpen && "opacity-0 mt-8 pointer-events-none"
         }`}>
         <div className="absolute shadow-[0_0px_3px_0px_rgba(0,0,0,0.2)] right-0.5 -top-[3px] w-3.5 h-2.5 bg-[#f8f8f8] -rotate-45 z-0"></div>
