@@ -1,13 +1,18 @@
 import React from "react";
 
-const Paragraph = ({ className = "", variant = "default", children }) => {
+const Paragraph = ({
+  className = "",
+  variant = "default",
+  children,
+  leading = "!leading-142",
+}) => {
   const variants = {
     default: "text-sm",
     secondary: "text-[14.4px] futuraMedium",
   };
   return (
     <p
-      className={`${className}  text-light-gray leading-142 text-center ${variants[variant]}`}
+      className={`${className} ${leading} text-light-gray text-center ${variants[variant]}`}
     >
       {children}
     </p>

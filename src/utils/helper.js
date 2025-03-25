@@ -167,3 +167,114 @@ export const PARTNERSHIPS_LIST = [
       "Signatory to WRI led business charter, value-chain approach to decarbonising the building and construction sector in India ",
   },
 ];
+export const FEATURED_PROJECT_DATA_LIST = [
+  {
+    image: "/assets/images/allproject/webp/lodha-world-tower.webp",
+    title: "Lodha World Towers | Mumbai",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-cullinan.webp",
+    title: "Lodha Cullinan | Mumbai",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-vero.webp",
+    title: "Lodha Vero | Mumbai",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-reserve.webp",
+    title: "The Reserve by Lodha Belmondo | Mumbai-Pune Expressway",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-sterling.webp",
+    title: "Lodha Sterling | Thane",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-golfview.webp",
+    title: "Lodha Golfview | Palava",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-villa-royale.webp",
+    title: "Lodha Villa Royale Gold | Thane",
+  },
+  {
+    image: "/assets/images/allproject/webp/lodha-azur.webp",
+    title: "Lodha Azur | Bangalore",
+  },
+];
+
+export const DETAIL_LINK_BAR_DATA = [
+  "About",
+  "Amenities",
+  "Location",
+  "Plans",
+  "Prices",
+  "Gallery",
+];
+export const DETAIL_ACTION_LINKS = ["Enquire", "Chat"];
+
+export const DETAIL_LIFE_DATA_LIST = [
+  {
+    image: "/assets/images/allproject/details/png/movie.png",
+    title: "Private Theatre",
+  },
+  {
+    image: "/assets/images/allproject/details/png/party.png",
+    title: "Grand Ballroom",
+  },
+  {
+    image: "/assets/images/allproject/details/png/left-arrow.png",
+    title: "Fitness Centre",
+  },
+  {
+    image: "/assets/images/allproject/details/png/flower.png",
+    title: "J Wellness Spa",
+  },
+  {
+    image: "/assets/images/allproject/details/png/racket.png",
+    title: "Multipurpose Indoor Court",
+  },
+  {
+    image: "/assets/images/allproject/details/png/run.png",
+    title: "Athletics Track",
+  },
+  {
+    image: "/assets/images/allproject/details/png/football.png",
+    title: "Kids Playroom",
+  },
+];
+
+export const DETAIL_SLIDER_IMAGES = [
+  "/assets/images/allproject/details/webp/pool.webp",
+  "/assets/images/allproject/details/webp/basketball.webp",
+  "/assets/images/allproject/details/webp/ground.webp",
+];
+
+export const THREE_BHK_LIST = [
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-1.webp",
+    title: "3 Bed Residence",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-2.webp",
+    title: "3 Bed Residence Finished W1",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-3.webp",
+    title: "3 Bed Redsidence Finished W2",
+  },
+];
+
+export const FOUR_BHK_LIST = [
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-1.webp",
+    title: "4 Bed Residence",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-2.webp",
+    title: "4 Bed Residence Finished N1",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-3.webp",
+    title: "4 Bed Residence Finished N2",
+  },
+];

@@ -1,6 +1,7 @@
 "use client";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Icons from "@/components/common/Icons";
+import outSideClickHandler from "@/utils/outSideClickHandler";
 import { useState } from "react";
 
 const Typology = ({
@@ -19,11 +20,14 @@ const Typology = ({
     type.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const dropRef = outSideClickHandler(() => {
+    setIsDropOpen(false);
+  });
   return (
-    <div className="relative z-50">
+    <div ref={dropRef} className="sm:relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
-        className={`inline-flex justify-between items-center cursor-pointer min-w-[105px] ${className}`}>
+        className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[105px] ${className}`}>
         <Paragraph className={`!text-start select-none`}>Typology</Paragraph>
         <Icons
           icon="accordion-arrow"

@@ -12,19 +12,26 @@ const RouteInfo = () => {
   return (
     <div className="container py-6 lg:py-8">
       <p className="text-sm text-light-gray font-normal leading-normal flex items-center gap-x-1">
-        <Link href="/">Home</Link>
+        <Link className="text-sm" href="/">
+          Home
+        </Link>
         {pathArray.map((obj, index) => (
           <span key={index} className="flex items-center">
             {index > 0 && (
               <span className=" size-1 border-b border-r border-solid border-b-light-gray border-r-light-gray -rotate-45 inline-block"></span>
             )}
-            {index > 0 && (
+            {index > 0 && pathArray.length - 1 === index ? (
               <span
-                className={`${
-                  index === pathArray.length - 1 && "text-dark-orange"
-                } uppercase inline-block pl-1`}>
+                className={`text-dark-orange capitalize inline-block pl-1 text-sm`}>
                 {obj.replace("-", " ")}
               </span>
+            ) : (
+              <Link
+                href={`/${obj}`}
+                className={`hover:text-dark-orange transition-all duration-300 ease-linear
+                 capitalize inline-block pl-1 text-sm`}>
+                {obj.replace("-", " ")}
+              </Link>
             )}
           </span>
         ))}

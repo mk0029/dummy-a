@@ -8,13 +8,15 @@
   --color-dark-gray: #f8f8f8;
   --color-wide-gray: #d0d0d0;
   --color-wide-black: #d9d9d9;
+  --leading-135: "135%";
   --leading-130: "130%";
-  --leading-142: "142%";
+  --leading-142: "1.42";
   --leading-140: "140%";
   --leading-125: "125%";
   --leading-120: "120%";
   --leading-116: "116%";
   --leading-110: "110%";
+  --leading-100: "1";
 }
 
 @font-face {
@@ -94,7 +96,9 @@ body {
   height: 1px;
   background-color: #9d7f19;
   transform: rotate(45deg) translateY(-7px);
+  transition: all 300ms linear;
 }
+
 .next-button::before,
 .next-btn::before {
   position: absolute;
@@ -103,6 +107,7 @@ body {
   height: 1px;
   background-color: #9d7f19;
   transform: rotate(-45deg) translateY(7px);
+  transition: all 300ms linear;
 }
 
 .prev-button::after,
@@ -113,7 +118,9 @@ body {
   height: 1px;
   background-color: #9d7f19;
   transform: rotate(45deg) translateY(7px);
+  transition: all 300ms linear;
 }
+
 .prev-button::before,
 .prev-btn::before {
   position: absolute;
@@ -122,6 +129,29 @@ body {
   height: 1px;
   background-color: #9d7f19;
   transform: rotate(-45deg) translateY(-7px);
+  transition: all 300ms linear;
+}
+
+.next-button:hover::after,
+.next-button:hover::before,
+.next-btn:hover::after,
+.next-btn:hover::before,
+.prev-button:hover::after,
+.prev-button:hover::before,
+.prev-btn:hover::after,
+.prev-btn:hover::before {
+  background-color: black;
+}
+
+.plans-link-parent::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  background-color: #ededed;
+  height: 3px;
+  z-index: -1;
+  left: 0;
 }
 
 @media (max-width: 1023.98px) {
@@ -130,6 +160,20 @@ body {
   }
   .navWhite {
     background-color: rgba(255, 255, 255, 0.3) !important;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .bhk-swiper .swiper-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 657.98px) {
+  .bhk-swiper .swiper-wrapper {
+    display: flex;
+    justify-content: unset;
   }
 }
 
@@ -155,4 +199,10 @@ body {
 }
 ::-webkit-scrollbar {
   @apply hidden;
+}
+.para-detail-rera span {
+  @apply block;
+}
+.para-detail-rera a {
+  @apply text-dark-orange transition-all ease-linear duration-300 hover:text-dark-orange/80 hover:underline;
 }
