@@ -11,7 +11,7 @@ import SocialImpact from "./social-impact/SocialImpact";
 const ImpactMain = () => {
   return (
     <div>
-      <AnimatedHero />
+      <AnimatedHero mainImage="/assets/images/impact/webp/hero-background.webp" />
       <CreatingImpact />
       <EnvironmentalImpact />
       <SocialImpact />

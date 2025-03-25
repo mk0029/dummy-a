@@ -201,3 +201,38 @@ export const FEATURED_PROJECT_DATA_LIST = [
     title: "Lodha Azur | Bangalore"
   },
 ]
+
+export const DETAIL_LINK_BAR_DATA = ["About", "Amenities", "Location", "Plans", "Prices", "Gallery"];
+export const DETAIL_ACTION_LINKS = ["Enquire", "Chat"];
+
+export const DETAIL_LIFE_DATA_LIST = [
+  {
+    image: "/assets/images/allproject/details/png/movie.png",
+    title:"Private Theatre",
+  },
+  {
+    image: "/assets/images/allproject/details/png/party.png",
+    title:"Grand Ballroom",
+  },
+  {
+    image: "/assets/images/allproject/details/png/left-arrow.png",
+    title:"Fitness Centre",
+  },
+  {
+    image: "/assets/images/allproject/details/png/flower.png",
+    title:"J Wellness Spa",
+  },
+  {
+    image: "/assets/images/allproject/details/png/racket.png",
+    title:"Multipurpose Indoor Court",
+  },
+  {
+    image: "/assets/images/allproject/details/png/run.png",
+    title:"Athletics Track",
+  },
+  {
+    image: "/assets/images/allproject/details/png/football.png",
+    title:"Kids Playroom",
+  },
+];
+

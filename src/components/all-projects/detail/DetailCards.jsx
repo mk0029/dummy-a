@@ -12,7 +12,7 @@ const DetalCards = () => {
           width={150}
           height={42}
           alt="logo"
-          src="/assets/images/details/png/lodha-logo.png"
+          src="/assets/images/allproject/details/png/lodha-logo.png"
         />
         <Paragraph className="text-center mx-auto mt-4 flex justify-center">
           A sculptural statement so powerful, it has transformed Mumbai's
@@ -22,7 +22,7 @@ const DetalCards = () => {
           <div className="w-full lg:max-w-[526px] lg:max-h-[467px] aspect-[526/467] relative">
             <Image
               className="object-cover"
-              src="/assets/images/details/webp/acres.webp"
+              src="/assets/images/allproject/details/webp/acres.webp"
               alt="details"
               fill
             />
@@ -59,7 +59,7 @@ const DetalCards = () => {
           <div className="w-full lg:max-w-[526px] lg:max-h-[467px] aspect-[526/467] relative">
             <Image
               className="object-cover"
-              src="/assets/images/details/webp/landmark.webp"
+              src="/assets/images/allproject/details/webp/landmark.webp"
               alt="details"
               fill
             />
