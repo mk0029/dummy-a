@@ -31,7 +31,7 @@ const CitySelector = ({ className = "", title = "" }) => {
     <div ref={dropRef} className="relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
-        className={`inline-flex justify-between items-center cursor-pointer min-w-[100px]  ${className}`}>
+        className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[100px]  ${className}`}>
         <Paragraph className="!text-start select-none">
           {selectedCities.length > 0
             ? `Select City ${selectedCities.length}`

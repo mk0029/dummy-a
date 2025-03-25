@@ -27,7 +27,7 @@ const ProjectType = ({
     <div ref={dropRef} className="relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
-        className={`inline-flex justify-between items-center cursor-pointer min-w-[105px] ${className}`}>
+        className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[105px] ${className}`}>
         <Paragraph className={`!text-start select-none`}>
           Project Type
         </Paragraph>

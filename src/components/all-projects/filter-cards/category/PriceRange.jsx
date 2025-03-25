@@ -29,7 +29,7 @@ const PriceRange = ({ className = "" }) => {
     <div ref={dropRef} className="relative z-50">
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
-        className={`inline-flex justify-between items-center cursor-pointer min-w-[140px] ${className}`}>
+        className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[140px] ${className}`}>
         <Paragraph className="!text-start select-none">Price Range</Paragraph>
         <Icons
           icon="accordion-arrow"
