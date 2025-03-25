@@ -5,6 +5,7 @@ import ExploreNeighbourhood from "./ExploreNeighbourhood";
 import Gallery from "./Gallery";
 import LinkBar from "./LinkBar";
 import RouteInfo from "@/components/common/Components/RouteInfo";
+import FinestDevelopments from "./FinestDevelopments";
 
 const DetailMain = () => {
   return (
@@ -15,8 +16,10 @@ const DetailMain = () => {
       />
       <LinkBar />
       <DetailCards />
+      <Gallery />
       <ExploreNeighbourhood />
-      <Gallery /> <CommonQueries />
+      <FinestDevelopments />
+      <CommonQueries />
       <RouteInfo />
     </div>
   );
