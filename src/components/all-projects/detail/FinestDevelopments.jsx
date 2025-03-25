@@ -27,13 +27,14 @@ const FinestDevelopments = () => {
       <Heading>Creating the world’s finest developments</Heading>
       <div className="flex w-full mt-6 lg:mt-8 -mx-2">
         {list.map((obj, index) => (
-          <div className="w-4/12 px-2 group cursor-pointer">
+          <div key={index} className="w-4/12 px-2 group cursor-pointer">
             <AnimatedImageCard
               key={index}
               src={obj.image}
               width={374}
               height={285.48}
               disableAnimation
+              scaling
             />
             <Paragraph variant="secondary" className="mt-2.5 md:mt-4">
               {obj.title}

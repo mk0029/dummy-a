@@ -252,3 +252,33 @@ export const DETAIL_SLIDER_IMAGES = [
   "/assets/images/allproject/details/webp/basketball.webp",
   "/assets/images/allproject/details/webp/ground.webp",
 ];
+
+export const THREE_BHK_LIST = [
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-1.webp",
+    title: "3 Bed Residence",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-2.webp",
+    title: "3 Bed Residence Finished W1",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/3-bed-residence-img-3.webp",
+    title: "3 Bed Redsidence Finished W2",
+  },
+];
+
+export const FOUR_BHK_LIST = [
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-1.webp",
+    title: "4 Bed Residence",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-2.webp",
+    title: "4 Bed Residence Finished N1",
+  },
+  {
+    image: "/assets/images/allproject/details/webp/4-bed-residence-img-3.webp",
+    title: "4 Bed Residence Finished N2",
+  },
+];

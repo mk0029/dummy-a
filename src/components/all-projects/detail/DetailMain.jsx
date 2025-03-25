@@ -6,6 +6,7 @@ import Gallery from "./Gallery";
 import LinkBar from "./LinkBar";
 import RouteInfo from "@/components/common/Components/RouteInfo";
 import FinestDevelopments from "./FinestDevelopments";
+import Plans from "./plans/Plans";
 
 const DetailMain = () => {
   return (
@@ -17,6 +18,7 @@ const DetailMain = () => {
       <LinkBar />
       <DetailCards />
       <Gallery />
+      <Plans />
       <ExploreNeighbourhood />
       <FinestDevelopments />
       <CommonQueries />

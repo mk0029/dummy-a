@@ -13,6 +13,7 @@ const AnimatedImageCard = ({
   disableAnimation,
   layerSpeed = 400,
   layerCoverPercent = 90,
+  scaling,
 }) => {
   const [animatedLayerVisible, setAnimatedLayerVisible] = useState(true);
   const cardRef = useRef();
@@ -48,7 +49,7 @@ const AnimatedImageCard = ({
   return (
     <div
       ref={cardRef}
-      className={`w-full relative overflow-hidden ${className}`}
+      className={`w-full relative overflow-hidden group ${className}`}
       style={{ aspectRatio }}>
       {/* Animated Layer */}
       {!disableAnimation && (
@@ -64,7 +65,9 @@ const AnimatedImageCard = ({
 
       {/* Image */}
       <Image
-        className="object-cover object-center absolute top-0 left-0"
+        className={`object-cover object-center absolute top-0 left-0 transition-all duration-300 ease-linear ${
+          scaling && "group-hover:scale-110"
+        }`}
         src={src}
         alt={alt || "animated pict. content"}
         fill
