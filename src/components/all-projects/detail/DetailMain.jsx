@@ -2,6 +2,7 @@ import AnimatedHero from "@/components/common/Components/AnimatedHero";
 import React from "react";
 import LinkBar from "./LinkBar";
 import DetailCards from "./DetailCards";
+import Gallery from "./Gallery";
 
 const DetailMain = () => {
   return (
@@ -12,6 +13,7 @@ const DetailMain = () => {
       />
       <LinkBar />
       <DetailCards />
+      <Gallery/>
     </div>
   );
 };
