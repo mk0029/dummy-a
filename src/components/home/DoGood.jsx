@@ -36,7 +36,7 @@ const DoGood = () => {
             <div className="flex flex-col items-start justify-center md:items-end px-[20px] md:px-[60px] lg:px-[120px] xl:pe-[160px] w-full lg:w-1/2 text-left">
                 <div className="lg:max-w-[357px]">
                     <div data-aos="fade-up">
-                    <TagParagraph>OUR PURPOSE</TagParagraph>
+                        <TagParagraph>OUR PURPOSE</TagParagraph>
                     </div>
                     <Heading aosdelay={"150"} aostime={"fade-up"} className={"pt-1 pb-2.5"}>Do good. Do well.</Heading>
                     <Paragraph aosdelay={"300"} aostime={"fade-up"}>
@@ -69,8 +69,11 @@ const DoGood = () => {
                             height={400}
                         />
                     </div>
-                    <Link href={"/"} className="absolute flex items-center gap-2 bottom-8 cormorantRegular left-[20px] text-white underline text-[1.25rem]">
-                        Our Story <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
+                    <Link href={"/"} className="absolute flex items-center gap-2 bottom-8 font-bold cormorantRegular left-5 text-white text-xl ">
+                        <span className="relative block before:absolute before:w-full before:h-[1px] before:bg-white before:bottom-[4px]">
+                            Our Story
+                        </span>
+                        <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
                     </Link>
                 </div>
 
@@ -97,8 +100,13 @@ const DoGood = () => {
                             height={400}
                         />
                     </div>
-                    <Link href={"/"} className="absolute flex items-center gap-2 bottom-8 cormorantRegular left-[20px] text-white underline text-[1.25rem]">
-                        Our Impact <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
+                    <Link
+                        href={"/"}
+                        className="relative flex items-center gap-2 bottom-8 font-bold cormorantRegular left-5 text-white text-xl "
+                    >
+                        <span className="relative block before:absolute before:w-full before:h-[1px] before:bg-white before:bottom-[4px]">
+                            Our Impact
+                        </span> <span className="group-hover:translate-x-2 duration-300"><Icons icon={"leftarrow"} /></span>
                     </Link>
                 </div>
             </div>
