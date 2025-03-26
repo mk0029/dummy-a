@@ -20,12 +20,11 @@ const Slider = () => {
         768: { slidesPerView: 2.3, spaceBetween: 0 },
         1024: { slidesPerView: 3, spaceBetween: 0 },
       }}
-      modules={[Autoplay, Navigation, Pagination]}
-    >
+      modules={[Autoplay, Navigation, Pagination]}>
       {BLOGS_LIST.length > 0 &&
         BLOGS_LIST.map(({ url, img, title, id, author }) => (
-          <SwiperSlide className="!h-full !flex !grow" key={id}>
-            <div className="mx-1 md:mx-2 flex flex-col h-full grow w-full">
+          <SwiperSlide className="!h-full !flex !grow group " key={id}>
+            <div className="mx-1 md:mx-2 flex flex-col h-full grow w-full hover:shadow-dark-orange/50 shadow-md shadow-transparent transition-all ease-linear duration-300">
               <Card authors={author} src={img} url={url}>
                 {title}
               </Card>

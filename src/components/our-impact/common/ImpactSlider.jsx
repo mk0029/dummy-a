@@ -23,7 +23,7 @@ const ImpactSlider = ({ list }) => {
       {list.length > 0 &&
         list.map(({ url, img, description, id }) => (
           <SwiperSlide key={id}>
-            <div className="mx-1 md:mx-2">
+            <div className="mx-1 md:mx-2 group">
               <ImpactCard src={img} url={url}>
                 {description}
               </ImpactCard>

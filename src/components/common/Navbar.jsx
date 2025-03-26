@@ -8,6 +8,7 @@ import MobileNav from "./MobileNav";
 import SearchNav from "./SearchNav";
 import OurProject from "./OurProject";
 import EnquireCall from "./EnquireCall";
+import outSideClickHandler from "@/utils/outSideClickHandler";
 
 const NavBar = () => {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
@@ -24,7 +25,9 @@ const NavBar = () => {
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
+  const navDropRef = outSideClickHandler(() => {
+    setOurProject(false);
+  });
   const handleScroll = useCallback(() => {
     const currentScrollPosition = window.scrollY;
     setIsHeaderVisible(
@@ -181,6 +184,7 @@ const NavBar = () => {
         />
       </div>
       <div
+        ref={navDropRef}
         className={`${
           ourProject ? "top-0" : "-top-[120vh]"
         } hidden lg:block  duration-300 fixed z-[499] transition-all overflow-clip lg:left-0 h-[620px] w-full backdrop-blur-[12px] navpopup`}>

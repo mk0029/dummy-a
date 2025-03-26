@@ -1,3 +1,4 @@
+import AnimatedImageCard from "@/components/common/Components/AnimatedImageCard";
 import Heading from "@/components/common/Components/Heading";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Image from "next/image";
@@ -5,17 +6,14 @@ import Image from "next/image";
 const Card = ({ authors = [], src, children, url }) => {
   return (
     <div className="flex flex-col h-full">
-      <div className="w-full aspect-[1.39] relative overflow-hidden group max-sm:max-h-[186px]">
-        <Image
-          src={src || "/assets/images/impact/webp/blogs-img-1.webp"}
-          width={373.99}
-          height={268.5}
-          quality={100}
-          sizes="100vw"
-          alt="card content"
-          className="absolute top-0 left-0 h-full w-full object-cover object-center group-hover:scale-110 transition-all ease-linear duration-500 select-none pointer-events-none"
-        />
-      </div>
+      <AnimatedImageCard
+        className="!aspect-[1.39]  max-sm:max-h-[186px]"
+        width={272}
+        height={269}
+        disableAnimation
+        scaling
+        src={src || "/assets/images/impact/webp/blogs-img-1.webp"}
+      />
       <div className="border border-solid border-dark-orange flex flex-col grow justify-between border-t-0">
         <Heading
           className="mt-2.5 pt-5 !text-start px-3.5 line-clamp-2"

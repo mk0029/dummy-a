@@ -28,7 +28,7 @@ const Accordion = ({
   return (
     <div className={`overflow-hidden ${className}`}>
       <button
-        className={`w-full flex justify-between items-center text-left font-medium focus:outline-none transition-all duration-300 ease-linear  pl-4 pr-5 py-5 sm:py-6 lg:py-7 ${
+        className={`w-full flex justify-between items-center text-left font-medium focus:outline-none transition-all duration-300 ease-linear  pl-4 pr-5 py-5 sm:py-6 lg:py-7 cursor-pointer hover:bg-dark-gray/50 ${
           isOpen ? "bg-dark-gray" : "bg-transparent"
         } ${titleClassName}`}
         onClick={toggleAccordion}>

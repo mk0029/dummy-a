@@ -18,7 +18,7 @@ const Footer = () => {
               {FOOTER_LINK_LIST.map((obj, i) => {
                 return (
                   <Link
-                    className="text-xs text-light-gray md:text-sm lg:text-base hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-red-500 before:bottom-0 before:left-0"
+                    className="text-xs text-light-gray md:text-sm lg:text-base hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-light-gray/50 before:bottom-0 before:left-0"
                     key={i}
                     href={obj.url}>
                     {obj.title}
@@ -30,7 +30,7 @@ const Footer = () => {
               {FOOTER_SECOND_LINK_LIST.map((obj, i) => {
                 return (
                   <Link
-                    className="text-xs text-light-gray md:text-sm lg:text-base hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-red-500 before:bottom-0 before:left-0"
+                    className="text-xs text-light-gray md:text-sm lg:text-base hover:text-dark-orange !leading-130 relative before:absolute hover:before:w-full duration-300 before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-light-gray/50 before:bottom-0 before:left-0"
                     key={i}
                     href={obj.url}>
                     {obj.title}

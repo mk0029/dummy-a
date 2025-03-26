@@ -143,17 +143,6 @@ body {
   background-color: black;
 }
 
-.plans-link-parent::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  width: 100%;
-  background-color: #ededed;
-  height: 3px;
-  z-index: -1;
-  left: 0;
-}
-
 @media (max-width: 1023.98px) {
   .navpopupwhite {
     background-color: rgba(235, 235, 234, 0.8) !important;
@@ -205,4 +194,7 @@ body {
 }
 .para-detail-rera a {
   @apply text-dark-orange transition-all ease-linear duration-300 hover:text-dark-orange/80 hover:underline;
+}
+.swiper-button-disabled {
+  @apply !border-gray-400 cursor-not-allowed;
 }

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Icons from "./Icons";
 
 const FooterContent = () => {
@@ -284,6 +284,16 @@ const FooterContent = () => {
   };
   const [isRotated, setIsRotated] = useState(false);
 
+  // const bottomDiv = document.getElementById("scroll-bottom");
+  // const scrollToBottom = () => {
+  //   if (bottomDiv.current) {
+  //     setTimeout(() => {
+  //       bottomDiv.scrollIntoView({ behavior: "smooth" });
+  //       console.log("scrolled to bottom");
+  //     }, 1000);
+  //   }
+  // };
+
   return (
     <div className="bg-light-orange">
       <div className="flex gap-2 items-center">
@@ -292,8 +302,9 @@ const FooterContent = () => {
           className={`absolute left-1/2 -translate-x-1/2 cursor-pointer transition-transform duration-300 ${
             isRotated ? "rotate-180" : "rotate-0"
           }`}
-          onClick={() => setIsRotated(!isRotated)}
-        >
+          onClick={() => {
+            setIsRotated(!isRotated);
+          }}>
           <Icons icon={"downUpArrow"} />
         </div>
         <span className="w-full h-[0.5px] bg-light-gray"></span>
@@ -302,8 +313,7 @@ const FooterContent = () => {
         <div
           className={`transition-all duration-1000 overflow-clip ${
             isRotated ? "max-h-[2400px] lg:max-h-[1200px]" : "max-h-0"
-          }`}
-        >
+          }`}>
           <div className="footer pt-[40px] px-4">
             <p className="mb-4 text-base font-bold text-left">
               Residential Properties
@@ -318,9 +328,8 @@ const FooterContent = () => {
                       href={property.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="transition-all duration-300 ease-in-out text text-zinc-400 hover:text-zinc-700 text-[14px] mt-[10px]"
-                      onClick={(e) => handlePropertyClick(e, property.title)}
-                    >
+                      className="transition-all duration-300 ease-in-out text text-zinc-400 hover:text-light-black transition-all duration-300 ease-linear text-[14px] mt-[10px]"
+                      onClick={(e) => handlePropertyClick(e, property.title)}>
                       {property.title}
                     </a>
                   ))}
@@ -334,8 +343,7 @@ const FooterContent = () => {
             {footerLinks.map((section, index) => (
               <div
                 key={index}
-                className="w-full text-left lg:w-auto lg:flex lg:flex-col lg:gap-y-4 md:col-span-2 "
-              >
+                className="w-full text-left lg:w-auto lg:flex lg:flex-col lg:gap-y-4 md:col-span-2 ">
                 <p className="mb-3 font-bold text-xl">{section.category}</p>
 
                 <div className="grid grid-cols-2 w-full gap-x-3 gap-y-2 mb-[20px] lg:grid-cols-1">
@@ -343,8 +351,7 @@ const FooterContent = () => {
                     <div key={linkIndex} className="w-full text-left">
                       <a
                         href={link.url}
-                        className="text-zinc-400 hover:text-zinc-700 text-[15px]"
-                      >
+                        className="text-zinc-400 hover:text-light-black transition-all duration-300 ease-linear text-[15px]">
                         {link.title}
                       </a>
                     </div>
@@ -359,7 +366,9 @@ const FooterContent = () => {
         </div>
 
         <div>
-          <p className="pt-8 text-[#6D6E70] text-center text-xs font-normal !leading-142">
+          <p
+            id="scroll-bottom"
+            className="pt-8 text-[#6D6E70] text-center text-xs font-normal !leading-142">
             © Lodha Group 2025 All Rights Reserved.
           </p>
         </div>

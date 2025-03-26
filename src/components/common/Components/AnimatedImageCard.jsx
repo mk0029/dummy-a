@@ -13,7 +13,7 @@ const AnimatedImageCard = ({
   disableAnimation,
   layerSpeed = 400,
   layerCoverPercent = 90,
-  scaling,
+  scaling = false,
 }) => {
   const [animatedLayerVisible, setAnimatedLayerVisible] = useState(true);
   const cardRef = useRef();

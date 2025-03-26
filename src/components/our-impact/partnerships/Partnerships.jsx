@@ -21,8 +21,8 @@ const Partnerships = () => {
       <Swiper
         className="!w-full mySwiper !flex !justify-center lg:max-w-[876px]"
         navigation={{
-          nextEl: ".next-btn",
-          prevEl: ".prev-btn",
+          nextEl: ".swiper-next-button-2",
+          prevEl: ".swiper-prev-button-2",
         }}
         slidesPerView={3}
         spaceBetween={0}
@@ -32,24 +32,22 @@ const Partnerships = () => {
           768: { slidesPerView: 1.3, spaceBetween: 0 },
           1024: { slidesPerView: 3, spaceBetween: 0 },
         }}
-        modules={[Autoplay, Navigation, Pagination]}
-      >
+        modules={[Autoplay, Navigation, Pagination]}>
         {PARTNERSHIPS_LIST.map((obj, id) => (
           <SwiperSlide
             key={id}
             className={`w-[292.5px] max-lg:w-full px-10 text-start border-dark-orange min-h-[100px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
               id === 2 ? "border-0" : "border-r-[0.5px]"
-            }`}
-          >
+            }`}>
             <Paragraph className="text-start !leading-5 lg:max-w-[212px]">
               {obj.description}
             </Paragraph>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-14 flex justify-center items-center gap-10 max-lg:mt-12 lg:hidden">
-        <div className="prev-btn size-[15px] relative cursor-pointer"></div>
-        <div className="next-btn size-[15px] relative cursor-pointer"></div>
+      <div className="flex justify-center items-center gap-10 mt-12 lg:hidden">
+        <div className="swiper-prev-button-2 size-4 rotate-45 relative cursor-pointer border-dark-orange border-solid border-2 border-t-0 border-r-0 hover:border-light-black transition-all duration-300 ease-linear rounded-bl-xs"></div>
+        <div className="swiper-next-button-2  size-4 rotate-45 relative cursor-pointer border-dark-orange border-solid border-2 border-b-0 border-l-0 hover:border-light-black transition-all duration-300 ease-linear rounded-tr-xs"></div>
       </div>
     </div>
   );
