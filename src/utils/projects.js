@@ -6,6 +6,9 @@ export const FEATURED_PROJECTS = [
     location: "mumbai",
     area: "worli",
     type: "residential",
+    projectType: "apartment",
+    price: { min: 2, max: 8 },
+    typology: "5",
     image: "/assets/images/allproject/webp/lodha-world-tower.webp",
     details: {
       image: "/assets/images/allproject/webp/details-hero.webp",
@@ -301,6 +304,8 @@ export const FEATURED_PROJECTS = [
     location: "mumbai",
     area: "andheri",
     type: "residential",
+    projectType: "apartment",
+    price: { min: 7, max: 17 },
     image: "/assets/images/allproject/webp/lodha-cullinan.webp",
     details: {
       image:
@@ -538,6 +543,8 @@ export const FEATURED_PROJECTS = [
     location: "mumbai",
     area: "matuanga",
     type: "residential",
+    projectType: "villas",
+    price: { min: 1, max: 10 },
     image: "/assets/images/allproject/webp/lodha-vero.webp",
     details: {
       image:
@@ -549,6 +556,8 @@ export const FEATURED_PROJECTS = [
     location: "mumbai-Pune expressway",
     area: "pune",
     type: "residential",
+    projectType: "villas",
+    price: { min: 1, max: 10 },
     image: "/assets/images/allproject/webp/lodha-reserve.webp",
     details: {
       image:
@@ -559,6 +568,8 @@ export const FEATURED_PROJECTS = [
     title: "Lodha Sterling ",
     location: "Thane",
     area: "thane",
+    projectType: "commercial",
+    price: { min: 1, max: 10 },
     type: "residential",
     image: "/assets/images/allproject/webp/lodha-sterling.webp",
     details: {
@@ -571,6 +582,8 @@ export const FEATURED_PROJECTS = [
     location: "Palava",
     area: "dombivli",
     type: "residential",
+    projectType: "commercial",
+    price: { min: 1, max: 10 },
     image: "/assets/images/allproject/webp/lodha-golfview.webp",
     details: {
       image:
@@ -583,6 +596,8 @@ export const FEATURED_PROJECTS = [
     area: "thane",
     type: "residential",
     image: "/assets/images/allproject/webp/lodha-villa-royale.webp",
+    projectType: "commercial",
+    price: { min: 1, max: 10 },
     details: {
       image:
         "/assets/images/allproject/details/webp/royal-gold-lodha-detail-main.jpg",
@@ -594,6 +609,8 @@ export const FEATURED_PROJECTS = [
     area: "bangalore",
     type: "residential",
     image: "/assets/images/allproject/webp/lodha-azur.webp",
+    projectType: "commercial",
+    price: { min: 1, max: 10 },
     details: {
       image:
         "/assets/images/allproject/details/webp/azur-lodha-detail-main.jpg",

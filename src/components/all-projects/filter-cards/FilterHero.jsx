@@ -7,14 +7,23 @@ import Paragraph from "@/components/common/Paragraph";
 import Icons from "@/components/common/Icons";
 import outSideClickHandler from "@/utils/outSideClickHandler";
 
-const FilterHero = () => {
+const FilterHero = ({
+  setInputVal,
+  setType,
+  setCity,
+  setTypology,
+  setMinPrice,
+  setMaxPrice,
+  handleResetFilters,
+  handleApplyFilters,
+}) => {
   const [isDropOpen, setIsDropOpen] = useState(false);
   const dropRef = outSideClickHandler(() => {
     setIsDropOpen(false);
   });
   return (
     <div className="container py-12 sm:py-14 md:py-16 lg:py-20 ">
-      <FilterInput />
+      <FilterInput onSearchChange={(e) => setInputVal(e)} />
       <div className="mt-12 max-lg:flex max-lg:items-center max-lg:justify-between w-full relative">
         <Heading className="!text-start lg:mt-1 lg:mb-5">All Projects</Heading>
         <div
@@ -42,7 +51,15 @@ const FilterHero = () => {
             className={`absolute shadow-[0_0px_3px_0px_rgba(0,0,0,0.2)] right-0.5 -top-[3px] w-3.5 h-2.5 bg-[#f8f8f8] -rotate-45 -z-10 lg:hidden ${
               !isDropOpen && "hidden"
             }`}></div>
-          <Categorys />
+          <Categorys
+            setType={setType}
+            setCity={setCity}
+            setTypology={setTypology}
+            setMinPrice={setMinPrice}
+            setMaxPrice={setMaxPrice}
+            handleResetFilters={handleResetFilters}
+            handleApplyFilters={handleApplyFilters}
+          />
         </div>
       </div>
     </div>

@@ -4,16 +4,11 @@ import Icons from "@/components/common/Icons";
 import outSideClickHandler from "@/utils/outSideClickHandler";
 import { useState } from "react";
 
-const Typology = ({
-  className = "",
-  title = "",
-  list = [],
-  search = false,
-}) => {
+const Typology = ({ className = "", title = "", typologyVal }) => {
   const [selectedType, setSelectedType] = useState("");
   const [isDropOpen, setIsDropOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const projectTypes = ["5+", "4", "3", "2"];
+  const projectTypes = ["5", "4", "3", "2"];
 
   // Filter project types based on search input
   const filteredTypes = projectTypes.filter((type) =>
@@ -53,7 +48,9 @@ const Typology = ({
         </div>
         {filteredTypes.map((type, index) => (
           <div
-            onClick={() => setSelectedType(type)}
+            onClick={() => {
+              setSelectedType(type), typologyVal(type);
+            }}
             key={index}
             className="py-3.5 w-full flex items-center border-b border-solid border-b-[rgba(0,0,0,0.1)] px-7 gap-x-2.5 hover:bg-light-black/10 transition-all ease-linear cursor-pointer">
             <span className="size-[18px] relative flex justify-center items-center border border-solid border-dark-orange">
@@ -61,7 +58,9 @@ const Typology = ({
                 <span className="w-2 h-1 absolute border-l border-solid border-dark-orange border-b -rotate-45 scale-[1.2] mb-0.5"></span>
               )}
             </span>
-            <Paragraph className="!text-black">{type} Beds</Paragraph>
+            <Paragraph className="!text-black">
+              {type} Beds{type >= 5 && " +"}
+            </Paragraph>
           </div>
         ))}
       </div>

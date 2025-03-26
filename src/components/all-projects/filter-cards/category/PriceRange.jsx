@@ -2,9 +2,9 @@
 import Paragraph from "@/components/common/Components/Paragraph";
 import Icons from "@/components/common/Icons";
 import outSideClickHandler from "@/utils/outSideClickHandler";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const PriceRange = ({ className = "" }) => {
+const PriceRange = ({ className = "", minPriceVal, maxPriceVal }) => {
   const [isDropOpen, setIsDropOpen] = useState(false);
   const [isSubDropOpen, setIsSubDropOpen] = useState(-1);
   const [selectedMin, setSelectedMin] = useState("1 Crore");
@@ -24,6 +24,24 @@ const PriceRange = ({ className = "" }) => {
   const subDropRef = outSideClickHandler(() => {
     setIsSubDropOpen(-1);
   });
+  useEffect(() => {
+    minPriceVal(
+      selectedMin
+        .toLowerCase()
+        .replace(/ /g, "")
+        .replace("+", "")
+        .replace(/crore/g, "")
+    );
+  }, [selectedMin]);
+  useEffect(() => {
+    maxPriceVal(
+      selectedMax
+        .toLowerCase()
+        .replace(/ /g, "")
+        .replace("+", "")
+        .replace(/crore/g, "")
+    );
+  }, [selectedMax]);
 
   return (
     <div ref={dropRef} className="sm:relative z-50">

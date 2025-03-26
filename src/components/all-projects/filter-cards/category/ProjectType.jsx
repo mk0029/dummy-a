@@ -4,12 +4,7 @@ import Icons from "@/components/common/Icons";
 import outSideClickHandler from "@/utils/outSideClickHandler";
 import { useState } from "react";
 
-const ProjectType = ({
-  className = "",
-  title = "",
-  list = [],
-  search = false,
-}) => {
+const ProjectType = ({ className = "", title = "", typeVal }) => {
   const [selectedType, setSelectedType] = useState("");
   const [isDropOpen, setIsDropOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,7 +50,10 @@ const ProjectType = ({
         </div>
         {filteredTypes.map((type, index) => (
           <div
-            onClick={() => setSelectedType(type)}
+            onClick={() => {
+              setSelectedType(type);
+              typeVal(type);
+            }}
             key={index}
             className="py-3.5 w-full flex items-center border-b border-solid border-b-[rgba(0,0,0,0.1)] px-7 gap-x-2.5 hover:bg-light-black/10 transition-all ease-linear cursor-pointer">
             <span className="size-[18px] rounded-full flex justify-center items-center border border-solid border-dark-orange">

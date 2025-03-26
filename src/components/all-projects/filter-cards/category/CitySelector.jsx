@@ -2,9 +2,9 @@
 import Paragraph from "@/components/common/Components/Paragraph";
 import Icons from "@/components/common/Icons";
 import outSideClickHandler from "@/utils/outSideClickHandler";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const CitySelector = ({ className = "", title = "" }) => {
+const CitySelector = ({ className = "", cityVal }) => {
   const [selectedCities, setSelectedCities] = useState([]);
   const [isDropOpen, setIsDropOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,6 +23,9 @@ const CitySelector = ({ className = "", title = "" }) => {
         : [...prev, type]
     );
   };
+  useEffect(() => {
+    cityVal(selectedCities);
+  }, [selectedCities]);
 
   const dropRef = outSideClickHandler(() => {
     setIsDropOpen(false);
