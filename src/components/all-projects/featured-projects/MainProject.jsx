@@ -37,7 +37,7 @@ const MainProject = () => {
       </div>
       {FEATURED_PROJECTS.length > 4 && (
         <p
-          className="text-dark-orange text-center text-sm leading-142 underline mt-12 cursor-pointer transition-all ease-linear duration-300 hover:text-light-black"
+          className="text-dark-orange text-center text-sm leading-142 underline mt-12 cursor-pointer transition-all ease-linear duration-300 hover:text-light-black w-fit mx-auto"
           onClick={() => setShowAll(!showAll)}>
           {showAll ? "View Less" : "View More"}
         </p>

@@ -31,7 +31,7 @@ const Loyalty = ({ className = "", title = "" }) => {
       <div
         onClick={() => setIsDropOpen(!isDropOpen)}
         className={`inline-flex justify-between items-center cursor-pointer max-lg:gap-x-3 lg:min-w-[125px]  ${className}`}>
-        <Paragraph className="!text-start select-none">Loyalty</Paragraph>
+        <Paragraph className="!text-start select-none">Locality</Paragraph>
         <Icons
           icon="accordion-arrow"
           className={`w-3 ${isDropOpen && "rotate-180"}`}

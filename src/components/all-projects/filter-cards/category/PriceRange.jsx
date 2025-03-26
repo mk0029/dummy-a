@@ -86,7 +86,7 @@ const PriceRange = ({ className = "" }) => {
                         (idx === 0 ? selectedMin : selectedMax) === price &&
                         "bg-gray-200"
                       }`}>
-                      <Paragraph>
+                      <Paragraph className="!text-black">
                         {price}
                         {idx === 1 && i === priceList.length - 1 && " +"}
                       </Paragraph>

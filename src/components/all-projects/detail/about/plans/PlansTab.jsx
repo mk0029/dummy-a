@@ -1,22 +1,16 @@
 "use client";
-import React, { useState } from "react";
-import ThreeBhk from "./ThreeBhk";
-import FourBhk from "./FourBhk";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Paragraph from "@/components/common/Paragraph";
+import Image from "next/image";
+import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FOUR_BHK_LIST, THREE_BHK_LIST } from "@/utils/helper";
-import Paragraph from "@/components/common/Paragraph";
-import Image from "next/image";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const PlanTab = ({ list }) => {
   const [tab, setTab] = useState({ id: list[0]?.id, list: list[0]?.list });
-  const tablist = [
-    { title: "3BHK", id: 1, list: THREE_BHK_LIST },
-    { title: "4BHK", id: 2, list: FOUR_BHK_LIST },
-  ];
+
   return (
     <>
       <div

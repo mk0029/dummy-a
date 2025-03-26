@@ -1,8 +1,7 @@
-import React from "react";
-import FilterHero from "./filter-cards/FilterHero";
 import Heading from "../common/Components/Heading";
-import MainProject from "./featured-projects/MainProject";
 import RouteInfo from "../common/Components/RouteInfo";
+import MainProject from "./featured-projects/MainProject";
+import FilterHero from "./filter-cards/FilterHero";
 
 const AllProjects = () => {
   return (

@@ -79,7 +79,7 @@ const CitySelector = ({ className = "", title = "" }) => {
                     <span className="w-2 h-1 absolute border-l border-solid border-dark-orange border-b -rotate-45 scale-[1.2] mb-0.5"></span>
                   )}
                 </span>
-                <Paragraph>{type}</Paragraph>
+                <Paragraph className="!text-black">{type}</Paragraph>
               </div>
             ))
           ) : (

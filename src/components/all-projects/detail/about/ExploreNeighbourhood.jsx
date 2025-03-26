@@ -2,7 +2,6 @@ import Cta from "@/components/common/Components/Cta";
 import Heading from "@/components/common/Components/Heading";
 import Paragraph from "@/components/common/Components/Paragraph";
 import Image from "next/image";
-import React from "react";
 
 const ExploreNeighbourhood = ({ content }) => {
   return (

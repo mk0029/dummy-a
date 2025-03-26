@@ -1,5 +1,4 @@
 import Icons from "@/components/common/Icons";
-import React from "react";
 
 const FilterInput = () => {
   return (

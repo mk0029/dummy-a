@@ -64,7 +64,7 @@ const ProjectType = ({
                   selectedType !== type && "opacity-0"
                 }`}></span>
             </span>
-            <Paragraph>{type}</Paragraph>
+            <Paragraph className="!text-[#666666]">{type}</Paragraph>
           </div>
         ))}
       </div>

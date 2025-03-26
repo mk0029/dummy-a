@@ -62,7 +62,7 @@ const NavBar = () => {
             : "border-transparent"
         } ${
           searchNavBar ? "navWhite" : "navbg"
-        } backdrop-blur-md navbg w-full duration-500 z-[500] ${
+        } backdrop-blur-md  w-full duration-500 z-[500] ${
           isHeaderVisible ? "translate-y-0" : "-translate-y-full"
         }`}>
         <div className="flex justify-between items-center w-full max-w-[1232px] px-4 mx-auto py-[18px] lg:py-5">

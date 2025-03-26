@@ -1,5 +1,4 @@
 "use client";
-import { DETAIL_SLIDER_IMAGES } from "@/utils/helper";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";

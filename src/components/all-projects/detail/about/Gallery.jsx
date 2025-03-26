@@ -1,6 +1,5 @@
 import Heading from "@/components/common/Heading";
 import Paragraph from "@/components/common/Paragraph";
-import { DETAIL_LIFE_DATA_LIST } from "@/utils/helper";
 import Image from "next/image";
 import Link from "next/link";
 import GallerySlider from "./GallerySlider";

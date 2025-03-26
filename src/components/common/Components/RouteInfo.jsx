@@ -11,8 +11,8 @@ const RouteInfo = () => {
 
   return (
     <div className="container py-6 lg:py-8">
-      <p className="text-sm text-light-gray font-normal leading-normal flex items-center gap-x-1">
-        <Link className="text-sm" href="/">
+      <p className="text-xs text-light-gray font-normal leading-normal flex items-center gap-x-1">
+        <Link className="text-xs" href="/">
           Home
         </Link>
         {pathArray.map((obj, index) => (
@@ -24,7 +24,7 @@ const RouteInfo = () => {
             <span
               className={`${
                 pathArray.length - 1 === index && "text-dark-orange"
-              } capitalize inline-block pl-1 text-sm`}>
+              } capitalize inline-block pl-1 text-xs`}>
               {obj.replace(/-/g, " ")}
             </span>
           </span>
