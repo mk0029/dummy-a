@@ -34,8 +34,11 @@ const LinkBar = () => {
       <div className="container">
         <div className="flex items-center overflow-x-auto justify-between w-full gap-8 sm:gap-10">
           <ul className="flex items-center gap-8 sm:gap-10">
-            {DETAIL_LINK_BAR_DATA.map((link) => (
+            {DETAIL_LINK_BAR_DATA.map((link, index) => (
               <li
+                data-aos="zoom-in"
+                data-aos-delay={`${index * 2 + 4}00`}
+                data-aos-duration="500"
                 key={link}
                 className={`text-sm font-normal transition-all duration-300 ease-linear !leading-125 cursor-pointer hover:text-dark-orange ${
                   activeLink === minifyPath(link) ||
@@ -49,8 +52,11 @@ const LinkBar = () => {
             ))}
           </ul>
           <ul className="flex items-center gap-8 sm:gap-10">
-            {DETAIL_ACTION_LINKS.map((link) => (
+            {DETAIL_ACTION_LINKS.map((link, index) => (
               <li
+                data-aos="zoom-in"
+                data-aos-delay={`${index * 2 + 14}00`}
+                data-aos-duration="500"
                 key={link}
                 className={`text-sm font-normal transition-all duration-300 ease-linear !leading-125 cursor-pointer hover:text-dark-orange ${
                   activeLink === minifyPath(link)

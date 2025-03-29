@@ -1,8 +1,8 @@
-import Heading from "@/components/common/Heading";
-import Paragraph from "@/components/common/Paragraph";
 import Image from "next/image";
 import Link from "next/link";
 import GallerySlider from "./GallerySlider";
+import Heading from "@/components/common/Components/Heading";
+import Paragraph from "@/components/common/Components/Paragraph";
 
 const Gallery = ({ content }) => {
   return (
@@ -10,20 +10,36 @@ const Gallery = ({ content }) => {
       <div className="container">
         <div className="flex flex-wrap gap-6 w-full justify-between">
           <div className="max-w-[500px] w-full">
-            <Heading className="max-md:!text-xl">
+            <Heading
+              aos="fade-right"
+              aosDuration="400"
+              className="!text-start max-md:!text-xl">
               {content?.title || "Lorem ipsum dolor sit amet."}
             </Heading>
-            <Paragraph className="mt-[10px] mb-6">
+            <Paragraph
+              aos="fade-right"
+              aosDuration="400"
+              aosDelay="250"
+              className="mt-[10px] mb-6 !text-start">
               {content?.description ||
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi ea reprehenderit accusantium adipisci vero corporis a cupiditate asperiores inventore!"}
             </Paragraph>
-            <span className="text-sm text-dark-orange font-bold !leading-135 capitalize">
+            <span
+              data-aos="fade-right"
+              data-aos-delay="700"
+              data-aos-duration="500"
+              className="text-sm text-dark-orange font-bold !leading-135 capitalize">
               Possession: {content?.prossession || "Loading..."}
             </span>
           </div>
           <div className="max-w-[300px] w-full flex flex-col gap-[15px]">
             {content?.features?.map((item, index) => (
-              <div key={index} className="flex items-center gap-3">
+              <div
+                data-aos="fade-down"
+                data-aos-delay={`${index * 2 + 2}00`}
+                data-aos-duration="500"
+                key={index}
+                className="flex items-center gap-3">
                 <Image
                   src={item.image}
                   alt={item.title}

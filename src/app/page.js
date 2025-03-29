@@ -20,23 +20,30 @@ export default function Home() {
       {/* <EnquireCall />  */}
       <OurPromise
         colorBg="bg-white"
-        tag="OUR PROMISE"
+        tag="OUR commitment"
         image="/assets/images/homepage/webp/our-promise.webp"
-        heading={
-          <>
-            Creating the world&apos;s <br /> finest developments
-          </>
-        }
-        para="Lodha is India's leading real estate developer, delivering thoughtfully designed, premium properties that shape urban lifestyle. "
+        heading={<>Strong and Reliable Structures</>}
+        para="As builders, our commitment to providing
+strong and reliable structures is at the
+forefront of everything we do. We take
+pride in using only the highest quality
+materials and utilizing the latest building
+techniques to ensure that our structures
+are built to last"
       />
       <DoGood />
       <Slider />
       <OurPromise
         colorBg="bg-dark-gray"
-        tag="OUR EXPERIENCES"
+        tag="dedication and attention"
         image="/assets/images/homepage/webp/our-experiences.webp"
-        heading="Elevating everyday living"
-        para="We craft a tapestry of experiences designed to enrich your life and elevate your every day, where every moment is a testament to the art of living."
+        heading="Commitment to Excellence in Everything"
+        para="In short, our building strength and trust in
+our clients is a reflection of our
+commitment to excellence in everything
+we do. Whether we are working on a small
+project or a large-scale development.
+"
       />
       <OurBrand />
     </div>

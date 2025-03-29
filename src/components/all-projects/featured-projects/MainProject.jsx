@@ -20,6 +20,9 @@ const MainProject = ({ filteredArray }) => {
             )}-property-in-${minifyPath(obj.area)}/${minifyPath(obj.title)}`;
             return (
               <div
+                data-aos="fade-up"
+                data-aos-delay={`${i * 2 + 10}00`}
+                data-aos-duration="500"
                 key={i}
                 onClick={() => router.push(url)}
                 className={`${

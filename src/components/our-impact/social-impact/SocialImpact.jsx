@@ -9,11 +9,17 @@ const SocialImpact = () => {
     <div className="py-12 sm:py-14 md:py-16 lg:py-20 bg-light-orange">
       <div className="container custom-dots-swiper">
         <div className="max-w-[800px] mx-auto">
-          <Heading className="lg:mt-1">Social Impact</Heading>
-          <Paragraph className="mt-2.5">
-            Lodha is committed to creating a positive impact on Indian society
-            through programmes which support the nation’s development. Our
-            current areas of focus are Women’s Empowerment and Education.
+          <Heading aos="fade-up" aosDuration="400" className="lg:mt-1">
+            Social Commitment & Community Development
+          </Heading>
+          <Paragraph
+            aos="fade-up"
+            aosDuration="400"
+            aosDelay="250"
+            className="mt-2.5">
+            Beyond construction, we believe in creating a positive social
+            impact. Our projects are designed to enhance the quality of life,
+            ensuring accessibility, safety, and comfort for all.
           </Paragraph>
         </div>
         <div className="mt-5 sm:mt-6 lg:mt-8">

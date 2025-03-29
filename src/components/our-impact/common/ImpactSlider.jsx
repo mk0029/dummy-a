@@ -23,7 +23,11 @@ const ImpactSlider = ({ list }) => {
       {list.length > 0 &&
         list.map(({ url, img, description, id }) => (
           <SwiperSlide key={id}>
-            <div className="mx-1 md:mx-2 group">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={`${id * 2 + 1}00`}
+              data-aos-duration="500"
+              className="mx-1 md:mx-2 group">
               <ImpactCard src={img} url={url}>
                 {description}
               </ImpactCard>

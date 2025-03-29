@@ -1,11 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
-import Heading from "../common/Components/Heading";
 import RouteInfo from "../common/Components/RouteInfo";
 import MainProject from "./featured-projects/MainProject";
 import FilterHero from "./filter-cards/FilterHero";
 import { FEATURED_PROJECTS } from "@/utils/projects";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Heading from "../common/Components/Heading";
 const AllProjects = () => {
   const [inputVal, setInputVal] = useState("");
   const [filteredArray, setFilteredArray] = useState(FEATURED_PROJECTS);
@@ -79,6 +80,9 @@ const AllProjects = () => {
     setFilteredArray(FEATURED_PROJECTS);
   };
 
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div>
       <FilterHero
@@ -93,7 +97,9 @@ const AllProjects = () => {
       />
       <div className="py-12 bg-[#F8F8F8]">
         <div className="container">
-          <Heading>Featured Projects</Heading>
+          <Heading aos="fade-up" aosDuration="400" aosDelay="700">
+            Featured Projects
+          </Heading>
           <MainProject filteredArray={filteredArray} />
         </div>
       </div>

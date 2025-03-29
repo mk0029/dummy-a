@@ -5,6 +5,11 @@ const Paragraph = ({
   variant = "default",
   children,
   leading = "!leading-142",
+  aos = "",
+  aosDelay = "",
+  aosPlacement = "",
+  aosOffset = "",
+  aosDuration = "",
 }) => {
   const variants = {
     default: "text-sm",
@@ -12,6 +17,12 @@ const Paragraph = ({
   };
   return (
     <p
+      data-aos={aos}
+      data-aos-delay={aosDelay}
+      data-aos-duration={aosDuration}
+      data-aos-easing="linear"
+      data-aos-anchor-placement={aosPlacement}
+      data-aos-offset={aosOffset}
       className={`${className} ${leading} text-light-gray text-center ${variants[variant]}`}>
       {children}
     </p>

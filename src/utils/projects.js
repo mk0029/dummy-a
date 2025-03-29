@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const FEATURED_PROJECTS = [
   {
-    title: "lodha world towers",
+    title: "Sheetal Bhoomi",
     location: "mumbai",
     area: "worli",
     type: "residential",
@@ -15,29 +15,27 @@ export const FEATURED_PROJECTS = [
       about: {
         propertyInfo: {
           propertyLogo: "/assets/images/allproject/details/png/lodha-logo.png",
-          title:
-            "A sculptural statement so powerful, it has transformed Mumbai's skyline forever.",
+          title: "A Landmark in Luxury Living, Redefining Skylines",
           details: [
             {
               title:
                 "A private world of unimaginable luxury, spanning 17 landscaped acres",
               description:
-                "A magnificent 17-acre estate ensconced in the Mumbai Mile, the glittering stretch that comprises some of Mumbai’s finest residences, business spaces and luxury hotels, Lodha World Towers embodies global standards in luxury. The grand landscaped entrance courtyard extends over almost 100,000 sq. ft.",
+                "An Icon of Prestige and Sophistication Nestled in a prime locale, Sheetal Builders presents a magnificent estate that epitomizes world-class living. Designed for those who seek perfection, our residences are a seamless blend of modern architecture and timeless luxury.",
               image: "/assets/images/allproject/details/webp/acres.webp",
             },
             {
-              title:
-                "  A private world of unimaginable luxury, spanning 17 landscaped acres",
+              title: " A Masterpiece Crafted by Visionaries",
               description:
-                "Armani/ Casa, one of the world's best-known names in interior design; Pei Cobb Freed, world-renowned architects; LERA, globally-acclaimed structural engineers; Ken Smith, internationally awarded landscape designer. Lodha World Towers represents a historic meeting of some of the world’s greatest legends.",
+                "Collaborating with the finest architects, structural engineers, and interior designers, Sheetal Builders transforms visions into reality. Our developments stand as a testament to precision, innovation, and sustainability.",
               image: "/assets/images/allproject/details/webp/landmark.webp",
             },
           ],
         },
         lifeStyle: {
-          title: "Life at Lodha World Towers",
+          title: "Life at Sheetal Residences",
           description:
-            "Lodha World Towers hosts Club W: 5 levels of entertainment, sports, and endless diversions. Each level of Club W is dedicated to a different and wholly immersive experience. Here you will find a top-notch gym to work out in and a spa that will help you unwind. A private theatre for evenings with close friends, and a stately ballroom for grander events. An indoor pool with cabanas made for privacy and leisure, and an outdoor poolside with a separate children’s pool for lively weekends. As varied as these spaces are, they all have that air of ritzy elegance that permeates through Lodha World Towers.",
+            "An exclusive haven of indulgence, Sheetal Residences feature Club X—a multi-level hub of leisure, fitness, and social experiences. Here, luxury extends beyond homes into every aspect of life. An indoor pool with cabanas made for privacy and leisure, and an outdoor poolside with a separate children’s pool for lively weekends. As varied as these spaces are, they all have that air of ritzy elegance that permeates through Lodha World Towers.",
           prossession: "ready to move in",
           features: [
             {
@@ -108,7 +106,7 @@ export const FEATURED_PROJECTS = [
           },
         },
         neighbourhood: {
-          title: "Explore the neighbourhood",
+          title: "Explore Our Residences",
           description:
             "A magnificent 17-acre estate ensconced in the Mumbai Mile, the glittering stretch that comprises some of Mumbai’s finest residences, business spaces, and luxury hotels, Lodha World Towers embodies global standards in luxury. The Lodha Place is an elegant boulevard lined with palm trees, boasting some of the finest gourmet restaurants and a secondary route to give you seamless connectivity to the Sea Link, SOBO, and other suburbs.",
           nearestLocations: [
@@ -136,28 +134,29 @@ export const FEATURED_PROJECTS = [
           note: "All distances stated in minutes are estimated travel time on 2-wheelers during normal traffic.",
         },
         finestDevelopments: {
-          title: "Creating the world’s finest developments",
+          title: "Shaping the Future of Luxury Living",
           collection: [
             {
               image: "/assets/images/allproject/details/webp/finest-dev-1.webp",
               title:
-                "Recognizing the profound impact of design and service on well-being, we create thoughtful and purposeful living spaces.",
+                "At Sheetal Builders, we create homes and spaces that resonate with luxury and sustainability. Every project is designed with a commitment to enhancing lifestyles while maintaining environmental harmony.",
             },
             {
               image: "/assets/images/allproject/details/webp/finest-dev-2.webp",
               title:
-                "Committed to surpassing expectations, our carefully crafted events and experiences ensure an enriched and empowered lifestyle.",
+                "Through meticulous planning, we deliver developments that redefine urban living—where sophistication meets comfort.",
             },
             {
               image: "/assets/images/allproject/details/webp/finest-dev-3.webp",
               title:
-                "We are creating homes and workspaces for an ever-changing tomorrow, where luxury and sustainability can co-exist in perfect harmony.",
+                "At Sheetal Builders, we create homes and spaces that resonate with luxury and sustainability. Every project is designed with a commitment to enhancing lifestyles while maintaining environmental harmony.",
             },
           ],
         },
         plans: {
           title: "Plans",
-          description: "Take a look at our meticulously planned layouts",
+          description:
+            "Meticulously planned to cater to the most refined tastes:",
           info: [
             {
               title: "3BHK",
@@ -166,7 +165,8 @@ export const FEATURED_PROJECTS = [
                 {
                   image:
                     "/assets/images/allproject/details/webp/3-bed-residence-img-1.webp",
-                  title: "3 Bed Residence",
+                  title:
+                    "2BHK & 3BHK Residences – Intelligent space utilization",
                 },
                 {
                   image:
@@ -187,7 +187,7 @@ export const FEATURED_PROJECTS = [
                 {
                   image:
                     "/assets/images/allproject/details/webp/4-bed-residence-img-1.webp",
-                  title: "4 Bed Residence",
+                  title: "4BHK & Penthouse Suites – A statement of grandeur",
                 },
                 {
                   image:
@@ -225,30 +225,27 @@ export const FEATURED_PROJECTS = [
           ],
         },
         queries: {
-          title: "Most common queries",
+          title: "Frequently Asked Questions",
           queriesList: [
             {
-              title: "Where are Lodha World Towers located?",
+              title: "Where is Sheetal Residences located?",
               description:
-                "Lodha World Towers occupies pride of place on the Mumbai Mile – a glittering stretch where landmark residential and commercial developments rub shoulders with the finest hotels, luxury retail stores, and premium entertainment hubs, bordered by the lush Mahalaxmi Race Course. Lodha World Towers address: Lodha World Towers, Lodha Place, Shankar Rao Naram Path, Worli, Mumbai, Maharashtra 400 013.",
+                "Situated in an elite neighborhood, Sheetal Residences boasts seamless access to prime business districts, luxury retail, and fine dining avenues.",
             },
             {
-              title:
-                "What are the different floor plans and unit plans available at Lodha World Towers?",
+              title: "What types of residences are available?",
               description:
-                "Lodha World Towers offers luxury 3, 4 & 5 bed residences in the heart of South Mumbai.",
+                "We offer exclusive 2BHK, 3BHK, 4BHK, and penthouse residences crafted for luxury seekers.",
             },
             {
-              title:
-                "How well is Lodha World Towers connected to other parts of the city?",
+              title: "How well is the project connected?",
               description:
-                "A rare living experience demands the right setting. Lodha World Towers chose the Mumbai mile. The estate offers swift access to prime arterial roads via Lodha Place and a secondary access route gives you access to the Sea Link. This luxury project in Mumbai enjoys seamless connectivity to the city and the suburbs.",
+                "With proximity to highways, commercial hubs, and premium lifestyle destinations, Sheetal Residences ensures effortless connectivity across the city.",
             },
             {
-              title:
-                "What social and retail infrastructures are present near Lodha World Towers?",
+              title: "What amenities are provided?",
               description:
-                "Lodha World Towers occupies pride of place on the Mumbai Mile – a glittering stretch where landmark residential and commercial developments rub shoulders with the finest hotels, luxury retail stores and premium entertainment hubs, bordered by the lush Mahalaxmi Race Course. Bandra-Worli Sea Link ~20 mins Domestic & International Airports ~30 mins Peninsula Corporate Park ~10 mins Palladium & High Street Phoenix ~5 mins",
+                "Residents can enjoy a host of world-class amenities, including a clubhouse, private theater, spa, and landscaped gardens, ensuring a holistic living experience.",
             },
           ],
           rera: {
@@ -300,7 +297,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "lodha cullinan",
+    title: "Sheetal Mann",
     location: "mumbai",
     area: "andheri",
     type: "residential",
@@ -539,7 +536,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "lodha vero",
+    title: "Sheetal Kunj",
     location: "mumbai",
     area: "matuanga",
     type: "residential",
@@ -552,7 +549,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "the reserve by lodha belmondo",
+    title: "Sheetal Dhara",
     location: "mumbai-Pune expressway",
     area: "pune",
     type: "residential",
@@ -565,7 +562,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "Lodha Sterling ",
+    title: "Sheetal Heights",
     location: "Thane",
     area: "thane",
     projectType: "commercial",
@@ -578,7 +575,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "Lodha Golfview ",
+    title: "Sheetal Greens",
     location: "Palava",
     area: "dombivli",
     type: "residential",
@@ -591,7 +588,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "Lodha Villa Royale Gold",
+    title: "Sheetal Elegance",
     location: "Thane",
     area: "thane",
     type: "residential",
@@ -604,7 +601,7 @@ export const FEATURED_PROJECTS = [
     },
   },
   {
-    title: "Lodha Azur",
+    title: "Sheetal Avenue",
     location: "Bangalore",
     area: "bangalore",
     type: "residential",

@@ -24,7 +24,11 @@ const Slider = () => {
       {BLOGS_LIST.length > 0 &&
         BLOGS_LIST.map(({ url, img, title, id, author }) => (
           <SwiperSlide className="!h-full !flex !grow group " key={id}>
-            <div className="mx-1 md:mx-2 flex flex-col h-full grow w-full hover:shadow-dark-orange/50 shadow-md shadow-transparent transition-all ease-linear duration-300">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={`${id * 2 + 1}00`}
+              data-aos-duration="500"
+              className="mx-1 md:mx-2 flex flex-col h-full grow w-full hover:shadow-dark-orange/50 shadow-md shadow-transparent transition-all ease-linear duration-300">
               <Card authors={author} src={img} url={url}>
                 {title}
               </Card>

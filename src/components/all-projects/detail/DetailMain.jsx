@@ -8,8 +8,12 @@ import { useEffect, useState } from "react";
 import AboutMain from "./about/AboutMain";
 import LinkBar from "./LinkBar";
 import NotAvailable from "../NotAvailable";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const DetailMain = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   const pathname = usePathname();
   const [filteredObject, setFilteredObject] = useState({});
 

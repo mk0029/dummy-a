@@ -11,11 +11,18 @@ import "swiper/css/pagination";
 
 const Recognition = () => {
   return (
-    <div className="max-w-[1200px] max-xl:container xl:px-5 mx-auto py-12 sm:py-14 md:py-16 lg:py-20 relative">
+    <div className="max-w-[1200px] max-xl:container xl:px-5 mx-auto common-space-y  relative">
       <div className="w-full text-center flex flex-col mb-14 max-lg:mb-10">
-        <Heading>Recognition</Heading>
-        <Paragraph className="mt-2.5">
-          Leading in global sustainability benchmarks
+        <Heading aos="fade-up" aosDuration="400">
+          Recognition & Achievements
+        </Heading>
+        <Paragraph
+          aos="fade-up"
+          aosDuration="400"
+          aosDelay="250"
+          className="mt-2.5 max-w-[800px]">
+          Sheetal Builders has been recognized for its contributions to
+          sustainable urbanization and architectural excellence.
         </Paragraph>
       </div>
       <Swiper
@@ -34,14 +41,18 @@ const Recognition = () => {
         }}
         modules={[Autoplay, Navigation, Pagination]}>
         {RECOGNITION_LIST.map((obj, id) => (
-          <SwiperSlide
-            key={id}
-            className={`w-1/4 max-w-[292.5px] max-lg:max-w-[611px] max-lg:w-full px-10 text-start border-dark-orange min-h-[140px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
-              id === 6 ? "border-0" : "border-r-[0.5px]"
-            }`}>
-            <Paragraph className="text-start !leading-5">
-              {obj.description}
-            </Paragraph>
+          <SwiperSlide key={id}>
+            <div
+              data-aos="fade-right"
+              data-aos-delay={`${id * 2 + 1}00`}
+              data-aos-duration="500"
+              className={`max-w-[292.5px] max-lg:max-w-[611px] max-lg:w-full px-10 text-start border-dark-orange min-h-[140px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
+                id === 6 ? "border-0" : "border-r-[0.5px]"
+              }`}>
+              <Paragraph className="text-start !leading-5">
+                {obj.description}
+              </Paragraph>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

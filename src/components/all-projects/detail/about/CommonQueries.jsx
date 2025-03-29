@@ -9,27 +9,35 @@ const CommonQueries = ({ content }) => {
   const [activeFaqIndex, setActiveFaqIndex] = useState(-1);
 
   return (
-    <div className="container  py-12 sm:py-14 md:py-16 lg:py-20 ">
-      <Heading className="!text-start md:mb-2.5">
+    <div className="container  common-space-y  ">
+      <Heading
+        aos="fade-up"
+        aosDuration="400"
+        className="!text-start md:mb-2.5">
         {content?.title || "Most common queries"}
       </Heading>
 
       <div className="flex flex-col">
         {content?.queriesList &&
           content?.queriesList?.map((obj, index) => (
-            <Accordion
-              titleClassName=""
-              defaultOpen={activeFaqIndex === index}
-              onClick={() =>
-                setActiveFaqIndex(activeFaqIndex === index ? -1 : index)
-              }
+            <div
               key={index}
-              title={obj.title}>
-              <Paragraph className="!text-left lg:pl-3 lg:pr-5">
-                {" "}
-                {obj.description}
-              </Paragraph>
-            </Accordion>
+              data-aos="fade-down"
+              data-aos-delay={`${index * 2 + 4}00`}
+              data-aos-duration="500">
+              <Accordion
+                titleClassName=""
+                defaultOpen={activeFaqIndex === index}
+                onClick={() =>
+                  setActiveFaqIndex(activeFaqIndex === index ? -1 : index)
+                }
+                title={obj.title}>
+                <Paragraph className="!text-left lg:pl-3 lg:pr-5">
+                  {" "}
+                  {obj.description}
+                </Paragraph>
+              </Accordion>
+            </div>
           ))}
         {content?.rera && (
           <div className="mt-14 sm:mt-16 lg:mt-20">

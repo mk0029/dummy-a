@@ -35,8 +35,11 @@ const PlanTab = ({ list }) => {
         <div>
           <Swiper
             className="!w-full mySwiper bhk-swiper"
+            autoHeight={true}
+            slidesPerView={3}
+            spaceBetween={16}
             autoplay={{
-              delay: 3500,
+              delay: 30500,
               disableOnInteraction: false,
             }}
             navigation={{
@@ -45,28 +48,28 @@ const PlanTab = ({ list }) => {
             }}
             pagination={false}
             breakpoints={{
-              320: { slidesPerView: 1.4, spaceBetween: 24 },
-              768: { slidesPerView: 1.8, spaceBetween: 30 },
+              320: { slidesPerView: 1.4 },
+              768: { slidesPerView: 3, spaceBetween: 30 },
               1024: { slidesPerView: 2.3, spaceBetween: 24 },
               1440: { slidesPerView: 2.81, spaceBetween: 24 },
             }}
             modules={[Autoplay, Navigation, Pagination]}>
             {tab.list.map((obj, i) => (
-              <SwiperSlide
-                key={i}
-                className="max-w-[296px] w-full max-lg:max-w-[225px]">
-                <div className="w-full h-[330px] bg-white overflow-hidden border border-light-gray flex justify-center items-center max-lg:h-[225px] max-lg:max-w-[225px]">
-                  <Image
-                    width={296}
-                    height={163.31}
-                    src={obj.image}
-                    className="max-w-[296px] max-lg:max-w-[225px] max-lg:w-full"
-                    alt="3 bhk info img"
-                  />
+              <SwiperSlide key={i}>
+                <div className=" max-sm:!max-w-full sm:max-w-[296px] w-full max-lg:max-w-[225px]">
+                  <div className="w-full max-sm:max-w-full h-[330px] bg-white overflow-hidden border border-light-gray flex justify-center items-center max-lg:h-[225px] max-lg:max-w-[225px]">
+                    <Image
+                      width={296}
+                      height={163.31}
+                      src={obj.image}
+                      className="max-w-[296px] max-lg:max-w-[225px] max-lg:w-full"
+                      alt="3 bhk info img"
+                    />
+                  </div>
+                  <Paragraph variant="secondary" className="text-start mt-4">
+                    {obj.title}
+                  </Paragraph>
                 </div>
-                <Paragraph variant="secondary" className="text-start mt-4">
-                  {obj.title}
-                </Paragraph>
               </SwiperSlide>
             ))}
           </Swiper>

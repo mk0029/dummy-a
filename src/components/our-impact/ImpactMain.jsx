@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import AnimatedHero from "../common/Components/AnimatedHero";
 import RouteInfo from "../common/Components/RouteInfo";
 import Blogs from "./blogs/Blogs";
@@ -7,8 +9,12 @@ import EnvironmentalImpact from "./environmental-impact/EnvironmentalImpact";
 import Partnerships from "./partnerships/Partnerships";
 import Recognition from "./recognition/Recognition";
 import SocialImpact from "./social-impact/SocialImpact";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ImpactMain = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div>
       <AnimatedHero mainImage="/assets/images/impact/webp/hero-background.webp" />

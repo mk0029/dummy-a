@@ -10,27 +10,37 @@ const Downloads = () => {
   const [isOpen, setIsOpen] = useState(-1);
 
   return (
-    <div className="container pt-12 sm:pt-14 md:pt-16 lg:pt-20">
-      <Heading className="md:mt-1 mb-2 md:mb-2.5">Downloads</Heading>
+    <div className="container  common-space-t ">
+      <Heading
+        aos="fade-up"
+        aosDuration="400"
+        className="md:mt-1 mb-2 md:mb-2.5">
+        FAQs
+      </Heading>
       {DOWNLOAD_LIST.map((item, index) => (
-        <Accordion
-          onClick={() => setIsOpen(isOpen === index ? -1 : index)}
+        <div
           key={index}
-          title={item.title}
-          defaultOpen={isOpen === index}>
-          {item.list &&
-            item.list.map((item, index) => (
-              <Paragraph className="!text-start" key={index}>
-                <Link
-                  target="_blank"
-                  rel="noopener"
-                  className="hover:text-dark-orange transition-all ease-linear duration-300"
-                  href={item.url || "/"}>
-                  {item.title}
-                </Link>
-              </Paragraph>
-            ))}
-        </Accordion>
+          data-aos="fade-down"
+          data-aos-delay={`${index + 2}00`}
+          data-aos-duration="600">
+          <Accordion
+            onClick={() => setIsOpen(isOpen === index ? -1 : index)}
+            title={item.title}
+            defaultOpen={isOpen === index}>
+            {item.list &&
+              item.list.map((item, index) => (
+                <Paragraph className="!text-start" key={index}>
+                  <Link
+                    target="_blank"
+                    rel="noopener"
+                    className="hover:text-dark-orange transition-all ease-linear duration-300"
+                    href={item.url || "/"}>
+                    {item.title}
+                  </Link>
+                </Paragraph>
+              ))}
+          </Accordion>
+        </div>
       ))}
     </div>
   );

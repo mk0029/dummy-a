@@ -5,20 +5,20 @@ export const ENVIRONMENTAL_IMPACT_LIST = [
     id: 1,
     img: "/assets/images/impact/webp/environmental-img-1.webp",
     description:
-      "Our decarbonisation initiatives are designed to lead the transition to a low-carbon future for the real estate industry by demonstrating that growth can be decoupled from increased emissions.",
+      "Smart Urban Development – We integrate smart designs and efficient resources to minimize environmental impact.",
     url: "/",
   },
   {
     id: 2,
     img: "/assets/images/impact/webp/environmental-img-2.webp",
     description:
-      "Our resilience initiatives focus on water resilience, biodiversity and asset safety; mitigating future climate risks through data modeling and climate-conscious design.",
+      "Energy-Efficient Buildings – Our projects are designed to optimize energy use, incorporating renewable energy solutions.",
   },
   {
     id: 3,
     img: "/assets/images/impact/webp/environmental-img-3.webp",
     description:
-      "The Lodha Net Zero Urban Accelerator, in partnership with US-based think tank RMI, is a pioneering platform through which we develop actionable initiatives in five key areas: Embodied Carbon, Passive Design Solutions, Efficient Equipment, Clean Energy, and Clean Mobility.",
+      "Water Conservation – Sustainable water management strategies ensure minimal waste and maximum efficiency.",
     url: "/",
   },
 ];
@@ -27,21 +27,21 @@ export const SOCIAL_IMPACT_LIST = [
     id: 1,
     img: "/assets/images/impact/webp/social-img-1.webp",
     description:
-      "Unnati, Lodha’s flagship Women’s Economic Empowerment initiative, champions and enables increased female participation in the formal workforce.",
+      "Empowering Communities – Our developments contribute to economic growth by creating job opportunities and supporting local businesses.",
     url: "/",
   },
   {
     id: 2,
     img: "/assets/images/impact/webp/social-img-2.webp",
     description:
-      "Lodha Genius Programme, in partnership with Ashoka University, is a fully-funded scholarship that nurtures and inspires the nation’s brightest young minds.",
+      "Educational Initiatives – We believe in fostering education by contributing to schools and learning centers.",
     url: "/",
   },
   {
     id: 3,
     img: "/assets/images/impact/webp/social-img-3.webp",
     description:
-      "Lodha is building the nation through access to quality education, with the Lodha World Schools, Lodha Oakwood School and the Sri Ram Universal School.",
+      "Women’s Empowerment – Encouraging equal opportunities and participation in the workforce.",
     url: "/",
   },
 ];
@@ -49,23 +49,21 @@ export const BLOGS_LIST = [
   {
     id: 1,
     img: "/assets/images/impact/webp/blogs-img-1.webp",
-    title:
-      "Building A Sustainable Future: The Need For Greener Supply Chains In The Real…",
+    title: "Sheetal Bhoomi – Premium living spaces with cutting-edge design.",
     author: ["Lodha"],
     url: "/",
   },
   {
     id: 2,
     img: "/assets/images/impact/webp/blogs-img-2.webp",
-    title: "Building green homes: planet over profit",
+    title: "Sheetal Mann – A blend of luxury and sustainability.",
     author: ["Aun Abdullah"],
     url: "/",
   },
   {
     id: 3,
     img: "/assets/images/impact/webp/blogs-img-3.webp",
-    title:
-      "Embodied carbon in high rise buildings - Insights from a baselining study",
+    title: "Sheetal Kunj – Affordable homes with world-class amenities.",
     author: ["Dr. Prasad Marepalli", "Aun Abdullah"],
     url: "/",
   },
@@ -75,15 +73,15 @@ export const DOWNLOAD_LIST = [
     title: "Environment Policies",
     list: [
       {
-        title: "Environment Sustainability Policy",
+        title: "What is the Environment Sustainability Policy?",
         url: "https://www.lodhagroup.com/sites/default/files/2024-08/Environmental-Sustainability-Policy.pdf",
       },
       {
-        title: "Supplier Code of Coduct",
+        title: "How does Sheetal Builders ensure sustainable procurement?",
         url: "https://www.lodhagroup.com/sites/default/files/2024-08/Supplier-Code-of-Conduct.pdf",
       },
       {
-        title: "Sustainable Procurement Policy",
+        title: "What is the Supplier Code of Conduct?",
         url: "https://www.lodhagroup.com/sites/default/files/2024-04/Proc_65_Sustainable-Procurement-Policy_Rev0.pdf",
       },
     ],
@@ -91,11 +89,13 @@ export const DOWNLOAD_LIST = [
   {
     title: "Social Policies",
     list: [
-      { title: "Prevention of Personal Harassment at Workplace Policy" },
-      { title: "Prevention of Sexual Harassment at Workplace Policy" },
-      { title: "Employee Handbook" },
+      {
+        title: "How does Sheetal Builders prevent harassment in the workplace?",
+      },
+      { title: "What is the Inclusion and Diversity Policy?" },
+      { title: "How does the company engage with stakeholders?" },
       { title: "Corporate Social Responsibility Policy" },
-      { title: "Human Rights Policy" },
+      { title: "What steps are taken for employee health and safety" },
       { title: "Inclusion and Diversity Policy" },
       { title: "Stakeholder Engagement Policy" },
       { title: "Stakeholder Grievance Redressal Policy" },
@@ -108,10 +108,13 @@ export const DOWNLOAD_LIST = [
   {
     title: "Governance Policies",
     list: [
-      { title: "Group Tax Policy" },
-      { title: "Nomination and Remuneration Policy" },
-      { title: "Related Party Transactions Policy" },
-      { title: "Code of Conduct for Directors and Senior Management" },
+      {
+        title:
+          "What is the Code of Conduct for Directors and Senior Management?",
+      },
+      { title: "How does Sheetal Builders handle insider trading?" },
+      { title: "What is the Whistle Blower Policy?" },
+      { title: "How does the company ensure transparency and ethics?" },
       { title: "Fair Disclosure Code" },
       { title: "Policy for Determination of Materiality" },
       { title: "Insider Trading Code" },
@@ -129,8 +132,11 @@ export const DOWNLOAD_LIST = [
   {
     title: "Sustainability Reports",
     list: [
-      { title: "FY 2024" },
-      { title: "FY 2023" },
+      { title: "Where can I access the company’s sustainability reports?" },
+      {
+        title:
+          " What are some key highlights from the latest sustainability report?",
+      },
       { title: "FY 2022" },
       { title: "FY 2021" },
       { title: "ESG Factbook" },
@@ -141,19 +147,16 @@ export const DOWNLOAD_LIST = [
     list: [
       {
         title:
-          "IGBC Green Existing Building Rating System, Lodha Excelus, Mahalaxmi, Mumbai",
+          " What certifications does Sheetal Builders hold for green buildings?",
       },
       {
-        title:
-          "IGBC Green Existing Building Rating System, Lodha iThink A, Palava",
+        title: "What is the significance of the IGBC Green Building Rating?",
       },
       {
-        title:
-          "IGBC Green Existing Building Rating System, Lodha iThink A, Thane",
+        title: " What does LEED Gold Certification mean for a building?",
       },
       {
-        title:
-          "IGBC Green Existing Building Rating System, Lodha Xperia Mall, Palava",
+        title: " What are ISO 14001 and ISO 45001 certifications?",
       },
       { title: "IGBC Green Homes, Lodha Bellavista, Pokhran Road, Thane" },
       { title: "IGBC Green Homes, Lodha Malabar, Walkeshwar, Mumbai" },

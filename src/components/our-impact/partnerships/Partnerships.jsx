@@ -11,11 +11,19 @@ import "swiper/css/pagination";
 
 const Partnerships = () => {
   return (
-    <div className="max-w-[1200px] max-xl:container xl:px-5 mx-auto pb-12 sm:pb-14 md:pb-16 lg:pb-20 relative flex flex-col justify-center items-center">
+    <div className="max-w-[1200px] max-xl:container xl:px-5 mx-auto  common-space-b  relative flex flex-col justify-center items-center">
       <div className="w-full text-center flex flex-col mb-14 max-lg:mb-10">
-        <Heading>Partnerships</Heading>
-        <Paragraph className="mt-2.5">
-          Strategic partnerships to lead the change in the industry
+        <Heading aos="fade-up" aosDuration="400">
+          Strategic Partnerships & Future Goals
+        </Heading>
+        <Paragraph
+          aos="fade-up"
+          aosDuration="400"
+          aosDelay="250"
+          className="mt-2.5 max-w-[800px] mx-auto">
+          We collaborate with leading architects, engineers, and sustainability
+          experts to ensure that our projects set benchmarks in quality and
+          innovation.
         </Paragraph>
       </div>
       <Swiper
@@ -34,14 +42,18 @@ const Partnerships = () => {
         }}
         modules={[Autoplay, Navigation, Pagination]}>
         {PARTNERSHIPS_LIST.map((obj, id) => (
-          <SwiperSlide
-            key={id}
-            className={`w-[292.5px] max-lg:w-full px-10 text-start border-dark-orange min-h-[100px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
-              id === 2 ? "border-0" : "border-r-[0.5px]"
-            }`}>
-            <Paragraph className="text-start !leading-5 lg:max-w-[212px]">
-              {obj.description}
-            </Paragraph>
+          <SwiperSlide key={id}>
+            <div
+              data-aos="fade-left"
+              data-aos-delay={`${id * 2 + 1}00`}
+              data-aos-duration="500"
+              className={`w-[292.5px] max-lg:w-full px-10 text-start border-dark-orange min-h-[100px] max-xl:px-7 max-lg:min-h-[60px] max-lg:px-6 ${
+                id === 2 ? "border-0" : "border-r-[0.5px]"
+              }`}>
+              <Paragraph className="text-start !leading-5 lg:max-w-[212px]">
+                {obj.description}
+              </Paragraph>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -22,10 +22,18 @@ const FilterHero = ({
     setIsDropOpen(false);
   });
   return (
-    <div className="container py-12 sm:py-14 md:py-16 lg:py-20 ">
-      <FilterInput onSearchChange={(e) => setInputVal(e)} />
+    <div className="container common-space-y  ">
+      <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
+        <FilterInput onSearchChange={(e) => setInputVal(e)} />
+      </div>
       <div className="mt-12 max-lg:flex max-lg:items-center max-lg:justify-between w-full relative">
-        <Heading className="!text-start lg:mt-1 lg:mb-5">All Projects</Heading>
+        <Heading
+          aos="fade-down"
+          aosDuration="400"
+          aosDelay="250"
+          className="!text-start lg:mt-1 lg:mb-5">
+          All Projects
+        </Heading>
         <div
           onClick={() => setIsDropOpen(!isDropOpen)}
           className="flex lg:hidden justify-between items-center pr-2 gap-x-3">

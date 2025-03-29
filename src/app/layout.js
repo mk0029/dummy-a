@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="max-w-[1920px] mx-auto">
+        <div className="max-w-[1920px] mx-auto overflow-hidden">
           <NavBar />
           {children}
           <Footer />

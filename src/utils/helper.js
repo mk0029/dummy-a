@@ -111,40 +111,33 @@ export const PROJECT_ALL_DATA_LIST = [
 export const RECOGNITION_LIST = [
   {
     id: 0,
-    description: (
-      <>
-        First Real Estate Company in India to have
-        {<span className="font-black"> SBTi validated Net-Zero Targets </span>}
-        (both near and long term)
-      </>
-    ),
+    description:
+      " Top-Ranked Sustainable Developer – Honored for our dedication to sustainable construction, integrating energy-efficient designs, water  conservation systems, and eco-conscious building materials to minimize our carbon footprint ",
   },
 
   {
     id: 1,
     description:
-      "Ranked 1st in India with the 6th highest score out of 500 Global Real Estate Development companies in the S&P Global Corporate Sustainability Assessment 2024. Member of Dow Jones Sustainability Indices",
+      "🏆 Industry Leader in Residential & Commercial Developments – Acknowledged for pioneering projects that seamlessly blend modern architecture with green technology, enhancing urban living experiences while maintaining environmental balance.",
   },
   {
     id: 2,
     description:
-      "Ranked 1st in Asia with a perfect score of 100/100 in the Residential Development Benchmark category at Global Real Estate Sustainability Benchmark 2024 (GRESB)",
+      "🏆 Certified Green Buildings – Many of our landmark projects adhere to IGBC (Indian Green Building Council) and LEED (Leadership in Energy and Environmental Design) certification standards, ensuring reduced energy consumption, lower emissions, and enhanced sustainability.",
   },
   {
     id: 3,
     description:
-      "Ranked 1st in India and 5th in Asia with a 5-star rating and a score of 94/100 in GRESB Standing Investments Benchmark 2024",
+      "🏆 Excellence in Architectural Innovation – Awarded for redefining urban skylines with aesthetically appealing, structurally sound, and technologically advanced infrastructure that meets the evolving needs of our clients.",
   },
   {
     id: 4,
     description:
-      "Ranked 3rd among 300 most influential companies across the globe and adjudged No. 1 in the real estate industry globally in the Urban Benchmark published by the World Benchmarking Alliance",
+      "🏆 Customer Satisfaction & Trust Awards – Recognized for delivering high-quality construction and maintaining transparency, earning the trust of homeowners, investors, and businesses alike.",
   },
   {
     id: 5,
-    description: `Included in the ${(
-      <span>FTSE4Good Index Series</span>
-    )}  in the June 2023 index review`,
+    description: `🏆 Smart & Future-Ready Infrastructure Recognition – Appreciated for integrating smart technology into our projects, incorporating automated energy management, IoT-enabled security systems, and sustainable urban solutions to improve livability.`,
   },
   {
     id: 6,
@@ -158,17 +151,17 @@ export const PARTNERSHIPS_LIST = [
   {
     id: 0,
     description:
-      "Launched Lodha Net Zero Urban Accelerator in partnership with RMI in 2022 ",
+      "At Sheetal Builders, we believe that meaningful progress comes through collaboration. By working closely with top architects, engineers, and sustainability experts, we ensure that our projects set new benchmarks in quality.",
   },
   {
     id: 1,
     description:
-      "Part of Xynteo’s Build Ahead - a business-led coalition, dedicated to collectively tackling the challenge of achieving a net-zero built environment  ",
+      "Sustainability is at the heart of our vision. We actively partner with green building councils to integrate eco-friendly practices into our developments, striving to achieve Net-Zero Energy goals. Through the use of energy-efficient designs.",
   },
   {
     id: 2,
     description:
-      "Signatory to WRI led business charter, value-chain approach to decarbonising the building and construction sector in India ",
+      "Embracing the latest advancements in construction, we are exploring AI-driven techniques to improve efficiency and precision in every phase of development. From automated project management to predictive analytics.",
   },
 ];
 

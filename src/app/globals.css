@@ -198,3 +198,12 @@ body {
 .swiper-button-disabled {
   @apply !border-gray-400 cursor-not-allowed;
 }
+.common-space-y {
+  @apply py-12 sm:py-14 md:py-16 lg:py-20;
+}
+.common-space-t {
+  @apply pt-12 sm:pt-14 md:pt-16 lg:pt-20;
+}
+.common-space-b {
+  @apply pb-12 sm:pb-14 md:pb-16 lg:pb-20;
+}
