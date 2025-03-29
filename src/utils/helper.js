@@ -174,3 +174,29 @@ export const DETAIL_LINK_BAR_DATA = [
   "Gallery",
 ];
 export const DETAIL_ACTION_LINKS = ["Enquire", "Chat"];
+export const OUR_STORY_LIST = [
+  {
+    title: "Crafting Timeless Elegance",
+    description:
+      "Each project we undertake is a testament to our pursuit of perfection. From the meticulous selection of premium materials to the integration of modern design aesthetics, every Sheetal development reflects sophistication and enduring quality.",
+    image: "/assets/images/ourstory/webp/ourImgOne.webp",
+  },
+  {
+    title: "Sustainability at the Core",
+    description:
+      "Our commitment extends beyond bricks and mortar. By incorporating sustainable building practices and eco-friendly innovations, we strive to minimize our carbon footprint while maximizing comfort and efficiency for our residents.",
+    image: "/assets/images/ourstory/webp/ourImgTwo.webp",
+  },
+  {
+    title: " A Masterpiece Crafted by Visionaries",
+    description:
+      "Collaborating with the finest architects, structural engineers, and interior designers, Sheetal Builders transforms visions into reality. Our developments stand as a testament to precision, innovation, and sustainability.",
+    image: "/assets/images/ourstory/webp/ourImgThird.webp",
+  },
+  {
+    title: "Crafting Timeless Elegance",
+    description:
+      "Each project we undertake is a testament to our pursuit of perfection. From the meticulous selection of premium materials to the integration of modern design aesthetics, every Sheetal development reflects sophistication and enduring quality.",
+    image: "/assets/images/ourstory/webp/ourImgFourth.webp",
+  },
+];

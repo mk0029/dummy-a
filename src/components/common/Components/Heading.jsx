@@ -11,9 +11,9 @@ const Heading = ({
   aosDuration = "",
 }) => {
   const variants = {
-    default: "text-2xl leading-116 max-md:text-xl max-md:leading-120",
+    default: "text-2xl leading-[1.16] max-md:text-xl max-md:leading-120",
     secondary:
-      "text-xl leading-140 max-lg:text-base max-md:text-sm max-lg:leading-125",
+      "text-xl leading-[1.4] max-lg:text-base max-md:text-sm max-lg:leading-125",
   };
   return (
     <h2

@@ -4,7 +4,7 @@ const Paragraph = ({
   className = "",
   variant = "default",
   children,
-  leading = "!leading-142",
+  leading = "!leading-[1.42]",
   aos = "",
   aosDelay = "",
   aosPlacement = "",
