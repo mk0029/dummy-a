@@ -83,7 +83,7 @@ const NavBar = () => {
             <div className="hidden lg:flex xl:ps-6 gap-11">
               <Link
                 className=" uppercase text-white text-sm leading-none duration-300 hover:text-white before:absolute hover:before:w-full relative before:duration-300 transition-all max-w-max before:w-0 before:h-0.5 before:bg-white before:-bottom-[23px] before:left-0"
-                href="https://www.lodhagroup.com/our-story">
+                href="/our-story">
                 Our Story
               </Link>
               <Link

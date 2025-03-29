@@ -1,12 +1,11 @@
-import React from 'react'
-import OurStoryDetail from '../../components/OurStoryDetail'
+import OurStoryMain from "@/components/our-story/OurStoryMain";
 
 const page = () => {
   return (
     <div>
-      <OurStoryDetail />
+      <OurStoryMain />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

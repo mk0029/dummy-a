@@ -7,7 +7,7 @@ const Card = ({ authors = [], src, children, url }) => {
   return (
     <div className="flex flex-col h-full">
       <AnimatedImageCard
-        className="!aspect-[1.39]  max-sm:max-h-[186px]"
+        className="!aspect-[1.39] max-sm:max-h-[186px]"
         width={272}
         height={269}
         disableAnimation
