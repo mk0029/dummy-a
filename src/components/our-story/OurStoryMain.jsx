@@ -12,7 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const OurStoryMain = () => {
   useEffect(() => {
-    AOS.init({});
+    AOS.init({ once: true });
   }, []);
   return (
     <>

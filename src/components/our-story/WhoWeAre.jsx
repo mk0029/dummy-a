@@ -17,7 +17,9 @@ const WhoWeAre = () => {
   ];
   return (
     <div className="container common-space-y">
-      <TagParagraph className="!text-center">WHO WE ARE</TagParagraph>
+      <div data-aos="fade-up" data-aos-delay="1" data-aos-duration="300">
+        <TagParagraph className="!text-center">WHO WE ARE</TagParagraph>
+      </div>
       <Heading
         aos="fade-up"
         aosDelay="10"

@@ -21,9 +21,9 @@ const About = () => {
           />
           <div className="lg:pl-[117px] w-full max-w-[800px] max-sm:mb-4 max-lg:mb-5 flex flex-col justify-center lg:max-w-[585px]">
             <div
-              ado="fade-left"
-              aos-delay="1"
-              aso-duration="300"
+              data-aos="fade-left"
+              data-aos-delay="1"
+              data-aos-duration="300"
               className="w-fit">
               <TagParagraph>about SHEETAL BUILDERS </TagParagraph>
             </div>

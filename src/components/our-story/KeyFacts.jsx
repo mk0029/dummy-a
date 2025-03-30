@@ -6,30 +6,32 @@ import Paragraph from "../common/Components/Paragraph";
 const KeyFacts = () => {
   const list = [
     {
-      title: "44",
+      title: "40+",
       info: (
         <>
-          Year legacy of <br />
+          Years of legacy in
+          <br />
           shaping real estate
         </>
       ),
     },
     {
-      title: "40",
+      title: "30+",
       info: (
         <>
-          operating <br />
-          projects*
+          Premium projects
+          <br />
+          successfully completed
         </>
       ),
     },
     {
-      title: "100",
+      title: "50+",
       info: (
         <>
-          mn. Sq. ft. area
+          mn. Sq. ft. of
           <br />
-          delivered
+          developed space
         </>
       ),
     },
@@ -37,7 +39,9 @@ const KeyFacts = () => {
   return (
     <div className="bg-dark-gray common-space-y lg:!py-12">
       <div className="container ">
-        <TagParagraph className="!text-center">KEY FACTS</TagParagraph>
+        <div data-aos="fade-up" data-aos-delay="1" data-aos-duration="300">
+          <TagParagraph className="!text-center">KEY FACTS</TagParagraph>
+        </div>
         <Heading
           aos="fade-up"
           aosDelay="10"
@@ -58,7 +62,7 @@ const KeyFacts = () => {
                 Presence in
               </h3>
               <Paragraph className=" max-sm:mx-auto sm:!text-start mt-2.5 !text-dark-orange !font-normal lg:text-base max-w-[200px]">
-                Mumbai, Thane, Pune, Bengaluru and London
+                Operating in <br /> Mumbai, Thane, Pune, Bengaluru, and Nashik
               </Paragraph>
             </div>
           </div>

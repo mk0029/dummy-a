@@ -5,11 +5,11 @@ import Heading from "../common/Components/Heading";
 
 const OurValue = () => {
   const list = [
-    "We exist to exceed the expectations of our customers through innovative,world-class solutions",
-    "We go that last mile to do things right and deliver excellence in all that we undertake",
-    "We work with the bes people, treat them well, expect a lot and the rest will follow",
-    "We behave with honesty, integrity and ethics with all stakeholders of our organization",
-    "We wholeheartedly contribute and create a significant positive impact on our nation’s communities and its environment",
+    "Exceeding Expectations: We exist to exceed the expectations of our customers through innovative, world-class solutions.",
+    "Commitment to Excellence: We go that last mile to do things right and deliver excellence in all that we undertake.",
+    "People-Centric Approach: We work with the best people, treat them well, expect a lot, and the rest will follow.",
+    "Integrity and Ethics: We behave with honesty, integrity, and ethics with all stakeholders of our organization.",
+    "Community & Sustainability: We wholeheartedly contribute and create a significant positive impact on our nation’s communities and its environment.",
   ];
   const [sliderLength, setSliderLength] = useState(1);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -28,7 +28,9 @@ const OurValue = () => {
 
   return (
     <div className="container common-space-b ">
-      <TagParagraph className="!text-center">Our Values</TagParagraph>
+      <div data-aos="fade-up" data-aos-delay="1" data-aos-duration="300">
+        <TagParagraph className="!text-center">Our Values</TagParagraph>
+      </div>
       <Heading className="mt-1">
         Shared principles that empower us to fulfill our purpose
       </Heading>

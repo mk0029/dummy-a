@@ -8,7 +8,9 @@ import AnimatedImageCard from "../common/Components/AnimatedImageCard";
 const OutStory = () => {
   return (
     <div className="container common-space-y text-center">
-      <TagParagraph className="!text-center"> OUR STORY </TagParagraph>
+      <div data-aos="fade-up" data-aos-delay="1" data-aos-duration="300">
+        <TagParagraph className="!text-center"> OUR STORY </TagParagraph>
+      </div>
       <Heading
         aos="fade-up"
         aosDelay="10"
