@@ -11,7 +11,7 @@ const AnimatedImageCard = ({
   onceTrue = false,
   threshold = 0.8,
   disableAnimation,
-  layerSpeed = 400,
+  layerSpeed = 1200,
   layerCoverPercent = 90,
   scaling = false,
 }) => {
@@ -49,12 +49,12 @@ const AnimatedImageCard = ({
   return (
     <div
       ref={cardRef}
-      className={`w-full relative overflow-hidden group ${className}`}
+      className={`w-full relative overflow-clip group ${className}`}
       style={{ aspectRatio }}>
       {/* Animated Layer */}
       {!disableAnimation && (
         <div
-          className={`absolute top-0 w-full h-full bg-white z-50 right-0 transition-transform ease-linear ${
+          className={`absolute top-0 w-full h-full bg-white z-50 right-0 transition-transform ease-in-out ${
             !animatedLayerVisible ? "translate-x-full" : ""
           }`}
           style={{

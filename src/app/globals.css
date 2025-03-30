@@ -82,6 +82,9 @@ body {
 .navpopup {
   background-color: rgba(24, 22, 21, 0.8);
 }
+.overflow-clip {
+  overflow: clip;
+}
 .css-1u9des2-indicatorSeparator {
   display: none !important;
 }

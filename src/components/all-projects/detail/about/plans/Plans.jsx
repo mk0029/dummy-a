@@ -6,7 +6,7 @@ import Paragraph from "@/components/common/Components/Paragraph";
 
 const Plans = ({ content }) => {
   return (
-    <div className="py-12 sm:py-14 md:py-16 lg:py-20 relative overflow-hidden">
+    <div className="py-12 sm:py-14 md:py-16 lg:py-20 relative overflow-clip">
       <div className="flex w-full max-lg:flex-col">
         <div className="w-3/12 container lg:absolute left-[8%] top-1/2 lg:-translate-y-1/2 max-xl:left-[-1px] mx-auto max-lg:w-full">
           <Heading aos="fade-right" aosDuration="400" className="!text-start">

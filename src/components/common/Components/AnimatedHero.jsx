@@ -12,7 +12,7 @@ const AnimatedHero = ({ className, mainImage }) => {
 
   return (
     <div
-      className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-hidden ${className}`}>
+      className={`w-full max-sm:min-h-[700px] sm:aspect-[2.38] relative overflow-clip ${className}`}>
       {mainImage && (
         <Image
           priority

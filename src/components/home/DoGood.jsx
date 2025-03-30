@@ -88,7 +88,7 @@ const DoGood = () => {
           </Link>
         </div>
 
-        <div className="relative w-full md:w-[50%] lg:w-[27vw] group md:h-screen md:max-h-[1024px]  overflow-hidden">
+        <div className="relative w-full md:w-[50%] lg:w-[27vw] group md:h-screen md:max-h-[1024px]  overflow-clip">
           <div className="relative overflow-clip group">
             <span
               ref={overlayRef2}

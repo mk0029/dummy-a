@@ -27,7 +27,7 @@ const MainProject = ({ filteredArray }) => {
                 onClick={() => router.push(url)}
                 className={`${
                   i >= 4 && !showAll
-                    ? "opacity-0 h-0 overflow-hidden"
+                    ? "opacity-0 h-0 overflow-clip"
                     : "opacity-100 h-auto"
                 } transition-all duration-500 group cursor-pointer`}>
                 <Card

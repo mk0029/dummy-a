@@ -38,7 +38,7 @@ const DetailCards = ({ content }) => {
               } w-full pt-[30px]`}>
               <AnimatedImageCard
                 onceTrue
-                layerSpeed={500}
+                layerSpeed={1200}
                 threshold={0.4}
                 width={526}
                 height={467}

@@ -12,7 +12,7 @@ const About = () => {
         <div className={`flex max-lg:flex-col-reverse w-full`}>
           <AnimatedImageCard
             onceTrue
-            layerSpeed={500}
+            layerSpeed={1200}
             threshold={0.4}
             width={585}
             height={347}

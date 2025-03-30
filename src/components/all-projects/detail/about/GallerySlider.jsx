@@ -29,7 +29,7 @@ const GallerySlider = ({ list }) => {
               data-aos="fade-up"
               data-aos-delay={`${index * 2 + 3}00`}
               data-aos-duration="500"
-              className="w-full lg:max-w-[373px] group lg:max-h-[373px] aspect-square overflow-hidden">
+              className="w-full lg:max-w-[373px] group lg:max-h-[373px] aspect-square overflow-clip">
               <Image
                 className="w-full group-hover:scale-105 transition-all duration-300 ease-linear h-full object-cover"
                 src={item.image}

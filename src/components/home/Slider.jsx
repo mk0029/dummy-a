@@ -96,18 +96,16 @@ const Slider = () => {
             aosdelay={"150"}
             aostime={"fade-up"}
             className={"pt-1"}
-            center
-          >
+            center>
             Iconic Properties
           </Heading>
         </div>
 
         {/* Slider Section */}
-        <div className="slider  w-full max-w-[1170px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-hidden relative">
+        <div className="slider  w-full max-w-[1170px] mx-auto flex justify-center mt-[30px] mb-[30px] overflow-clip relative">
           <div
             ref={sliderRef}
-            className="w-full justify-between flex gap-[30px] overflow-hidden"
-          >
+            className="w-full justify-between flex gap-[30px] overflow-clip">
             {slides.map((slide, index) => (
               <div key={index} className="flex flex-col min-w-[250px]">
                 <Image
@@ -121,8 +119,7 @@ const Slider = () => {
                 <p
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  className="text-light-gray text-sm font-medium futuraMedium !leading-110 mt-[10px] text-left"
-                >
+                  className="text-light-gray text-sm font-medium futuraMedium !leading-110 mt-[10px] text-left">
                   {slide.title}
                 </p>
               </div>
@@ -134,8 +131,7 @@ const Slider = () => {
         <div className=" gap-4 items-center justify-center mt-[15px] hidden md:flex lg:hidden">
           <div
             className="cursor-pointer px-[12px] py-[6px] text-dark-orangetext-[1.5rem]"
-            onClick={() => slideTo(activeSlide > 0 ? activeSlide - 1 : 0)}
-          >
+            onClick={() => slideTo(activeSlide > 0 ? activeSlide - 1 : 0)}>
             &lt;
           </div>
           <div
@@ -146,8 +142,7 @@ const Slider = () => {
                   ? activeSlide + 1
                   : slides.length - 1
               )
-            }
-          >
+            }>
             &gt;
           </div>
         </div>
@@ -184,8 +179,7 @@ const Slider = () => {
                         duration-[0.5s] 
                         ease-[cubic-bezier(0.075,0.82,0.165,1)] 
                         capitalize 
-                        cursor-pointer hover:text-white hover:bg-dark-orange"
-          >
+                        cursor-pointer hover:text-white hover:bg-dark-orange">
             View All Projects
           </button>
         </div>

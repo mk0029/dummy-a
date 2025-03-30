@@ -43,11 +43,11 @@ const NavBar = () => {
 
   useEffect(() => {
     if (showNavBar || searchNavBar || ourProject || showEnquire) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("overflow-clip");
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("overflow-clip");
     }
-    return () => document.body.classList.remove("overflow-hidden");
+    return () => document.body.classList.remove("overflow-clip");
   }, [showNavBar, searchNavBar, ourProject, showEnquire]);
 
   if (!isMounted) return null; // Avoid hydration mismatch

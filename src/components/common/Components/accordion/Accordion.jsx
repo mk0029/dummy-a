@@ -26,7 +26,7 @@ const Accordion = ({
   }, [defaultOpen]);
 
   return (
-    <div className={`overflow-hidden ${className}`}>
+    <div className={`overflow-clip ${className}`}>
       <button
         className={`w-full flex justify-between items-center text-left font-medium focus:outline-none transition-all duration-300 ease-linear  pl-4 pr-5 py-5 sm:py-6 lg:py-7 cursor-pointer hover:bg-dark-gray/50 ${
           isOpen ? "bg-dark-gray" : "bg-transparent"
@@ -50,7 +50,7 @@ const Accordion = ({
         />
       </button>
       <div
-        className={`overflow-hidden bg-dark-gray transition-all duration-300 ease-in-out border-t  border-solid ${
+        className={`overflow-clip bg-dark-gray transition-all duration-300 ease-in-out border-t  border-solid ${
           isOpen ? "border-transparent" : "border-[rgba(109,110,112,0.5)]"
         }`}
         style={{

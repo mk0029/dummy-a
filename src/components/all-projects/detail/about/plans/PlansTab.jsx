@@ -57,7 +57,7 @@ const PlanTab = ({ list }) => {
             {tab.list.map((obj, i) => (
               <SwiperSlide key={i}>
                 <div className=" max-sm:!max-w-full sm:max-w-[296px] w-full max-lg:max-w-[225px]">
-                  <div className="w-full max-sm:max-w-full h-[330px] bg-white overflow-hidden border border-light-gray flex justify-center items-center max-lg:h-[225px] max-lg:max-w-[225px]">
+                  <div className="w-full max-sm:max-w-full h-[330px] bg-white overflow-clip border border-light-gray flex justify-center items-center max-lg:h-[225px] max-lg:max-w-[225px]">
                     <Image
                       width={296}
                       height={163.31}
