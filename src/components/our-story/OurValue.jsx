@@ -5,11 +5,11 @@ import Heading from "../common/Components/Heading";
 
 const OurValue = () => {
   const list = [
-    "Exceeding Expectations: We exist to exceed the expectations of our customers through innovative, world-class solutions.",
-    "Commitment to Excellence: We go that last mile to do things right and deliver excellence in all that we undertake.",
-    "People-Centric Approach: We work with the best people, treat them well, expect a lot, and the rest will follow.",
-    "Integrity and Ethics: We behave with honesty, integrity, and ethics with all stakeholders of our organization.",
-    "Community & Sustainability: We wholeheartedly contribute and create a significant positive impact on our nation’s communities and its environment.",
+    "As builders, our commitment to providing strong and reliable structures is at the forefront of everything we do",
+    "We also understand that our clients are entrusting us with one of their most valuable investments, and we take that responsibility very seriously.",
+    "In short, our building strength and trust in our clients is a reflection of our commitment to excellence in everything we do.",
+    "As builders, our commitment to providing strong and reliable structures is at the forefront of everything we do",
+    "We have built a reputation for honesty, integrity, and transparency in our work, and we always strive to maintain open and effective communication with our clients.",
   ];
   const [sliderLength, setSliderLength] = useState(1);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -41,7 +41,8 @@ const OurValue = () => {
               key={index}
               className={`w-full  h-2 bg-light-gray transition-all ease-linear duration-300 ${
                 activeSlide === index ? "opacity-100" : "opacity-60"
-              }`}></div>
+              }`}
+            ></div>
           ))}
         </div>
         <div className="flex max-lg:flex-col -mx-4 w-fit gap-y-7">
@@ -54,11 +55,13 @@ const OurValue = () => {
                     ? "opacity-100"
                     : "opacity-50"
                   : ""
-              }`}>
+              }`}
+            >
               <p
                 data-aos="fade-left"
                 data-aso-duration="500"
-                className={`text-base leading-[1.3] min-w-[190px] px-4 cormorantSemiBold text-dark-orange`}>
+                className={`text-base leading-[1.3] min-w-[190px] px-4 cormorantSemiBold text-dark-orange`}
+              >
                 {title}
               </p>
             </div>

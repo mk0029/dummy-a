@@ -178,25 +178,38 @@ export const OUR_STORY_LIST = [
   {
     title: "Crafting Timeless Elegance",
     description:
-      "Each project we undertake is a testament to our pursuit of perfection. From the meticulous selection of premium materials to the integration of modern design aesthetics, every Sheetal development reflects sophistication and enduring quality.",
-    image: "/assets/images/ourstory/webp/ourImgOne.webp",
+      " We have built a reputation for honesty, integrity, and transparency in our work, and we always strive to maintain open and effective communication with our clients. I believe that by working together and building a strong, trusting relationship, we can achieve great things and create structures that are both beautiful and functional. ",
+    image:
+      "/assets/images/allproject/details/webp/vorero-lodha-detail-main.jpg",
   },
   {
     title: "Sustainability at the Core",
     description:
-      "Our commitment extends beyond bricks and mortar. By incorporating sustainable building practices and eco-friendly innovations, we strive to minimize our carbon footprint while maximizing comfort and efficiency for our residents.",
-    image: "/assets/images/ourstory/webp/ourImgTwo.webp",
+      "In short, our building strength and trust in our clients is a reflection of our commitment to excellence in everything we do. Whether we are working on a small project or a large-scale development, we approach each project with the same level of dedication and attention to detail, ensuring that our clients always receive the highest quality results.",
+    image:
+      "/assets/images/allproject/details/webp/royal-gold-lodha-detail-main.jpg",
   },
   {
     title: " A Masterpiece Crafted by Visionaries",
     description:
-      "Collaborating with the finest architects, structural engineers, and interior designers, Sheetal Builders transforms visions into reality. Our developments stand as a testament to precision, innovation, and sustainability.",
-    image: "/assets/images/ourstory/webp/ourImgThird.webp",
+      "We also understand that our clients are entrusting us with one of their most valuable investments, and we take that responsibility very seriously. That's why we are dedicated to delivering not just a building, but a complete and comprehensive solution that meets their unique needs and exceeds their expectations.",
+    image:
+      "/assets/images/allproject/details/webp/starling-lodha-detail-main.jpg",
   },
   {
     title: "Crafting Timeless Elegance",
     description:
-      "Each project we undertake is a testament to our pursuit of perfection. From the meticulous selection of premium materials to the integration of modern design aesthetics, every Sheetal development reflects sophistication and enduring quality.",
-    image: "/assets/images/ourstory/webp/ourImgFourth.webp",
+      "As builders, our commitment to providing strong and reliable structures is at the forefront of everything we do. We take pride in using only the highest quality materials and utilizing the latest building techniques to ensure that our structures are built to last.",
+    image:
+      "/assets/images/allproject/details/webp/golfview-lodha-detail-main.jpg",
   },
+];
+
+export const FEATURED_LIST = [
+  "Recognized among India’s Top Builders 2024",
+  "Best Luxury Developer 2023 by Real Estate Awards",
+  "Sustainable Developer of the Year 2023",
+  "Certified as a Great Place to Work 2024-25",
+  "Great Manager Award 2023",
+  " Among India's Top Builders 2024 in the National Category, Construction World Architect & Builder Awards",
 ];
