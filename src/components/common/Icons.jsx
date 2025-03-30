@@ -288,7 +288,11 @@ const Icons = ({ icon, className, stroke, fill }) => {
           </path>
         </g>
       </svg>
-    ),
+    ),rightArrow:(
+      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+<path id="Icon" d="M1 11L6 6L1 1" stroke="#9D7F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    )
   };
   const addClassName = (icon) => {
     return React.cloneElement(icon, {
