@@ -37,8 +37,8 @@ const FeaturedAwards = () => {
             {FEATURED_LIST.map((title, index) => (
               <Paragraph
                 key={index}
-                aos="fade-left"
-                aosDelay="200"
+                aos="fade-up"
+                aosDelay={`${index * 2 + 2}00`}
                 aosDuration="500"
                 className={`lg:max-w-[485px] !text-left ${
                   index > 0 && "mt-3 md:mt-5 "
